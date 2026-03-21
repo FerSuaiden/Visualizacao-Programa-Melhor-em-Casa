@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Composição e Capacidade — Programa Melhor Em Casa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Melhor Em Casa — Análise
+    </a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="oferta.html">Oferta</a></li>
+      <li><a href="composicao.html">Composição</a></li>
+      <li><a href="conformidade.html">Conformidade</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <!-- Contexto -->
+    <section>
+      <div class="section-header">
+        <h2>Composição e Capacidade das Equipes</h2>
+        <p>Tipos de equipe, perfil profissional e capacidade operacional.</p>
+      </div>
+      <p>
+        As equipes de Atenção Domiciliar são classificadas em quatro tipos, cada um com composição e funções distintas.
+        Esta seção detalha o que compõe cada equipe, seus tipos, profissionais e capacidade operacional
+        medida pela Carga Horária Semanal (CHS).
+      </p>
+    </section>
+
+    <!-- Tipos de Equipe -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Tipos de Equipe</h2>
+        <p>Distribuição percentual dos quatro tipos no Brasil.</p>
+      </div>
+      <div class="card" style="max-width:600px;margin:0 auto;">
+        <img src="Outputs%26Codigo/PARTE1/composicao_nacional_pizza.png" alt="Composição nacional - pizza" />
+        <div class="card-body">
+          <h3>Composição Nacional</h3>
+          <p>As EMAD I representam 41% das equipes, seguidas por EMAP (34,9%), EMAD II (17,3%) e EMAP-R (6,8%).</p>
+        </div>
+      </div>
+      <div class="info-box mt-2">
+        <strong>O que faz cada equipe:</strong><br />
+        <strong>EMAD I:</strong>
+        Equipe de referência com dedicação integral. Composta por médico (≥&nbsp;40h), enfermeiro (≥&nbsp;60h),
+        técnicos de enfermagem (≥&nbsp;120h) e fisioterapeuta ou assistente social (≥&nbsp;30h).
+        É o tipo mais exigente e mais numeroso.<br />
+        <strong>EMAD II:</strong>
+        Mesma estrutura da EMAD I, mas com carga horária reduzida para médico (≥&nbsp;20h) e enfermeiro (≥&nbsp;30h).<br />
+        <strong>EMAP:</strong>
+        Equipe de apoio multiprofissional que complementa as EMADs com especialistas (fisioterapeuta,
+        fonoaudiólogo, nutricionista, psicólogo, etc.). Requer ≥&nbsp;3 categorias de nível superior e
+        ≥&nbsp;90h de CHS total.<br />
+        <strong>EMAP-R:</strong>
+        Equipe Multiprofissional de Apoio para Reabilitação, com requisito de CHS reduzido (≥&nbsp;60h).
+      </div>
+    </section>
+
+    <!-- Composição por Região -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Composição por Região</h2>
+        <p>Como a distribuição dos tipos varia entre as cinco regiões.</p>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Região</th>
+              <th>EMAD I</th>
+              <th>EMAD II</th>
+              <th>EMAP</th>
+              <th>EMAP-R</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Nordeste (1.104 eq.)</td><td>27,9%</td><td>23,8%</td><td>37,8%</td><td>10,5%</td></tr>
+            <tr><td>Norte (237 eq.)</td><td>45,6%</td><td>13,1%</td><td>40,1%</td><td>1,3%</td></tr>
+            <tr><td>Centro-Oeste (216 eq.)</td><td>38,4%</td><td>19,9%</td><td>40,3%</td><td>1,4%</td></tr>
+            <tr><td>Sudeste (892 eq.)</td><td>53,0%</td><td>9,8%</td><td>31,2%</td><td>6,1%</td></tr>
+            <tr><td>Sul (215 eq.)</td><td>56,3%</td><td>16,7%</td><td>24,2%</td><td>2,8%</td></tr>
+            <tr style="font-weight:700;"><td>Brasil (2.664 eq.)</td><td>41,0%</td><td>17,3%</td><td>34,9%</td><td>6,8%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted">O Nordeste destaca-se pela maior presença de EMAD II e EMAP-R. Sudeste e Sul concentram mais de 50% das equipes no tipo EMAD I.</p>
+    </section>
+
+    <!-- Composição Profissional -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Composição Profissional</h2>
+        <p>Categorias profissionais que integram as equipes, em visão hierárquica.</p>
+      </div>
+      <div class="iframe-wrapper" style="padding-bottom:70%;">
+        <iframe src="Outputs%26Codigo/PARTE2/habilidades_sunburst.html" title="Sunburst de habilidades" loading="lazy"></iframe>
+        <button class="iframe-expand" title="Expandir">⛶</button>
+      </div>
+      <p class="text-muted">
+        Este gráfico sunburst é interativo: clique nos segmentos para navegar pela hierarquia profissional.
+        São <strong>17.677 vínculos profissional–CBO</strong> mapeados a partir dos códigos da Classificação Brasileira de Ocupações (CBO)
+        em 9 categorias: Téc. Enfermagem (33,4%), Enfermeiro (16,2%), Fisioterapeuta (14,8%), Médico (12,4%) e outras.
+      </p>
+    </section>
+
+    <!-- Capacidade Operacional -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Capacidade Operacional</h2>
+        <p>Carga Horária Semanal total (Q<sub>k</sub>) por equipe e por estado.</p>
+      </div>
+      <div class="info-box">
+        <strong>Q<sub>k</sub></strong> representa a capacidade total de uma equipe k, calculada como a soma das
+        CHS de todos os seus profissionais.
+        Quanto maior o Q<sub>k</sub>, mais horas semanais a equipe tem disponível para atendimentos de Atenção Domiciliar.
+      </div>
+      <div class="grid-2 mt-2">
+        <div class="card">
+          <img src="Outputs%26Codigo/PARTE2/distribuicao_capacidade_Qk_histograma.png" alt="Histograma de capacidade" />
+          <div class="card-body">
+            <h3>Distribuição de Q<sub>k</sub></h3>
+            <p>Mediana de 230h/semana e média de 224,0h por equipe (incluindo equipes com Q<sub>k</sub>=0), com DP de 169,7h. Este gráfico mostra a distribuição por equipe (Q<sub>k</sub> individual), não o total por estado.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Outputs%26Codigo/PARTE2/capacidade_total_chs_por_estado.png" alt="Capacidade por estado" />
+          <div class="card-body">
+            <h3>CHS Total por Estado</h3>
+            <p>São Paulo lidera com 100.929h, seguido por MG (67.752h), BA (57.125h), RJ (51.390h) e CE (36.164h). Aqui o indicador é agregado (soma de CHS das equipes do estado), por isso os valores são muito maiores que a média por equipe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa de Calor CHS -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Mapa de Calor da CHS</h2>
+        <p>Concentração geográfica da capacidade operacional das equipes.</p>
+      </div>
+      <div class="iframe-wrapper" style="padding-bottom:65%;">
+        <iframe src="Outputs%26Codigo/PARTE2/mapa_calor_chs_brasil.html" title="Mapa de calor CHS Brasil" loading="lazy"></iframe>
+        <button class="iframe-expand" title="Expandir">⛶</button>
+      </div>
+      <p class="text-muted">
+        Mapa interativo: use o zoom e arraste para navegar. A intensidade do calor representa a concentração de CHS total das equipes em cada localidade.
+      </p>
+    </section>
+
+    <!-- Síntese -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Síntese</h2>
+      </div>
+      <p>
+        As EMAD I (41%) e EMAP (34,9%) dominam o programa, mas a composição varia regionalmente. Sudeste e Sul concentram mais EMAD I (acima de 50%), enquanto o Nordeste tem maior presença de EMAD II e EMAP-R. O quadro profissional é liderado por técnicos de enfermagem (33,4%) e enfermeiros (16,2%). A capacidade operacional média é de 224,7h/semana por equipe, com alta variabilidade (DP = 169,8h), refletindo diferenças na estruturação entre estados.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Fernando Alee Suaiden · Orientadora: Maristela Oliveira dos Santos · ICMC-USP</p>
+    <p>Projeto Otimização de Rotas de Atenção Domiciliar · <a href="https://github.com/fersuaiden/IC" target="_blank">GitHub</a></p>
+  </footer>
+
+  <!-- Image Viewer -->
+  <div id="lightbox" class="lightbox-overlay">
+    <div class="lb-toolbar">
+      <span class="lb-zoom-level">100%</span>
+      <button id="lb-zoom-in" title="Ampliar">+</button>
+      <button id="lb-zoom-out" title="Reduzir">−</button>
+      <button id="lb-reset" title="Resetar zoom">↺</button>
+      <button id="lb-fullscreen" title="Tela cheia">⛶</button>
+      <button id="lb-download" title="Download">⤓</button>
+      <button id="lb-close" title="Fechar">✕</button>
+    </div>
+    <div class="lb-img-container">
+      <img src="" alt="" />
+    </div>
+    <div class="lb-hint">Scroll para zoom · Arraste para mover · ESC para fechar</div>
+  </div>
+  <button class="scroll-top" aria-label="Voltar ao topo">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

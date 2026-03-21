@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conformidade Legal — Programa Melhor Em Casa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Melhor Em Casa — Análise
+    </a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="oferta.html">Oferta</a></li>
+      <li><a href="composicao.html">Composição</a></li>
+      <li><a href="conformidade.html">Conformidade</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <section>
+      <div class="section-header">
+        <h2>Conformidade com a Portaria GM/MS nº 3.005/2024</h2>
+        <p>Verificação dos requisitos mínimos de composição de cada tipo de equipe.</p>
+      </div>
+
+      <p>
+        A conformidade legal é avaliada por tipo de equipe, por região e por estado, permitindo identificar onde e por que as equipes não atendem aos critérios mínimos da legislação vigente.
+      </p>
+
+      <p>
+        A <strong>Portaria GM/MS nº 3.005/2024</strong> estabelece os requisitos mínimos de
+        Carga Horária Semanal (CHS)
+        e categorias profissionais para cada tipo de equipe de Atenção Domiciliar.
+        A verificação consistiu em agregar as CHS por categoria profissional
+        (via prefixos da Classificação Brasileira de Ocupações)
+        para cada equipe, descartar profissionais com CHS inferior a 20h, e comparar os valores com os requisitos mínimos.
+      </p>
+
+      <!-- Requisitos por tipo -->
+      <div class="table-wrapper mt-2">
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Médico</th>
+              <th>Enfermeiro</th>
+              <th>Téc. Enfermagem</th>
+              <th>Fisio/Assist. Social</th>
+              <th>CHS Total Mín.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>EMAD I</td><td>≥ 40h</td><td>≥ 60h</td><td>≥ 120h</td><td>≥ 30h</td><td>—</td></tr>
+            <tr><td>EMAD II</td><td>≥ 20h</td><td>≥ 30h</td><td>≥ 120h</td><td>≥ 30h</td><td>—</td></tr>
+            <tr><td>EMAP</td><td colspan="4">≥ 3 categorias de nível superior</td><td>≥ 90h</td></tr>
+            <tr><td>EMAP-R</td><td colspan="4">≥ 3 categorias de nível superior</td><td>≥ 60h</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted">Requisito adicional: nenhum profissional de EMAD pode ter CHS inferior a 20h (Art. 547, §1º).</p>
+    </section>
+
+    <!-- Resultados Nacionais -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Resultado Nacional</h2>
+      </div>
+
+      <div class="kpi-row" style="position:static;margin-top:0;">
+        <div class="kpi-card">
+          <div class="kpi-value">67,61%</div>
+          <div class="kpi-label">Conformidade geral</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">1.801</div>
+          <div class="kpi-label">Equipes conformes</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-value">863</div>
+          <div class="kpi-label">Equipes não-conformes</div>
+        </div>
+      </div>
+
+      <div class="table-wrapper mt-3">
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Total</th>
+              <th>Conformes</th>
+              <th>Não-Conformes</th>
+              <th>Taxa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>EMAD I</td><td>1.093</td><td>535</td><td>558</td><td>48,9%</td></tr>
+            <tr><td>EMAD II</td><td>460</td><td>385</td><td>75</td><td>83,7%</td></tr>
+            <tr><td>EMAP</td><td>929</td><td>760</td><td>169</td><td>81,8%</td></tr>
+            <tr><td>EMAP-R</td><td>182</td><td>121</td><td>61</td><td>66,5%</td></tr>
+            <tr style="font-weight:700;"><td>TOTAL</td><td>2.664</td><td>1.801</td><td>863</td><td>67,61%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Gráficos de Conformidade -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Conformidade por Tipo e por Região</h2>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/conformidade_legal/conformidade_por_tipo.png" alt="Conformidade por tipo" />
+          <div class="card-body">
+            <h3>Por Tipo de Equipe</h3>
+            <p>A EMAD I (tipo mais numeroso e central) apresenta a menor taxa: 48,9%. EMAD II e EMAP têm 83,7% e 81,8%, respectivamente.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/conformidade_legal/conformidade_por_regiao.png" alt="Conformidade por região" />
+          <div class="card-body">
+            <h3>Por Região</h3>
+            <p>Regiões com mais EMAD I (Sudeste/Sul) tendem a menor conformidade geral.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Análise EMAD I -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Decomposição: EMAD I Não-Conformes</h2>
+        <p>Das 558 EMAD I fora da conformidade, quais são os déficits predominantes?</p>
+      </div>
+      <p>
+        A EMAD I é o tipo mais numeroso (1.093 equipes, 41% do total) e o principal responsável pelo atendimento direto aos pacientes. Ao mesmo tempo, é o tipo com a menor taxa de conformidade (48,9%), o que justifica uma análise detalhada dos seus déficits específicos.
+      </div>
+      <p>
+        <strong>Causa principal:</strong> A Portaria 3.005/2024 elevou o requisito de enfermeiro para EMAD I de 40h (Portaria 825/2016) para 60h, o que aumentou substancialmente a dificuldade de conformidade desse tipo de equipe.
+      </p>
+    </section>
+
+    <!-- Conformidade por região (tabela) -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Conformidade por Região</h2>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Região</th>
+              <th>Equipes</th>
+              <th>Conformes</th>
+              <th>Taxa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Centro-Oeste</td><td>216</td><td>159</td><td>73,6%</td></tr>
+            <tr><td>Norte</td><td>237</td><td>171</td><td>72,2%</td></tr>
+            <tr><td>Nordeste</td><td>1.104</td><td>779</td><td>70,6%</td></tr>
+            <tr><td>Sudeste</td><td>892</td><td>560</td><td>62,8%</td></tr>
+            <tr><td>Sul</td><td>215</td><td>132</td><td>61,4%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted">Regiões com maior proporção de EMAD I tendem a menor conformidade geral, pois a taxa desse tipo é baixa em todas as regiões.</p>
+    </section>
+
+    <!-- Explorador por Estado -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Conformidade por Estado</h2>
+        <p>Selecione um estado para visualizar a conformidade das equipes.</p>
+      </div>
+
+      <div class="state-selector">
+        <label for="state-select">Escolha o estado:</label>
+        <select id="state-select">
+          <option value="AC">Acre (AC)</option>
+          <option value="AL">Alagoas (AL)</option>
+          <option value="AM">Amazonas (AM)</option>
+          <option value="AP">Amapá (AP)</option>
+          <option value="BA">Bahia (BA)</option>
+          <option value="CE">Ceará (CE)</option>
+          <option value="DF">Distrito Federal (DF)</option>
+          <option value="ES">Espírito Santo (ES)</option>
+          <option value="GO">Goiás (GO)</option>
+          <option value="MA">Maranhão (MA)</option>
+          <option value="MG">Minas Gerais (MG)</option>
+          <option value="MS">Mato Grosso do Sul (MS)</option>
+          <option value="MT">Mato Grosso (MT)</option>
+          <option value="PA">Pará (PA)</option>
+          <option value="PB">Paraíba (PB)</option>
+          <option value="PE">Pernambuco (PE)</option>
+          <option value="PI">Piauí (PI)</option>
+          <option value="PR">Paraná (PR)</option>
+          <option value="RJ">Rio de Janeiro (RJ)</option>
+          <option value="RN">Rio Grande do Norte (RN)</option>
+          <option value="RO">Rondônia (RO)</option>
+          <option value="RR">Roraima (RR)</option>
+          <option value="RS">Rio Grande do Sul (RS)</option>
+          <option value="SC">Santa Catarina (SC)</option>
+          <option value="SE">Sergipe (SE)</option>
+          <option value="SP" selected>São Paulo (SP)</option>
+          <option value="TO">Tocantins (TO)</option>
+        </select>
+      </div>
+
+      <!-- Grid de botões rápidos -->
+      <div class="state-grid">
+        <button class="state-btn" data-uf="AC">AC</button>
+        <button class="state-btn" data-uf="AL">AL</button>
+        <button class="state-btn" data-uf="AM">AM</button>
+        <button class="state-btn" data-uf="AP">AP</button>
+        <button class="state-btn" data-uf="BA">BA</button>
+        <button class="state-btn" data-uf="CE">CE</button>
+        <button class="state-btn" data-uf="DF">DF</button>
+        <button class="state-btn" data-uf="ES">ES</button>
+        <button class="state-btn" data-uf="GO">GO</button>
+        <button class="state-btn" data-uf="MA">MA</button>
+        <button class="state-btn" data-uf="MG">MG</button>
+        <button class="state-btn" data-uf="MS">MS</button>
+        <button class="state-btn" data-uf="MT">MT</button>
+        <button class="state-btn" data-uf="PA">PA</button>
+        <button class="state-btn" data-uf="PB">PB</button>
+        <button class="state-btn" data-uf="PE">PE</button>
+        <button class="state-btn" data-uf="PI">PI</button>
+        <button class="state-btn" data-uf="PR">PR</button>
+        <button class="state-btn" data-uf="RJ">RJ</button>
+        <button class="state-btn" data-uf="RN">RN</button>
+        <button class="state-btn" data-uf="RO">RO</button>
+        <button class="state-btn" data-uf="RR">RR</button>
+        <button class="state-btn" data-uf="RS">RS</button>
+        <button class="state-btn" data-uf="SC">SC</button>
+        <button class="state-btn" data-uf="SE">SE</button>
+        <button class="state-btn active" data-uf="SP">SP</button>
+        <button class="state-btn" data-uf="TO">TO</button>
+      </div>
+
+      <!-- Display dinâmico -->
+      <div id="state-display" class="grid-2">
+        <div class="card card-full">
+          <img src="Outputs%26Codigo/PARTE4/visualizacoes/estados/SP/SP_equipes_conformidade.png" alt="Conformidade SP" />
+          <div class="card-body">
+            <h3>SP: Conformidade das Equipes</h3>
+            <p>Distribuição de equipes conformes e não-conformes no estado, por tipo de equipe (Portaria 3.005/2024).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conclusão -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Síntese</h2>
+      </div>
+      <p>
+        A taxa nacional de conformidade é de <strong>67,61%</strong>, o que significa que aproximadamente 1 em cada 3 equipes não atende plenamente os requisitos da Portaria 3.005/2024. O principal gargalo é o tipo EMAD I (48,9% de conformidade), fortemente impactado pela elevação do requisito de enfermagem de 40h para 60h. As regiões com maior proporção de EMAD I (Sudeste e Sul) são as mais afetadas.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Fernando Alee Suaiden · Orientadora: Maristela Oliveira dos Santos · ICMC-USP</p>
+    <p>Projeto Otimização de Rotas de Atenção Domiciliar · <a href="https://github.com/fersuaiden/IC" target="_blank">GitHub</a></p>
+  </footer>
+
+  <!-- Image Viewer -->
+  <div id="lightbox" class="lightbox-overlay">
+    <div class="lb-toolbar">
+      <span class="lb-zoom-level">100%</span>
+      <button id="lb-zoom-in" title="Ampliar">+</button>
+      <button id="lb-zoom-out" title="Reduzir">−</button>
+      <button id="lb-reset" title="Resetar zoom">↺</button>
+      <button id="lb-fullscreen" title="Tela cheia">⛶</button>
+      <button id="lb-download" title="Download">⤓</button>
+      <button id="lb-close" title="Fechar">✕</button>
+    </div>
+    <div class="lb-img-container">
+      <img src="" alt="" />
+    </div>
+    <div class="lb-hint">Scroll para zoom · Arraste para mover · ESC para fechar</div>
+  </div>
+  <button class="scroll-top" aria-label="Voltar ao topo">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

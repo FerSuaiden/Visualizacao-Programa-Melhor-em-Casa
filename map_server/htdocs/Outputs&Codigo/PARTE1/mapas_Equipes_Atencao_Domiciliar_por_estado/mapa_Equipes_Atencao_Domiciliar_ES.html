@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d0a152594287cd700687c279ea07f18c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <div style="position: fixed;
+                bottom: 50px; left: 50px; width: 420px; height: auto;
+                border:2px solid grey; z-index:9999; font-size:14px;
+                background-color:white; opacity: .92; padding: 14px;
+                line-height: 1.6;
+                ">
+                <b style="font-size:16px;">Legenda - Programa Melhor em Casa (ES)</b><br><br>
+                <i class="fa fa-map-marker fa-2x" style="color:purple"></i>&nbsp; <b>Atendimento + Apoio</b> (EMAD + EMAP)<br>
+                <i class="fa fa-map-marker fa-2x" style="color:blue"></i>&nbsp; <b>Apenas EMAD</b> (Equipe de Atendimento)<br>
+                <i class="fa fa-map-marker fa-2x" style="color:green"></i>&nbsp; <b>Apenas EMAP</b> (Equipe de Apoio)<br>
+                <hr style="margin: 10px 0;">
+                <span style="line-height: 1.7; font-size: 13px;">
+                <b>EMAD I/II:</b> Equipe Multiprofissional de Atenção Domiciliar<br>
+                <b>EMAP:</b> Equipe Multiprofissional de Apoio<br>
+                <b>EMAP-R:</b> Equipe Multiprofissional de Apoio para Reabilitação<br>
+                <i>Fonte: CNES/DataSUS - Competência 2025/08</i>
+                </span>
+    </div>
+    
+    
+            <div class="folium-map" id="map_d0a152594287cd700687c279ea07f18c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d0a152594287cd700687c279ea07f18c = L.map(
+                "map_d0a152594287cd700687c279ea07f18c",
+                {
+                    center: [-19.312426520590886, -40.167332655759274],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1a83b0801fe268e8a452ef0cf91680ae = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1a83b0801fe268e8a452ef0cf91680ae.addTo(map_d0a152594287cd700687c279ea07f18c);
+        
+    
+            var marker_cluster_693bbb687ce8b08b1e19d28989d44838 = L.markerClusterGroup(
+                {
+  "disableClusteringAtZoom": 17,
+  "maxClusterRadius": 40,
+}
+            );
+        
+    
+            var marker_6303d6489a94e12770fe661d31141448 = L.marker(
+                [-18.567366, -39.752335],
+                {
+}
+            ).addTo(marker_cluster_693bbb687ce8b08b1e19d28989d44838);
+        
+    
+            var icon_5d2baa422deb2b634e56cebd354df217 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a96b58bbe87f2d549f2a66d159ab0f0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0eccf32b68dd2a52fe89a6a44f19463f = $(`<div id="html_0eccf32b68dd2a52fe89a6a44f19463f" style="width: 100.0%; height: 100.0%;"><b>POLICLINICA NOSSA SENHORA DA CONCEICAO</b><br><b>Equipes:</b> Apenas Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA ITAUNAS, S/N<br><b>CNES:</b> 2483920</div>`)[0];
+                popup_a96b58bbe87f2d549f2a66d159ab0f0c.setContent(html_0eccf32b68dd2a52fe89a6a44f19463f);
+            
+        
+
+        marker_6303d6489a94e12770fe661d31141448.bindPopup(popup_a96b58bbe87f2d549f2a66d159ab0f0c)
+        ;
+
+        
+    
+    
+                marker_6303d6489a94e12770fe661d31141448.setIcon(icon_5d2baa422deb2b634e56cebd354df217);
+            
+    
+            var marker_c8a94b01d1bb814861b1bd26e89fede2 = L.marker(
+                [-20.353821102954427, -40.35411357879639],
+                {
+}
+            ).addTo(marker_cluster_693bbb687ce8b08b1e19d28989d44838);
+        
+    
+            var icon_040ea5e05edb6e3ef117032a44ccf614 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ee2bf374583722b47f5c6f3afda9f76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8dc4d05477bc48f86a28a16aa4e5c719 = $(`<div id="html_8dc4d05477bc48f86a28a16aa4e5c719" style="width: 100.0%; height: 100.0%;"><b>MELHOR EM CASA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AVENIDA JOAO FRANCISCO GONCALVES, 733<br><b>CNES:</b> 3408159</div>`)[0];
+                popup_3ee2bf374583722b47f5c6f3afda9f76.setContent(html_8dc4d05477bc48f86a28a16aa4e5c719);
+            
+        
+
+        marker_c8a94b01d1bb814861b1bd26e89fede2.bindPopup(popup_3ee2bf374583722b47f5c6f3afda9f76)
+        ;
+
+        
+    
+    
+                marker_c8a94b01d1bb814861b1bd26e89fede2.setIcon(icon_040ea5e05edb6e3ef117032a44ccf614);
+            
+    
+            var marker_bd384fd50271ae3ec8fa956ce3bf64b7 = L.marker(
+                [-18.715212, -39.860879],
+                {
+}
+            ).addTo(marker_cluster_693bbb687ce8b08b1e19d28989d44838);
+        
+    
+            var icon_b535e8c1ed0271b29a519b8108c4fc82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fbcff695a939c4ddff9f5210b290b8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a643473a76c4cbe89fe331c03b59541b = $(`<div id="html_a643473a76c4cbe89fe331c03b59541b" style="width: 100.0%; height: 100.0%;"><b>PROGRAMA MELHOR EM CASA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AVENIDA JOSE TOZZI, 2220<br><b>CNES:</b> 9946586</div>`)[0];
+                popup_2fbcff695a939c4ddff9f5210b290b8e.setContent(html_a643473a76c4cbe89fe331c03b59541b);
+            
+        
+
+        marker_bd384fd50271ae3ec8fa956ce3bf64b7.bindPopup(popup_2fbcff695a939c4ddff9f5210b290b8e)
+        ;
+
+        
+    
+    
+                marker_bd384fd50271ae3ec8fa956ce3bf64b7.setIcon(icon_b535e8c1ed0271b29a519b8108c4fc82);
+            
+    
+            var marker_f0c0540518fabe7dde862f7b6c8651ad = L.marker(
+                [-18.5857335, -39.7343357],
+                {
+}
+            ).addTo(marker_cluster_693bbb687ce8b08b1e19d28989d44838);
+        
+    
+            var icon_c8fecda050ac9fe7ad6d3243bee6d4d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cef88afa343fc8e165b238d961623af2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ab06dc6e9f16f0940097552c8f9eb42 = $(`<div id="html_8ab06dc6e9f16f0940097552c8f9eb42" style="width: 100.0%; height: 100.0%;"><b>PRONTO SOCORRO DE CONCEICAO DA BARRA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA PREF ITALO BENSO, 735<br><b>CNES:</b> 2483858</div>`)[0];
+                popup_cef88afa343fc8e165b238d961623af2.setContent(html_8ab06dc6e9f16f0940097552c8f9eb42);
+            
+        
+
+        marker_f0c0540518fabe7dde862f7b6c8651ad.bindPopup(popup_cef88afa343fc8e165b238d961623af2)
+        ;
+
+        
+    
+    
+                marker_f0c0540518fabe7dde862f7b6c8651ad.setIcon(icon_c8fecda050ac9fe7ad6d3243bee6d4d5);
+            
+    
+            var marker_9264e6d5a65f748c0f88966d5f059cda = L.marker(
+                [-20.34, -41.135],
+                {
+}
+            ).addTo(marker_cluster_693bbb687ce8b08b1e19d28989d44838);
+        
+    
+            var icon_60872468f954023916f1dd26f4296d6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89d76b10110bb5557cb2fe0328da06c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_879eaf044e78084e5456f83a4f2d0c19 = $(`<div id="html_879eaf044e78084e5456f83a4f2d0c19" style="width: 100.0%; height: 100.0%;"><b>POLICLINICA DE VENDA NOVA DO IMIGRANTE</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AVENIDA LORENZO ZANDONADE, 840<br><b>CNES:</b> 2403358</div>`)[0];
+                popup_89d76b10110bb5557cb2fe0328da06c7.setContent(html_879eaf044e78084e5456f83a4f2d0c19);
+            
+        
+
+        marker_9264e6d5a65f748c0f88966d5f059cda.bindPopup(popup_89d76b10110bb5557cb2fe0328da06c7)
+        ;
+
+        
+    
+    
+                marker_9264e6d5a65f748c0f88966d5f059cda.setIcon(icon_60872468f954023916f1dd26f4296d6f);
+            
+    
+            marker_cluster_693bbb687ce8b08b1e19d28989d44838.addTo(map_d0a152594287cd700687c279ea07f18c);
+        
+</script>
+</html>

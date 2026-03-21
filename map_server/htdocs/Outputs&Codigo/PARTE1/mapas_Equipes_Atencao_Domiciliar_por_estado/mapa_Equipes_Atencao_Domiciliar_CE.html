@@ -1,0 +1,3289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8616806b967c5dab96ebd91850dbe0d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <div style="position: fixed;
+                bottom: 50px; left: 50px; width: 420px; height: auto;
+                border:2px solid grey; z-index:9999; font-size:14px;
+                background-color:white; opacity: .92; padding: 14px;
+                line-height: 1.6;
+                ">
+                <b style="font-size:16px;">Legenda - Programa Melhor em Casa (CE)</b><br><br>
+                <i class="fa fa-map-marker fa-2x" style="color:purple"></i>&nbsp; <b>Atendimento + Apoio</b> (EMAD + EMAP)<br>
+                <i class="fa fa-map-marker fa-2x" style="color:blue"></i>&nbsp; <b>Apenas EMAD</b> (Equipe de Atendimento)<br>
+                <i class="fa fa-map-marker fa-2x" style="color:green"></i>&nbsp; <b>Apenas EMAP</b> (Equipe de Apoio)<br>
+                <hr style="margin: 10px 0;">
+                <span style="line-height: 1.7; font-size: 13px;">
+                <b>EMAD I/II:</b> Equipe Multiprofissional de Atenção Domiciliar<br>
+                <b>EMAP:</b> Equipe Multiprofissional de Apoio<br>
+                <b>EMAP-R:</b> Equipe Multiprofissional de Apoio para Reabilitação<br>
+                <i>Fonte: CNES/DataSUS - Competência 2025/08</i>
+                </span>
+    </div>
+    
+    
+            <div class="folium-map" id="map_8616806b967c5dab96ebd91850dbe0d6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8616806b967c5dab96ebd91850dbe0d6 = L.map(
+                "map_8616806b967c5dab96ebd91850dbe0d6",
+                {
+                    center: [-4.780237241402273, -39.26621735122335],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4a3e7d522928bc660f5e7fa57156ea37 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4a3e7d522928bc660f5e7fa57156ea37.addTo(map_8616806b967c5dab96ebd91850dbe0d6);
+        
+    
+            var marker_cluster_e7137988a7e02c31df92d4a7037b77e3 = L.markerClusterGroup(
+                {
+  "disableClusteringAtZoom": 17,
+  "maxClusterRadius": 40,
+}
+            );
+        
+    
+            var marker_15afdfc7b5297f81c3671a21478986a1 = L.marker(
+                [-4.967524590152369, -39.02212858200073],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_2c187cdc31f4addbd0b4cae37e1d20c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1dd7b4312250a0ff143c9c78c6f7732a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_981c0ad74adc120333d9bfcf680a30be = $(`<div id="html_981c0ad74adc120333d9bfcf680a30be" style="width: 100.0%; height: 100.0%;"><b>SAD DE QUIXADA SERVICO DE ATENCAO DOMICILIAR</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA DOUTOR EUSEBIO N A SOUSA C DR FCO A BRSILEIRO, 2324<br><b>CNES:</b> 0828246</div>`)[0];
+                popup_1dd7b4312250a0ff143c9c78c6f7732a.setContent(html_981c0ad74adc120333d9bfcf680a30be);
+            
+        
+
+        marker_15afdfc7b5297f81c3671a21478986a1.bindPopup(popup_1dd7b4312250a0ff143c9c78c6f7732a)
+        ;
+
+        
+    
+    
+                marker_15afdfc7b5297f81c3671a21478986a1.setIcon(icon_2c187cdc31f4addbd0b4cae37e1d20c7);
+            
+    
+            var marker_16053db02cb7d0fdae92b0dd59c746e0 = L.marker(
+                [-3.762877, -38.574053],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_ed37c0e1f6718291e07e9c2791ca0f7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f49ef67ff935a079d89fcdb1dfadf576 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f097b811077e1a5c00a4fa7885324491 = $(`<div id="html_f097b811077e1a5c00a4fa7885324491" style="width: 100.0%; height: 100.0%;"><b>POLICLINICA LUSMAR VERAS RODRIGUES</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AV CARNEIRO DE MENDONCA, 1583<br><b>CNES:</b> 9939938</div>`)[0];
+                popup_f49ef67ff935a079d89fcdb1dfadf576.setContent(html_f097b811077e1a5c00a4fa7885324491);
+            
+        
+
+        marker_16053db02cb7d0fdae92b0dd59c746e0.bindPopup(popup_f49ef67ff935a079d89fcdb1dfadf576)
+        ;
+
+        
+    
+    
+                marker_16053db02cb7d0fdae92b0dd59c746e0.setIcon(icon_ed37c0e1f6718291e07e9c2791ca0f7f);
+            
+    
+            var marker_be62008f719229b48ec4e63c7f5f4078 = L.marker(
+                [-4.0397, -38.63661],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_d79806391e2094242914a1a3fa659511 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67710bbac754258ce6facb9eab4f4903 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_205c79f4198e8ffb1c9ef7ef55ca88e6 = $(`<div id="html_205c79f4198e8ffb1c9ef7ef55ca88e6" style="width: 100.0%; height: 100.0%;"><b>SAD DE GUAIUBA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA IVANILDO NOCRATO, S/N<br><b>CNES:</b> 9764704</div>`)[0];
+                popup_67710bbac754258ce6facb9eab4f4903.setContent(html_205c79f4198e8ffb1c9ef7ef55ca88e6);
+            
+        
+
+        marker_be62008f719229b48ec4e63c7f5f4078.bindPopup(popup_67710bbac754258ce6facb9eab4f4903)
+        ;
+
+        
+    
+    
+                marker_be62008f719229b48ec4e63c7f5f4078.setIcon(icon_d79806391e2094242914a1a3fa659511);
+            
+    
+            var marker_d66ea3b04eaed0f4553e5ccf10d0b3de = L.marker(
+                [-4.94136, -37.97542],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_ac1a3eb8aa842d3c05186a2075adad67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a6647ecfe6ac84ade2846a258b76215 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9c455f48ae0cddb006646fed2989ea1 = $(`<div id="html_b9c455f48ae0cddb006646fed2989ea1" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE ESPECIALIDADES MUNICIPAL MARGARIDA LEANDRO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA MONSENHOR JOAO LUIS, S/N<br><b>CNES:</b> 9169695</div>`)[0];
+                popup_1a6647ecfe6ac84ade2846a258b76215.setContent(html_b9c455f48ae0cddb006646fed2989ea1);
+            
+        
+
+        marker_d66ea3b04eaed0f4553e5ccf10d0b3de.bindPopup(popup_1a6647ecfe6ac84ade2846a258b76215)
+        ;
+
+        
+    
+    
+                marker_d66ea3b04eaed0f4553e5ccf10d0b3de.setIcon(icon_ac1a3eb8aa842d3c05186a2075adad67);
+            
+    
+            var marker_9106ae20614ca4e39d64498e7d706776 = L.marker(
+                [-5.5363104, -40.7766387],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_0adc45320f3c97a41d577364f3c728e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3947f93d610d9d8604b399c30414fc3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bcc1a4b3c7127b09ff2f63034d7f158 = $(`<div id="html_7bcc1a4b3c7127b09ff2f63034d7f158" style="width: 100.0%; height: 100.0%;"><b>HOSP MATERN DR JOSE MARIA LEITAO</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA DEOCLECIANO ARAGAO, S/N<br><b>CNES:</b> 2415658</div>`)[0];
+                popup_3947f93d610d9d8604b399c30414fc3b.setContent(html_7bcc1a4b3c7127b09ff2f63034d7f158);
+            
+        
+
+        marker_9106ae20614ca4e39d64498e7d706776.bindPopup(popup_3947f93d610d9d8604b399c30414fc3b)
+        ;
+
+        
+    
+    
+                marker_9106ae20614ca4e39d64498e7d706776.setIcon(icon_0adc45320f3c97a41d577364f3c728e9);
+            
+    
+            var marker_846db3137c0981396203ca3032daff8a = L.marker(
+                [-4.18100257910616, -38.13115239143372],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_7c65d905258399e697519e068416cf84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acb46dd1e741c8a6457c9bebabeed95c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b05c5989f288160c17e5b97c2273dfe = $(`<div id="html_7b05c5989f288160c17e5b97c2273dfe" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL MONSENHOR DOURADO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> MONSENHOR DOURADO, 100<br><b>CNES:</b> 2372819</div>`)[0];
+                popup_acb46dd1e741c8a6457c9bebabeed95c.setContent(html_7b05c5989f288160c17e5b97c2273dfe);
+            
+        
+
+        marker_846db3137c0981396203ca3032daff8a.bindPopup(popup_acb46dd1e741c8a6457c9bebabeed95c)
+        ;
+
+        
+    
+    
+                marker_846db3137c0981396203ca3032daff8a.setIcon(icon_7c65d905258399e697519e068416cf84);
+            
+    
+            var marker_28026590054edb31df97eaae28b91f6a = L.marker(
+                [-7.2219002, -39.3192855],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_c5ecc5547e2727c165c9f336a9a76fbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eac540bbc18b59b4389efe6d0a4021b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a0ff29627771e60804291efca7ff3a7 = $(`<div id="html_6a0ff29627771e60804291efca7ff3a7" style="width: 100.0%; height: 100.0%;"><b>POLICLINICA GERALDO MENEZES BARBOSA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA SAO PEDRO, S/N<br><b>CNES:</b> 4011457</div>`)[0];
+                popup_eac540bbc18b59b4389efe6d0a4021b4.setContent(html_6a0ff29627771e60804291efca7ff3a7);
+            
+        
+
+        marker_28026590054edb31df97eaae28b91f6a.bindPopup(popup_eac540bbc18b59b4389efe6d0a4021b4)
+        ;
+
+        
+    
+    
+                marker_28026590054edb31df97eaae28b91f6a.setIcon(icon_c5ecc5547e2727c165c9f336a9a76fbf);
+            
+    
+            var marker_fb34b60d7b01fc1ab68dc7f8c15090b4 = L.marker(
+                [-3.4891579, -39.5791554],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_e2042c11bc3e44515ae0712c2b0ddca2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_510804c2ce8a048ae360166a1a475620 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11741f1c21a60e8aa75cbbcb8f51ceff = $(`<div id="html_11741f1c21a60e8aa75cbbcb8f51ceff" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE ESPECIALIDADES MEDICAS DE ITAPIPOCA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA OSVALDO CRUZ, 405<br><b>CNES:</b> 2426315</div>`)[0];
+                popup_510804c2ce8a048ae360166a1a475620.setContent(html_11741f1c21a60e8aa75cbbcb8f51ceff);
+            
+        
+
+        marker_fb34b60d7b01fc1ab68dc7f8c15090b4.bindPopup(popup_510804c2ce8a048ae360166a1a475620)
+        ;
+
+        
+    
+    
+                marker_fb34b60d7b01fc1ab68dc7f8c15090b4.setIcon(icon_e2042c11bc3e44515ae0712c2b0ddca2);
+            
+    
+            var marker_beab72d60aead5255be1797c72f8ca43 = L.marker(
+                [-5.1291, -39.7311],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_a51d63f98c9fac409acbd6cb62452bb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f9a4adba77734680e19c22abfa453ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_64fef7b8438b72c231e1655196b81cbc = $(`<div id="html_64fef7b8438b72c231e1655196b81cbc" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE FISIO VENCESLAU V BATISTA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA VENCESLAU VIEIRA, 0<br><b>CNES:</b> 2479036</div>`)[0];
+                popup_1f9a4adba77734680e19c22abfa453ce.setContent(html_64fef7b8438b72c231e1655196b81cbc);
+            
+        
+
+        marker_beab72d60aead5255be1797c72f8ca43.bindPopup(popup_1f9a4adba77734680e19c22abfa453ce)
+        ;
+
+        
+    
+    
+                marker_beab72d60aead5255be1797c72f8ca43.setIcon(icon_a51d63f98c9fac409acbd6cb62452bb6);
+            
+    
+            var marker_ddde9e909c67ca7862d281c2fc7bffdf = L.marker(
+                [-7.583858621947544, -39.282270669937134],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_d2e28023d76e774dc74ce156185a5f9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ad2ab6d737d16b2d06708ce63584569 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db34042e3222eda0bb73bfd61c9a8747 = $(`<div id="html_db34042e3222eda0bb73bfd61c9a8747" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL DE JARDIM</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> AV WILSON RORIZ, 893<br><b>CNES:</b> 2425599</div>`)[0];
+                popup_5ad2ab6d737d16b2d06708ce63584569.setContent(html_db34042e3222eda0bb73bfd61c9a8747);
+            
+        
+
+        marker_ddde9e909c67ca7862d281c2fc7bffdf.bindPopup(popup_5ad2ab6d737d16b2d06708ce63584569)
+        ;
+
+        
+    
+    
+                marker_ddde9e909c67ca7862d281c2fc7bffdf.setIcon(icon_d2e28023d76e774dc74ce156185a5f9a);
+            
+    
+            var marker_9136fd3fe3ffe67c4ce8d214739157ed = L.marker(
+                [-4.130570527169979, -38.23539912700653],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_97bf04040120603e7d52f8b781fe7cb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a36bf90451d63aed5dcaebd9b8aea3d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0009b5cf6b12af9c98bce9950b0a46dd = $(`<div id="html_0009b5cf6b12af9c98bce9950b0a46dd" style="width: 100.0%; height: 100.0%;"><b>SAD CASCAVEL</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA DONA MARIA ERNESTINA, S/N<br><b>CNES:</b> 0787965</div>`)[0];
+                popup_a36bf90451d63aed5dcaebd9b8aea3d0.setContent(html_0009b5cf6b12af9c98bce9950b0a46dd);
+            
+        
+
+        marker_9136fd3fe3ffe67c4ce8d214739157ed.bindPopup(popup_a36bf90451d63aed5dcaebd9b8aea3d0)
+        ;
+
+        
+    
+    
+                marker_9136fd3fe3ffe67c4ce8d214739157ed.setIcon(icon_97bf04040120603e7d52f8b781fe7cb2);
+            
+    
+            var marker_f5a58c293fc2c1010762ce0d5e80985a = L.marker(
+                [-2.896378, -40.450595],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_92bbb77547bbbd9bbb12de508d830ebb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fd49372588e0ce96d780ef8ed7c293c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b07dae66b59fc42d72e43e14a7b39252 = $(`<div id="html_b07dae66b59fc42d72e43e14a7b39252" style="width: 100.0%; height: 100.0%;"><b>UNIDADE BASICA DE SAUDE UBS DA SEDE</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA SANTA LUZIA, S/N<br><b>CNES:</b> 3005712</div>`)[0];
+                popup_9fd49372588e0ce96d780ef8ed7c293c.setContent(html_b07dae66b59fc42d72e43e14a7b39252);
+            
+        
+
+        marker_f5a58c293fc2c1010762ce0d5e80985a.bindPopup(popup_9fd49372588e0ce96d780ef8ed7c293c)
+        ;
+
+        
+    
+    
+                marker_f5a58c293fc2c1010762ce0d5e80985a.setIcon(icon_92bbb77547bbbd9bbb12de508d830ebb);
+            
+    
+            var marker_aa9ec97a80efdf0ce3030884d6f797a8 = L.marker(
+                [-7.233742253901831, -39.40789461135864],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_e90e25cb75c31a820fa551583b98815c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_378b81861d7369fe1692b1882122b3e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3f4a0a2f7c663901d25b88a9b49b95c = $(`<div id="html_d3f4a0a2f7c663901d25b88a9b49b95c" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE ESPECIALIDADES DO CRATO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA JOSE MARROCOS, 570<br><b>CNES:</b> 2415372</div>`)[0];
+                popup_378b81861d7369fe1692b1882122b3e7.setContent(html_d3f4a0a2f7c663901d25b88a9b49b95c);
+            
+        
+
+        marker_aa9ec97a80efdf0ce3030884d6f797a8.bindPopup(popup_378b81861d7369fe1692b1882122b3e7)
+        ;
+
+        
+    
+    
+                marker_aa9ec97a80efdf0ce3030884d6f797a8.setIcon(icon_e90e25cb75c31a820fa551583b98815c);
+            
+    
+            var marker_399a2f132f14468af255c8cde24d2a83 = L.marker(
+                [-3.4356942992770394, -39.14848208427429],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_460190771cb1f50dd746ae0a2db697db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_542272d5345c13b5712cbff6b88d3c4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3ab7eb05be3fcaf6f888517c8355452 = $(`<div id="html_f3ab7eb05be3fcaf6f888517c8355452" style="width: 100.0%; height: 100.0%;"><b>HOSP OTACILIO BARBOSA DOS SANTOS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA EVARISTO GOMES, 177<br><b>CNES:</b> 2561891</div>`)[0];
+                popup_542272d5345c13b5712cbff6b88d3c4a.setContent(html_f3ab7eb05be3fcaf6f888517c8355452);
+            
+        
+
+        marker_399a2f132f14468af255c8cde24d2a83.bindPopup(popup_542272d5345c13b5712cbff6b88d3c4a)
+        ;
+
+        
+    
+    
+                marker_399a2f132f14468af255c8cde24d2a83.setIcon(icon_460190771cb1f50dd746ae0a2db697db);
+            
+    
+            var marker_9a7a9c5882544a91f6a8bea3d7153453 = L.marker(
+                [-6.786194897869351, -39.297370717717335],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_1a59ffc33eb128eb04ab4d617f9a983a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_357de0c29a5c74d81719449ce437d088 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6cfd38608c18f9801ed1656746ef945 = $(`<div id="html_e6cfd38608c18f9801ed1656746ef945" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE SAUDE DE VARZEA ALEGRE</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> CORONEL ANTONIO CORREIA, S/N<br><b>CNES:</b> 2562774</div>`)[0];
+                popup_357de0c29a5c74d81719449ce437d088.setContent(html_e6cfd38608c18f9801ed1656746ef945);
+            
+        
+
+        marker_9a7a9c5882544a91f6a8bea3d7153453.bindPopup(popup_357de0c29a5c74d81719449ce437d088)
+        ;
+
+        
+    
+    
+                marker_9a7a9c5882544a91f6a8bea3d7153453.setIcon(icon_1a59ffc33eb128eb04ab4d617f9a983a);
+            
+    
+            var marker_480f4d7e4d438968dd7fc693424de026 = L.marker(
+                [-4.223684843703874, -38.73085141181946],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_f675add9f24f6efe9ccee4b1f5272d6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6fab09b75b7ea6f28e4d1aee46e17552 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcc557ccaf18f901a9a41f4ae674d3a9 = $(`<div id="html_bcc557ccaf18f901a9a41f4ae674d3a9" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE SAUDE DE REDENCAO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA SANTOS DUMONT, 00586<br><b>CNES:</b> 2373203</div>`)[0];
+                popup_6fab09b75b7ea6f28e4d1aee46e17552.setContent(html_bcc557ccaf18f901a9a41f4ae674d3a9);
+            
+        
+
+        marker_480f4d7e4d438968dd7fc693424de026.bindPopup(popup_6fab09b75b7ea6f28e4d1aee46e17552)
+        ;
+
+        
+    
+    
+                marker_480f4d7e4d438968dd7fc693424de026.setIcon(icon_f675add9f24f6efe9ccee4b1f5272d6c);
+            
+    
+            var marker_1b70b3debc185336483333237214be46 = L.marker(
+                [-3.565026, -41.086905],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_52dd5174c9e208f2cb2efa080c4a906f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc7ff7f3fc2848d91e3b320c2a9bbe10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5ca9bebc2809e4295ef7b8d4abb7fb4 = $(`<div id="html_c5ca9bebc2809e4295ef7b8d4abb7fb4" style="width: 100.0%; height: 100.0%;"><b>UNIDADE BASICA DE SAUDE DO CARANGUEJO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA FONTENELE SOBRINHO, 323<br><b>CNES:</b> 7222017</div>`)[0];
+                popup_bc7ff7f3fc2848d91e3b320c2a9bbe10.setContent(html_c5ca9bebc2809e4295ef7b8d4abb7fb4);
+            
+        
+
+        marker_1b70b3debc185336483333237214be46.bindPopup(popup_bc7ff7f3fc2848d91e3b320c2a9bbe10)
+        ;
+
+        
+    
+    
+                marker_1b70b3debc185336483333237214be46.setIcon(icon_52dd5174c9e208f2cb2efa080c4a906f);
+            
+    
+            var marker_0430b9140707d67610aa956fc2f0000c = L.marker(
+                [-6.491838183474196, -38.62426042556763],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_31b9a73a510dfe2d91c543a7e2b10925 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a53352daaad8e72209b38d0922c1e98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39da9e13f9a113a08cb885ce1fcbcbb3 = $(`<div id="html_39da9e13f9a113a08cb885ce1fcbcbb3" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL REGIONAL DE ICO DEPUTADO ORIEL GUIMARAES NUNES</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AV JOSEFA NOGUEIRA MONTEIRO, S/N<br><b>CNES:</b> 2611309</div>`)[0];
+                popup_2a53352daaad8e72209b38d0922c1e98.setContent(html_39da9e13f9a113a08cb885ce1fcbcbb3);
+            
+        
+
+        marker_0430b9140707d67610aa956fc2f0000c.bindPopup(popup_2a53352daaad8e72209b38d0922c1e98)
+        ;
+
+        
+    
+    
+                marker_0430b9140707d67610aa956fc2f0000c.setIcon(icon_31b9a73a510dfe2d91c543a7e2b10925);
+            
+    
+            var marker_c5f673e7037849b4b945966ac30b7174 = L.marker(
+                [-5.4655, -39.7123],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_fc4b867df43ac9fba0113e99ae85fa2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0a3ec9e37437e3ec6d4efeb1a36c7f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d057893a98cd5ff089194b8f194c0a9 = $(`<div id="html_7d057893a98cd5ff089194b8f194c0a9" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE SAUDE DE PEDRA BRANCA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> R JOAQUIM CAVALCANTE, 49<br><b>CNES:</b> 2566095</div>`)[0];
+                popup_b0a3ec9e37437e3ec6d4efeb1a36c7f2.setContent(html_7d057893a98cd5ff089194b8f194c0a9);
+            
+        
+
+        marker_c5f673e7037849b4b945966ac30b7174.bindPopup(popup_b0a3ec9e37437e3ec6d4efeb1a36c7f2)
+        ;
+
+        
+    
+    
+                marker_c5f673e7037849b4b945966ac30b7174.setIcon(icon_fc4b867df43ac9fba0113e99ae85fa2a);
+            
+    
+            var marker_8062ec4adc8da61071ab80d7fba5b240 = L.marker(
+                [-7.247, -39.141],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_297d05dc92f3615ca49d5f0fd0935d68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2a10c5ee0cb3ad9b324275baca90e4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3d7ea03884708892f16c2e4482728ed = $(`<div id="html_e3d7ea03884708892f16c2e4482728ed" style="width: 100.0%; height: 100.0%;"><b>PSF II RAIMUNDO FIGUEIREDO SILVA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> TRAVESSA MANUEL FREIRE, 230<br><b>CNES:</b> 2425459</div>`)[0];
+                popup_f2a10c5ee0cb3ad9b324275baca90e4d.setContent(html_e3d7ea03884708892f16c2e4482728ed);
+            
+        
+
+        marker_8062ec4adc8da61071ab80d7fba5b240.bindPopup(popup_f2a10c5ee0cb3ad9b324275baca90e4d)
+        ;
+
+        
+    
+    
+                marker_8062ec4adc8da61071ab80d7fba5b240.setIcon(icon_297d05dc92f3615ca49d5f0fd0935d68);
+            
+    
+            var marker_c968eab95ae864a1ba73ecab2e3c0ce4 = L.marker(
+                [-5.246072053425373, -38.128952980041504],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_6931bd24ea26003584c799895ee99342 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_284ead3d15067ecdf402ee1de2851ddc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d3dfa8f0a2e52841729f1a81920b3ce = $(`<div id="html_4d3dfa8f0a2e52841729f1a81920b3ce" style="width: 100.0%; height: 100.0%;"><b>UNIDADE DE SAUDE DA FAMILIA MARIA DE FATIMA FREITAS MAIA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA CORONEL PIO GADELHA, 4499<br><b>CNES:</b> 2552191</div>`)[0];
+                popup_284ead3d15067ecdf402ee1de2851ddc.setContent(html_4d3dfa8f0a2e52841729f1a81920b3ce);
+            
+        
+
+        marker_c968eab95ae864a1ba73ecab2e3c0ce4.bindPopup(popup_284ead3d15067ecdf402ee1de2851ddc)
+        ;
+
+        
+    
+    
+                marker_c968eab95ae864a1ba73ecab2e3c0ce4.setIcon(icon_6931bd24ea26003584c799895ee99342);
+            
+    
+            var marker_a5e1acebd515182d61be35f652ae6936 = L.marker(
+                [-4.703979014560753, -40.56221008300781],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_e86730fcbc5e4e7824150a29080b113d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8110660ec78aaf2a69ba4a74d7eac577 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12f967fff37704960accaf281e89678b = $(`<div id="html_12f967fff37704960accaf281e89678b" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE ESPECIALIDADES DA SAUDE DR FRANCISCO SCARCELA JORG</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA HERMENEGILDO MARTINS, 733<br><b>CNES:</b> 5723507</div>`)[0];
+                popup_8110660ec78aaf2a69ba4a74d7eac577.setContent(html_12f967fff37704960accaf281e89678b);
+            
+        
+
+        marker_a5e1acebd515182d61be35f652ae6936.bindPopup(popup_8110660ec78aaf2a69ba4a74d7eac577)
+        ;
+
+        
+    
+    
+                marker_a5e1acebd515182d61be35f652ae6936.setIcon(icon_e86730fcbc5e4e7824150a29080b113d);
+            
+    
+            var marker_c0e2dbbf3177cd9eaccbf29303467213 = L.marker(
+                [-3.409899993201555, -39.02815282344818],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_a8a8a3eff9b312431a0f7cdc1805ab01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4ff6d15bc0565d853b4ed0bd90f548c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d97a813ef8c0e06e0d504e4e8c984131 = $(`<div id="html_d97a813ef8c0e06e0d504e4e8c984131" style="width: 100.0%; height: 100.0%;"><b>SERVICO DE ATENCAO DOMICILIAR DE PARACURU</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA ORMEZINDA SAMPAIO, S/N<br><b>CNES:</b> 7407637</div>`)[0];
+                popup_d4ff6d15bc0565d853b4ed0bd90f548c.setContent(html_d97a813ef8c0e06e0d504e4e8c984131);
+            
+        
+
+        marker_c0e2dbbf3177cd9eaccbf29303467213.bindPopup(popup_d4ff6d15bc0565d853b4ed0bd90f548c)
+        ;
+
+        
+    
+    
+                marker_c0e2dbbf3177cd9eaccbf29303467213.setIcon(icon_a8a8a3eff9b312431a0f7cdc1805ab01);
+            
+    
+            var marker_1f07b9446d2f38c7bd7ab779c54f5cbf = L.marker(
+                [-3.896412831043276, -38.68392080068588],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_ab3bc87a8397d1d3d51b1cde836db957 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b943b31f9ed81404ddef16b3f283f7d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3ad82da04b3f4cb4e8a6236897e9863 = $(`<div id="html_c3ad82da04b3f4cb4e8a6236897e9863" style="width: 100.0%; height: 100.0%;"><b>UBS CENTRO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA CORONEL ANTONIO BOTELHO, 410<br><b>CNES:</b> 2373920</div>`)[0];
+                popup_b943b31f9ed81404ddef16b3f283f7d6.setContent(html_c3ad82da04b3f4cb4e8a6236897e9863);
+            
+        
+
+        marker_1f07b9446d2f38c7bd7ab779c54f5cbf.bindPopup(popup_b943b31f9ed81404ddef16b3f283f7d6)
+        ;
+
+        
+    
+    
+                marker_1f07b9446d2f38c7bd7ab779c54f5cbf.setIcon(icon_ab3bc87a8397d1d3d51b1cde836db957);
+            
+    
+            var marker_08f8de154405bad3707dbe9c6f3f78fe = L.marker(
+                [-6.243238723231506, -38.9159506559372],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_7cb78521c4c5e400c8119712d9331bf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e57246c66b3b5b52fc25ad1e2761ce69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_537a43c0516844f59084ff137ec38a6b = $(`<div id="html_537a43c0516844f59084ff137ec38a6b" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE SAUDE DE OROS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA LUIZ ROLIM, 00138<br><b>CNES:</b> 2664607</div>`)[0];
+                popup_e57246c66b3b5b52fc25ad1e2761ce69.setContent(html_537a43c0516844f59084ff137ec38a6b);
+            
+        
+
+        marker_08f8de154405bad3707dbe9c6f3f78fe.bindPopup(popup_e57246c66b3b5b52fc25ad1e2761ce69)
+        ;
+
+        
+    
+    
+                marker_08f8de154405bad3707dbe9c6f3f78fe.setIcon(icon_7cb78521c4c5e400c8119712d9331bf0);
+            
+    
+            var marker_fab08437fd55451a10b100b82fa6cc2b = L.marker(
+                [-5.075192063777957, -37.9878044128418],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_ff3d53c1af7ff3eeacedf91fc204f289 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6d23186c5baa7102e93baf24d825f1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89b052c3ddbf27f07f58cc7142955e16 = $(`<div id="html_89b052c3ddbf27f07f58cc7142955e16" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL JOAQUIM MANOEL OLIVEIRA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA PADRE ZACARIAS, 396<br><b>CNES:</b> 2526662</div>`)[0];
+                popup_c6d23186c5baa7102e93baf24d825f1d.setContent(html_89b052c3ddbf27f07f58cc7142955e16);
+            
+        
+
+        marker_fab08437fd55451a10b100b82fa6cc2b.bindPopup(popup_c6d23186c5baa7102e93baf24d825f1d)
+        ;
+
+        
+    
+    
+                marker_fab08437fd55451a10b100b82fa6cc2b.setIcon(icon_ff3d53c1af7ff3eeacedf91fc204f289);
+            
+    
+            var marker_fef4f540ca1b5d39eb3e37aa77a9a481 = L.marker(
+                [-3.6890906884817096, -38.65790605545044],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_58d80dd94edacc0c0ecf78b05b1d2201 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a44c7d184ae8265c92eb2f056457fcfa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8977a16499cdc73515d29e1bb76b66a7 = $(`<div id="html_8977a16499cdc73515d29e1bb76b66a7" style="width: 100.0%; height: 100.0%;"><b>S A D SERVICO DE ATENCAO DOMICILIAR</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> JUACI SAMPAIO PONTES, 3336<br><b>CNES:</b> 9763031</div>`)[0];
+                popup_a44c7d184ae8265c92eb2f056457fcfa.setContent(html_8977a16499cdc73515d29e1bb76b66a7);
+            
+        
+
+        marker_fef4f540ca1b5d39eb3e37aa77a9a481.bindPopup(popup_a44c7d184ae8265c92eb2f056457fcfa)
+        ;
+
+        
+    
+    
+                marker_fef4f540ca1b5d39eb3e37aa77a9a481.setIcon(icon_58d80dd94edacc0c0ecf78b05b1d2201);
+            
+    
+            var marker_e9a2e09c129513b280faa9ad9c214cef = L.marker(
+                [-4.6520352, -40.204036],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_99cceffc2c4b97aa6bc340752357b7dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_913c032685fd04eb78cf4b99e6b5e61c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caef98cd3329d38a6af48ddb6d8bd5cb = $(`<div id="html_caef98cd3329d38a6af48ddb6d8bd5cb" style="width: 100.0%; height: 100.0%;"><b>UNIDADE BASICA DE SAUDE ELVINA ELISA LIMA</b><br><b>Equipes:</b> Apenas Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA FRANCISCO PEREIRA NAU, S/N<br><b>CNES:</b> 2610493</div>`)[0];
+                popup_913c032685fd04eb78cf4b99e6b5e61c.setContent(html_caef98cd3329d38a6af48ddb6d8bd5cb);
+            
+        
+
+        marker_e9a2e09c129513b280faa9ad9c214cef.bindPopup(popup_913c032685fd04eb78cf4b99e6b5e61c)
+        ;
+
+        
+    
+    
+                marker_e9a2e09c129513b280faa9ad9c214cef.setIcon(icon_99cceffc2c4b97aa6bc340752357b7dd);
+            
+    
+            var marker_6f169abd14036a513eac65df84b804ec = L.marker(
+                [-7.3123687, -39.3094054],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_be12315665f6253960c2b7aa7f2a06dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5978e8725fd0e30f3ca9a1456dd3e957 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa43f18b619893564a34b76a85cbe492 = $(`<div id="html_fa43f18b619893564a34b76a85cbe492" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE ESPECIALIDADES E DIAGNOSTICO CED</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> TRISTAO GONCALVES, S/N<br><b>CNES:</b> 5368723</div>`)[0];
+                popup_5978e8725fd0e30f3ca9a1456dd3e957.setContent(html_fa43f18b619893564a34b76a85cbe492);
+            
+        
+
+        marker_6f169abd14036a513eac65df84b804ec.bindPopup(popup_5978e8725fd0e30f3ca9a1456dd3e957)
+        ;
+
+        
+    
+    
+                marker_6f169abd14036a513eac65df84b804ec.setIcon(icon_be12315665f6253960c2b7aa7f2a06dc);
+            
+    
+            var marker_7f6f31e75725ed02ad15f3a66a79bca2 = L.marker(
+                [-5.88, -38.622],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_33971b1796d60978660c40bb5b0a494d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3871361dd57fd24826f99e991397277 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcf1f43cde7646082a361007492c7458 = $(`<div id="html_bcf1f43cde7646082a361007492c7458" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL GOVERNADOR ADAUTO BEZERRA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA MARIA DO ROSARIO CAMPOS DA SILVA, 103<br><b>CNES:</b> 2374064</div>`)[0];
+                popup_a3871361dd57fd24826f99e991397277.setContent(html_bcf1f43cde7646082a361007492c7458);
+            
+        
+
+        marker_7f6f31e75725ed02ad15f3a66a79bca2.bindPopup(popup_a3871361dd57fd24826f99e991397277)
+        ;
+
+        
+    
+    
+                marker_7f6f31e75725ed02ad15f3a66a79bca2.setIcon(icon_33971b1796d60978660c40bb5b0a494d);
+            
+    
+            var marker_d2cf8ac48d94beac2c103601dae3c79f = L.marker(
+                [-3.1183405319092325, -40.14983],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_22805a6f52bccf87547429acd0f7ea25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_970fb1bd5abacca9a7017ef1ca91210a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb5fcdb7c29d341dd9f3c7c6bbc82c8c = $(`<div id="html_eb5fcdb7c29d341dd9f3c7c6bbc82c8c" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL JAIME OSTERNO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AV PREFEITO GUIDO OSTERNO, S/N<br><b>CNES:</b> 2560984</div>`)[0];
+                popup_970fb1bd5abacca9a7017ef1ca91210a.setContent(html_eb5fcdb7c29d341dd9f3c7c6bbc82c8c);
+            
+        
+
+        marker_d2cf8ac48d94beac2c103601dae3c79f.bindPopup(popup_970fb1bd5abacca9a7017ef1ca91210a)
+        ;
+
+        
+    
+    
+                marker_d2cf8ac48d94beac2c103601dae3c79f.setIcon(icon_22805a6f52bccf87547429acd0f7ea25);
+            
+    
+            var marker_11c58e5d77bf8139d2915734ec57c3dc = L.marker(
+                [-5.9934065, -40.2955771],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_89b5101bcaf9ea0c369d71657823592d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d819aa29bea617f6b817664b649bf991 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa75aa108457c8f2becf2cf0f7583b69 = $(`<div id="html_aa75aa108457c8f2becf2cf0f7583b69" style="width: 100.0%; height: 100.0%;"><b>UNIDADE BASICA DE SAUDE ALDEOTA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> AV ODILON AGUIAR, S/N<br><b>CNES:</b> 8014965</div>`)[0];
+                popup_d819aa29bea617f6b817664b649bf991.setContent(html_aa75aa108457c8f2becf2cf0f7583b69);
+            
+        
+
+        marker_11c58e5d77bf8139d2915734ec57c3dc.bindPopup(popup_d819aa29bea617f6b817664b649bf991)
+        ;
+
+        
+    
+    
+                marker_11c58e5d77bf8139d2915734ec57c3dc.setIcon(icon_89b5101bcaf9ea0c369d71657823592d);
+            
+    
+            var marker_8cfe66a71d4afa81b5fee542704a2418 = L.marker(
+                [-2.903669105938324, -40.17269968986511],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_4b13b4d33c6929faa2610a250d587cd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17b108739995902ce36c5505376b01c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c9ae7b35d7f28b8167a1942b0951811 = $(`<div id="html_2c9ae7b35d7f28b8167a1942b0951811" style="width: 100.0%; height: 100.0%;"><b>UBSF IZAIAS JOSE DO NASCIMENTO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AVENIDA TENENTE ALBANO, S/N<br><b>CNES:</b> 3455440</div>`)[0];
+                popup_17b108739995902ce36c5505376b01c2.setContent(html_2c9ae7b35d7f28b8167a1942b0951811);
+            
+        
+
+        marker_8cfe66a71d4afa81b5fee542704a2418.bindPopup(popup_17b108739995902ce36c5505376b01c2)
+        ;
+
+        
+    
+    
+                marker_8cfe66a71d4afa81b5fee542704a2418.setIcon(icon_4b13b4d33c6929faa2610a250d587cd2);
+            
+    
+            var marker_6b313b03baa57163f683cb646797d906 = L.marker(
+                [-7.477559482738899, -38.98045778274536],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_ceaaf7b5649560833fc12ca553486b0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aee6709aab6cd92f22e0c186afc7fbcb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62b946bdec05f932217599930565acac = $(`<div id="html_62b946bdec05f932217599930565acac" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE REFERENCIA AMAI</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AV JOAO INACIO DE LUCENA, 1600<br><b>CNES:</b> 8013403</div>`)[0];
+                popup_aee6709aab6cd92f22e0c186afc7fbcb.setContent(html_62b946bdec05f932217599930565acac);
+            
+        
+
+        marker_6b313b03baa57163f683cb646797d906.bindPopup(popup_aee6709aab6cd92f22e0c186afc7fbcb)
+        ;
+
+        
+    
+    
+                marker_6b313b03baa57163f683cb646797d906.setIcon(icon_ceaaf7b5649560833fc12ca553486b0f);
+            
+    
+            var marker_eed29a59913dd3c4036c3cc564fe95a2 = L.marker(
+                [-4.36788, -38.80513],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_dc4c82f32ef90f373c2ed1883c045761 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0914b5c764310ab578ee634b2a689a11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a83662a0b1e05ed371cb45761c375220 = $(`<div id="html_a83662a0b1e05ed371cb45761c375220" style="width: 100.0%; height: 100.0%;"><b>HOSP MATERN SANTA ISABEL ARACOIABA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA GETULIO VARGAS, 139<br><b>CNES:</b> 4010779</div>`)[0];
+                popup_0914b5c764310ab578ee634b2a689a11.setContent(html_a83662a0b1e05ed371cb45761c375220);
+            
+        
+
+        marker_eed29a59913dd3c4036c3cc564fe95a2.bindPopup(popup_0914b5c764310ab578ee634b2a689a11)
+        ;
+
+        
+    
+    
+                marker_eed29a59913dd3c4036c3cc564fe95a2.setIcon(icon_dc4c82f32ef90f373c2ed1883c045761);
+            
+    
+            var marker_2b6ecd6d733d691fa4c3f23db8e6a1d3 = L.marker(
+                [-3.905837333315248, -38.3825865516128],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_e8b9a2bf35628b9628739e6c52e3aa31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e33b678ac88667fb15a5bb48ea6eb39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46e62ca4421e2f747682ae0dd192bf18 = $(`<div id="html_46e62ca4421e2f747682ae0dd192bf18" style="width: 100.0%; height: 100.0%;"><b>UBSF SEDE II E III</b><br><b>Equipes:</b> Apenas Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA ANGELICA, S/N<br><b>CNES:</b> 6279236</div>`)[0];
+                popup_8e33b678ac88667fb15a5bb48ea6eb39.setContent(html_46e62ca4421e2f747682ae0dd192bf18);
+            
+        
+
+        marker_2b6ecd6d733d691fa4c3f23db8e6a1d3.bindPopup(popup_8e33b678ac88667fb15a5bb48ea6eb39)
+        ;
+
+        
+    
+    
+                marker_2b6ecd6d733d691fa4c3f23db8e6a1d3.setIcon(icon_e8b9a2bf35628b9628739e6c52e3aa31);
+            
+    
+            var marker_2afd214e5e162ea51772853551b2a081 = L.marker(
+                [-4.3282733, -38.882297],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_14acbb6190323b549b74bd6ab88aaaa7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac168639832f3692fb2f4c667aabf34a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa4b652b543c94c6261f124e15c589ec = $(`<div id="html_aa4b652b543c94c6261f124e15c589ec" style="width: 100.0%; height: 100.0%;"><b>PSF DA SEDE</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA NOSSA SENHORA DA PALMA, S/N<br><b>CNES:</b> 2722976</div>`)[0];
+                popup_ac168639832f3692fb2f4c667aabf34a.setContent(html_aa4b652b543c94c6261f124e15c589ec);
+            
+        
+
+        marker_2afd214e5e162ea51772853551b2a081.bindPopup(popup_ac168639832f3692fb2f4c667aabf34a)
+        ;
+
+        
+    
+    
+                marker_2afd214e5e162ea51772853551b2a081.setIcon(icon_14acbb6190323b549b74bd6ab88aaaa7);
+            
+    
+            var marker_12adcd0bc28a9bf811c39f2023f64aac = L.marker(
+                [-4.7159879, -37.3516787],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_dcc14c26b87f24f2817a067087ee35b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2064b283b4badca84bd7b92787d878e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ecd0ea19c9c50499d82788776d6713d = $(`<div id="html_8ecd0ea19c9c50499d82788776d6713d" style="width: 100.0%; height: 100.0%;"><b>UBS PEDRO REBOUCAS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA PEDRO REBOUCAS, S/N<br><b>CNES:</b> 2665204</div>`)[0];
+                popup_e2064b283b4badca84bd7b92787d878e.setContent(html_8ecd0ea19c9c50499d82788776d6713d);
+            
+        
+
+        marker_12adcd0bc28a9bf811c39f2023f64aac.bindPopup(popup_e2064b283b4badca84bd7b92787d878e)
+        ;
+
+        
+    
+    
+                marker_12adcd0bc28a9bf811c39f2023f64aac.setIcon(icon_dcc14c26b87f24f2817a067087ee35b0);
+            
+    
+            var marker_02ac60eff19880dcd1359818816b2e0c = L.marker(
+                [-5.84435, -40.70336],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_53791d7167bc9db02b67e946cf10060f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5ad7e1b3a44b01731172d45338a66a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8d824c1208109f308528b212904450d = $(`<div id="html_a8d824c1208109f308528b212904450d" style="width: 100.0%; height: 100.0%;"><b>MATERNIDADE QUITERIA DE LIMA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA LAURINDO GOMES, 63<br><b>CNES:</b> 2480050</div>`)[0];
+                popup_a5ad7e1b3a44b01731172d45338a66a7.setContent(html_a8d824c1208109f308528b212904450d);
+            
+        
+
+        marker_02ac60eff19880dcd1359818816b2e0c.bindPopup(popup_a5ad7e1b3a44b01731172d45338a66a7)
+        ;
+
+        
+    
+    
+                marker_02ac60eff19880dcd1359818816b2e0c.setIcon(icon_53791d7167bc9db02b67e946cf10060f);
+            
+    
+            var marker_dcbb2632c13a793685b6aa367a47e195 = L.marker(
+                [-7.386832666104016, -38.78090143203735],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_0083213e913dbfa4c1bad87b827f1627 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_075b7b768617b2ee4a3b3016488e5c6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1243268c65f92e737ac9eacb59cf2540 = $(`<div id="html_1243268c65f92e737ac9eacb59cf2540" style="width: 100.0%; height: 100.0%;"><b>MELHOR EM CASA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA JOSE DODOU, S/N<br><b>CNES:</b> 9591494</div>`)[0];
+                popup_075b7b768617b2ee4a3b3016488e5c6f.setContent(html_1243268c65f92e737ac9eacb59cf2540);
+            
+        
+
+        marker_dcbb2632c13a793685b6aa367a47e195.bindPopup(popup_075b7b768617b2ee4a3b3016488e5c6f)
+        ;
+
+        
+    
+    
+                marker_dcbb2632c13a793685b6aa367a47e195.setIcon(icon_0083213e913dbfa4c1bad87b827f1627);
+            
+    
+            var marker_10d941c731a90a80718ec13a74a10015 = L.marker(
+                [-3.715267950500381, -40.98143935203552],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_3a8ed51c9ff1cdece0ff710c08461c77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f38771974be164059d9f87ffa1bf69b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3eeffb7e0f4e2c1902e1dede4170e60d = $(`<div id="html_3eeffb7e0f4e2c1902e1dede4170e60d" style="width: 100.0%; height: 100.0%;"><b>UPA TIANGUA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> SDO, 03<br><b>CNES:</b> 0183229</div>`)[0];
+                popup_7f38771974be164059d9f87ffa1bf69b.setContent(html_3eeffb7e0f4e2c1902e1dede4170e60d);
+            
+        
+
+        marker_10d941c731a90a80718ec13a74a10015.bindPopup(popup_7f38771974be164059d9f87ffa1bf69b)
+        ;
+
+        
+    
+    
+                marker_10d941c731a90a80718ec13a74a10015.setIcon(icon_3a8ed51c9ff1cdece0ff710c08461c77);
+            
+    
+            var marker_8943225ac9a272673b381d7c78de846c = L.marker(
+                [-5.104363454001549, -38.36290067717802],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_8240b154b0ed23107dab1a18c9039370 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5dab774c942c60dc6280114e26bbd923 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf2c859173eae082b892a19f8702d0e1 = $(`<div id="html_bf2c859173eae082b892a19f8702d0e1" style="width: 100.0%; height: 100.0%;"><b>POLICLINICA MUNICIPAL DE MORADA NOVA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AV MANOEL DE CASTRO FILHO, S/N<br><b>CNES:</b> 4011627</div>`)[0];
+                popup_5dab774c942c60dc6280114e26bbd923.setContent(html_bf2c859173eae082b892a19f8702d0e1);
+            
+        
+
+        marker_8943225ac9a272673b381d7c78de846c.bindPopup(popup_5dab774c942c60dc6280114e26bbd923)
+        ;
+
+        
+    
+    
+                marker_8943225ac9a272673b381d7c78de846c.setIcon(icon_8240b154b0ed23107dab1a18c9039370);
+            
+    
+            var marker_667afd7d97233cddfbe616f092f991dd = L.marker(
+                [-4.093294, -38.50058],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_d94f6101542a20afec161dbe7c48c9bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cf613d0007907cd5604fe35565ffa92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db5eb7666dc62e60181d68ba8b54ccda = $(`<div id="html_db5eb7666dc62e60181d68ba8b54ccda" style="width: 100.0%; height: 100.0%;"><b>UNIDADE BASICA DE SAUDE DE RAFAEL SANTOS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA LUCIANO CARNEIRO, 26<br><b>CNES:</b> 2481588</div>`)[0];
+                popup_5cf613d0007907cd5604fe35565ffa92.setContent(html_db5eb7666dc62e60181d68ba8b54ccda);
+            
+        
+
+        marker_667afd7d97233cddfbe616f092f991dd.bindPopup(popup_5cf613d0007907cd5604fe35565ffa92)
+        ;
+
+        
+    
+    
+                marker_667afd7d97233cddfbe616f092f991dd.setIcon(icon_d94f6101542a20afec161dbe7c48c9bc);
+            
+    
+            var marker_ee3752d67ed0a927948f4b61f42726cf = L.marker(
+                [-6.570140741876726, -39.59815979003906],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_d7fe90afc8055a8a953f5a4dde876555 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd4194b90fb599c58817b4af3379091e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63856d74c1d34fabd92f35b99e1d8fd1 = $(`<div id="html_63856d74c1d34fabd92f35b99e1d8fd1" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL JOSE FACUNDO FILHO</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> JOSE FACUNDO FILHO, 176<br><b>CNES:</b> 5077680</div>`)[0];
+                popup_bd4194b90fb599c58817b4af3379091e.setContent(html_63856d74c1d34fabd92f35b99e1d8fd1);
+            
+        
+
+        marker_ee3752d67ed0a927948f4b61f42726cf.bindPopup(popup_bd4194b90fb599c58817b4af3379091e)
+        ;
+
+        
+    
+    
+                marker_ee3752d67ed0a927948f4b61f42726cf.setIcon(icon_d7fe90afc8055a8a953f5a4dde876555);
+            
+    
+            var marker_6e18e28101c27441077047c41622752e = L.marker(
+                [-4.966395, -38.637483],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_3c5982c280305ac070289c2431bd61c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bc521b29255ce181a697d07e0e5914a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c13b4446872ced8cca04d8daf9a8e7b8 = $(`<div id="html_c13b4446872ced8cca04d8daf9a8e7b8" style="width: 100.0%; height: 100.0%;"><b>UNIDADE BASICA DE SAUDE DA FAMILIA LUIZ FERREIRA NOBRE</b><br><b>Equipes:</b> Apenas Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA SAMUEL FERREIRA NOBRE, S/N<br><b>CNES:</b> 7758677</div>`)[0];
+                popup_3bc521b29255ce181a697d07e0e5914a.setContent(html_c13b4446872ced8cca04d8daf9a8e7b8);
+            
+        
+
+        marker_6e18e28101c27441077047c41622752e.bindPopup(popup_3bc521b29255ce181a697d07e0e5914a)
+        ;
+
+        
+    
+    
+                marker_6e18e28101c27441077047c41622752e.setIcon(icon_3c5982c280305ac070289c2431bd61c6);
+            
+    
+            var marker_2f7618e79e35a335d438203e3854342d = L.marker(
+                [-7.039926517385329, -39.27633762359619],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_4894c30c8b2a78981461c2cc3ee3eafa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4753d54848544060433c48722a3b0c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41f4d87c0c6999ad0a9821f6cd555b8c = $(`<div id="html_41f4d87c0c6999ad0a9821f6cd555b8c" style="width: 100.0%; height: 100.0%;"><b>HOSP MATERN GERALDO L BOTELHO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA MESTRE NECO, S/N<br><b>CNES:</b> 2425343</div>`)[0];
+                popup_b4753d54848544060433c48722a3b0c1.setContent(html_41f4d87c0c6999ad0a9821f6cd555b8c);
+            
+        
+
+        marker_2f7618e79e35a335d438203e3854342d.bindPopup(popup_b4753d54848544060433c48722a3b0c1)
+        ;
+
+        
+    
+    
+                marker_2f7618e79e35a335d438203e3854342d.setIcon(icon_4894c30c8b2a78981461c2cc3ee3eafa);
+            
+    
+            var marker_4fb40c4f00aafa7adcc04e3c19180069 = L.marker(
+                [-2.88823931222646, -40.1121112704277],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_b9a4bde687cd67ec213f23294a3f02dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8546a2f1668248443a81af75d6fa321f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00661700b62b6a30f2cdbf46fa7c6744 = $(`<div id="html_00661700b62b6a30f2cdbf46fa7c6744" style="width: 100.0%; height: 100.0%;"><b>UBS DE MONSENHOR SABINO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> TRAV DESEMBARGADOR ARMANDO DE SOUSA LOUZADA, S/N<br><b>CNES:</b> 5018137</div>`)[0];
+                popup_8546a2f1668248443a81af75d6fa321f.setContent(html_00661700b62b6a30f2cdbf46fa7c6744);
+            
+        
+
+        marker_4fb40c4f00aafa7adcc04e3c19180069.bindPopup(popup_8546a2f1668248443a81af75d6fa321f)
+        ;
+
+        
+    
+    
+                marker_4fb40c4f00aafa7adcc04e3c19180069.setIcon(icon_b9a4bde687cd67ec213f23294a3f02dc);
+            
+    
+            var marker_9a0a24d9ff09b02d51ed7e4b5fb0ddb9 = L.marker(
+                [-5.197, -39.295],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_1aa6b58ebb3bae946d2eed0e82c4d605 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_059a7d23af534594f375ac1ee98eee62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d31262509fbb25a51e6c440bee0952e0 = $(`<div id="html_d31262509fbb25a51e6c440bee0952e0" style="width: 100.0%; height: 100.0%;"><b>SERVICO DE ATENCAO DOMICILIAR SAD</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA JULIAO BARROSO, S/N<br><b>CNES:</b> 7407688</div>`)[0];
+                popup_059a7d23af534594f375ac1ee98eee62.setContent(html_d31262509fbb25a51e6c440bee0952e0);
+            
+        
+
+        marker_9a0a24d9ff09b02d51ed7e4b5fb0ddb9.bindPopup(popup_059a7d23af534594f375ac1ee98eee62)
+        ;
+
+        
+    
+    
+                marker_9a0a24d9ff09b02d51ed7e4b5fb0ddb9.setIcon(icon_1aa6b58ebb3bae946d2eed0e82c4d605);
+            
+    
+            var marker_2bdcff57743206a23747c9fcefd9c944 = L.marker(
+                [-4.360529, -39.312719],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_42878cf9ea8b80a824a6e326ca511190 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5db5304f0b10b5334a433c3803c904b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af8e6c34cccc663cf563118b8c27165d = $(`<div id="html_af8e6c34cccc663cf563118b8c27165d" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE SAUDE CHICO CAMPOS</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA ANTONIO MARTINS, 239<br><b>CNES:</b> 2478927</div>`)[0];
+                popup_5db5304f0b10b5334a433c3803c904b3.setContent(html_af8e6c34cccc663cf563118b8c27165d);
+            
+        
+
+        marker_2bdcff57743206a23747c9fcefd9c944.bindPopup(popup_5db5304f0b10b5334a433c3803c904b3)
+        ;
+
+        
+    
+    
+                marker_2bdcff57743206a23747c9fcefd9c944.setIcon(icon_42878cf9ea8b80a824a6e326ca511190);
+            
+    
+            var marker_1e4d1a76f7aa90b35ebc1968612200e2 = L.marker(
+                [-5.140228473412229, -38.09672355651856],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_9bb2c5405a843e7c8fb9650916353c69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba28c105f18a5af2ae58ebe2f46288cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25ca5b499f5779569bc9ed6b29290a32 = $(`<div id="html_25ca5b499f5779569bc9ed6b29290a32" style="width: 100.0%; height: 100.0%;"><b>HOSP MUNIC DR DEOCLECIO LIMA VERDE</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA SABINO ROBERIO, 3005<br><b>CNES:</b> 2529556</div>`)[0];
+                popup_ba28c105f18a5af2ae58ebe2f46288cf.setContent(html_25ca5b499f5779569bc9ed6b29290a32);
+            
+        
+
+        marker_1e4d1a76f7aa90b35ebc1968612200e2.bindPopup(popup_ba28c105f18a5af2ae58ebe2f46288cf)
+        ;
+
+        
+    
+    
+                marker_1e4d1a76f7aa90b35ebc1968612200e2.setIcon(icon_9bb2c5405a843e7c8fb9650916353c69);
+            
+    
+            var marker_b9ba74f4d4144c7dcb7f719f2aa9bcef = L.marker(
+                [-3.793356136828054, -39.27370101213455],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_5f7e64bd20264e5cb76d4a0635eb21d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d98645b27f41836c74d2eeb20d4b8271 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8e5bccc640d9dce8564a8869c2c3a83 = $(`<div id="html_b8e5bccc640d9dce8564a8869c2c3a83" style="width: 100.0%; height: 100.0%;"><b>HOSP MATERN REG VALE DO CURU</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA FRANCISCO MOREIRA, 414<br><b>CNES:</b> 2562138</div>`)[0];
+                popup_d98645b27f41836c74d2eeb20d4b8271.setContent(html_b8e5bccc640d9dce8564a8869c2c3a83);
+            
+        
+
+        marker_b9ba74f4d4144c7dcb7f719f2aa9bcef.bindPopup(popup_d98645b27f41836c74d2eeb20d4b8271)
+        ;
+
+        
+    
+    
+                marker_b9ba74f4d4144c7dcb7f719f2aa9bcef.setIcon(icon_5f7e64bd20264e5cb76d4a0635eb21d4);
+            
+    
+            var marker_a2178b1db7f7bcc9f31a7f37418b4dbd = L.marker(
+                [-6.371720399905166, -39.30798930151853],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_d1e306889b6b565be509cb3aa332f077 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9b6e48027da629284bd775025903c71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_259211fd123e1e5de144b3ce797e34ee = $(`<div id="html_259211fd123e1e5de144b3ce797e34ee" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL REGIONAL DE IGUATU</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA EDILSON DE MELO TAVORA, S/N<br><b>CNES:</b> 2675560</div>`)[0];
+                popup_b9b6e48027da629284bd775025903c71.setContent(html_259211fd123e1e5de144b3ce797e34ee);
+            
+        
+
+        marker_a2178b1db7f7bcc9f31a7f37418b4dbd.bindPopup(popup_b9b6e48027da629284bd775025903c71)
+        ;
+
+        
+    
+    
+                marker_a2178b1db7f7bcc9f31a7f37418b4dbd.setIcon(icon_d1e306889b6b565be509cb3aa332f077);
+            
+    
+            var marker_3f1c3f8249dacc1b7c45e6efae6cfed5 = L.marker(
+                [-4.7883339, -40.0608195],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_05e3decc96b61052dc86255e248c7511 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_afdc54ae5f1444f0ab1d35a0ec5ea1bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_826999dc9237954907002903aa88871b = $(`<div id="html_826999dc9237954907002903aa88871b" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE SAUDE JOSEFA C CAVALCANTE</b><br><b>Equipes:</b> Apenas Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA SANTO ANTONIO, S/N<br><b>CNES:</b> 2426617</div>`)[0];
+                popup_afdc54ae5f1444f0ab1d35a0ec5ea1bc.setContent(html_826999dc9237954907002903aa88871b);
+            
+        
+
+        marker_3f1c3f8249dacc1b7c45e6efae6cfed5.bindPopup(popup_afdc54ae5f1444f0ab1d35a0ec5ea1bc)
+        ;
+
+        
+    
+    
+                marker_3f1c3f8249dacc1b7c45e6efae6cfed5.setIcon(icon_05e3decc96b61052dc86255e248c7511);
+            
+    
+            var marker_a3d689006e30e7c598524e393b234baa = L.marker(
+                [-4.743539, -40.938903],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_4ce9f0ee51a2cfc01ec754a261f8ccf8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b97cdc6c96de82463e2a74c5c12265a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98206d5b31c5bcc1070471b19e000726 = $(`<div id="html_98206d5b31c5bcc1070471b19e000726" style="width: 100.0%; height: 100.0%;"><b>POSTO DE SAUDE MANOEL LIMEIRA</b><br><b>Equipes:</b> Apenas Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA RAIMUNDO BEZERRA DE MENEZES, S/N<br><b>CNES:</b> 6237657</div>`)[0];
+                popup_b97cdc6c96de82463e2a74c5c12265a3.setContent(html_98206d5b31c5bcc1070471b19e000726);
+            
+        
+
+        marker_a3d689006e30e7c598524e393b234baa.bindPopup(popup_b97cdc6c96de82463e2a74c5c12265a3)
+        ;
+
+        
+    
+    
+                marker_a3d689006e30e7c598524e393b234baa.setIcon(icon_4ce9f0ee51a2cfc01ec754a261f8ccf8);
+            
+    
+            var marker_9dbd321f7509183873144c19534c93e6 = L.marker(
+                [-4.323731215687286, -40.713958740234375],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_9ca987c5fe46a09f7ccb2b7dac693ef4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fbddfdc79f0b46b9956efd2a0f28f9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16eb33261ff321f5f80b39956ce46739 = $(`<div id="html_16eb33261ff321f5f80b39956ce46739" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL DR JOSE EVANGELISTA DE OLIVEIRA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA FARIAS BRITO, S/N<br><b>CNES:</b> 5018110</div>`)[0];
+                popup_8fbddfdc79f0b46b9956efd2a0f28f9b.setContent(html_16eb33261ff321f5f80b39956ce46739);
+            
+        
+
+        marker_9dbd321f7509183873144c19534c93e6.bindPopup(popup_8fbddfdc79f0b46b9956efd2a0f28f9b)
+        ;
+
+        
+    
+    
+                marker_9dbd321f7509183873144c19534c93e6.setIcon(icon_9ca987c5fe46a09f7ccb2b7dac693ef4);
+            
+    
+            var marker_2feb2dc244fd1ada5966fb2c0845f5a5 = L.marker(
+                [-4.842130871734204, -37.78075128793717],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_b202379ce43ee2597fcf79c5aff97146 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a23a6d2fa5a8ca5e8aaa37c3a60efd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1cf1a06cb8600b8a5b62801a73c34b3 = $(`<div id="html_c1cf1a06cb8600b8a5b62801a73c34b3" style="width: 100.0%; height: 100.0%;"><b>UBASF FRANCISCO NOGUEIRA BARBOSA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA JULIO BARBOSA DE CARVALHO, S/N<br><b>CNES:</b> 9178201</div>`)[0];
+                popup_9a23a6d2fa5a8ca5e8aaa37c3a60efd3.setContent(html_c1cf1a06cb8600b8a5b62801a73c34b3);
+            
+        
+
+        marker_2feb2dc244fd1ada5966fb2c0845f5a5.bindPopup(popup_9a23a6d2fa5a8ca5e8aaa37c3a60efd3)
+        ;
+
+        
+    
+    
+                marker_2feb2dc244fd1ada5966fb2c0845f5a5.setIcon(icon_b202379ce43ee2597fcf79c5aff97146);
+            
+    
+            var marker_bf21acc50a8696e6c9e79eb6d65dd7e1 = L.marker(
+                [-3.9731438717487344, -38.521413803100586],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_aea0cbaa83df0452c0ed6722e62fed5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c73fbf4951bcb715dd3f41edf36d66b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0931eaa53dafcb29f288a49979da662 = $(`<div id="html_f0931eaa53dafcb29f288a49979da662" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL E MATERNIDADE ESTER CAVALCANTE ASSUNCAO</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA ISAAC NEWTON CAMPOS, S/N<br><b>CNES:</b> 2724308</div>`)[0];
+                popup_c73fbf4951bcb715dd3f41edf36d66b3.setContent(html_f0931eaa53dafcb29f288a49979da662);
+            
+        
+
+        marker_bf21acc50a8696e6c9e79eb6d65dd7e1.bindPopup(popup_c73fbf4951bcb715dd3f41edf36d66b3)
+        ;
+
+        
+    
+    
+                marker_bf21acc50a8696e6c9e79eb6d65dd7e1.setIcon(icon_aea0cbaa83df0452c0ed6722e62fed5b);
+            
+    
+            var marker_645a8b85fe22b890331d6001a55bd668 = L.marker(
+                [-4.171168974812487, -38.46819878465837],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_61bf5b6258bd9957a4642106e6b807cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67eab5f070df7a96e1560223848f5a3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc9b8203ff70a30999373d17d92e8eca = $(`<div id="html_bc9b8203ff70a30999373d17d92e8eca" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL JOSE MARIA PHILOMENO GOMES</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA JOAQUIM NOGUEIRA LOPES, 463<br><b>CNES:</b> 2427176</div>`)[0];
+                popup_67eab5f070df7a96e1560223848f5a3f.setContent(html_bc9b8203ff70a30999373d17d92e8eca);
+            
+        
+
+        marker_645a8b85fe22b890331d6001a55bd668.bindPopup(popup_67eab5f070df7a96e1560223848f5a3f)
+        ;
+
+        
+    
+    
+                marker_645a8b85fe22b890331d6001a55bd668.setIcon(icon_61bf5b6258bd9957a4642106e6b807cc);
+            
+    
+            var marker_7d25fe8e14d8cfa63fa9a220c5aaf551 = L.marker(
+                [-4.836379333818908, -40.32952308654785],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_a52da16ee896830856d7e269445d1444 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a95102476466ec48f069606291d66ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1120ac2c12d9e69c40a7e84e6b261e1 = $(`<div id="html_a1120ac2c12d9e69c40a7e84e6b261e1" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL RAIMUNDA TIMBO CAMELO TAMBORIL</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA FRANKLIN CAVALCANTE, S/N<br><b>CNES:</b> 2415623</div>`)[0];
+                popup_7a95102476466ec48f069606291d66ac.setContent(html_a1120ac2c12d9e69c40a7e84e6b261e1);
+            
+        
+
+        marker_7d25fe8e14d8cfa63fa9a220c5aaf551.bindPopup(popup_7a95102476466ec48f069606291d66ac)
+        ;
+
+        
+    
+    
+                marker_7d25fe8e14d8cfa63fa9a220c5aaf551.setIcon(icon_a52da16ee896830856d7e269445d1444);
+            
+    
+            var marker_ab18c23f670bb0b3cb90a0fb6bae8dff = L.marker(
+                [-2.918332572226382, -39.91858720779419],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_bf8422e3b26f2c5e48c4a2bf30698453 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36f03cc5bc23c2c2f28ace085dde192c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1aa2c7d776c310b9b2add803c13bf4c = $(`<div id="html_a1aa2c7d776c310b9b2add803c13bf4c" style="width: 100.0%; height: 100.0%;"><b>HOSP MUNICIPAL NATERCIA JUNIOR RIOS</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> AVENIDA RIOS, S/N<br><b>CNES:</b> 2806339</div>`)[0];
+                popup_36f03cc5bc23c2c2f28ace085dde192c.setContent(html_a1aa2c7d776c310b9b2add803c13bf4c);
+            
+        
+
+        marker_ab18c23f670bb0b3cb90a0fb6bae8dff.bindPopup(popup_36f03cc5bc23c2c2f28ace085dde192c)
+        ;
+
+        
+    
+    
+                marker_ab18c23f670bb0b3cb90a0fb6bae8dff.setIcon(icon_bf8422e3b26f2c5e48c4a2bf30698453);
+            
+    
+            var marker_94e5db62415e48fd8a44027da30bb6f4 = L.marker(
+                [-4.4969836, -38.590111],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_ffdfec4cd37021c1f22107ac7aeb5b9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b8aa1d3e03d664c0dac5ebfc11e5502 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1b8e87ac3f1e3a0019358c48a7c421f = $(`<div id="html_b1b8e87ac3f1e3a0019358c48a7c421f" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL E MATERNIDADE FRANCISCO RAIMUNDO MARCOS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA CICERO PEREIRA DO NASCIMENTO, S/N<br><b>CNES:</b> 2561441</div>`)[0];
+                popup_1b8aa1d3e03d664c0dac5ebfc11e5502.setContent(html_b1b8e87ac3f1e3a0019358c48a7c421f);
+            
+        
+
+        marker_94e5db62415e48fd8a44027da30bb6f4.bindPopup(popup_1b8aa1d3e03d664c0dac5ebfc11e5502)
+        ;
+
+        
+    
+    
+                marker_94e5db62415e48fd8a44027da30bb6f4.setIcon(icon_ffdfec4cd37021c1f22107ac7aeb5b9b);
+            
+    
+            var marker_e24b2d1e1ab48f2f08e2c940e59f6fb1 = L.marker(
+                [-3.12, -40.826],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_d24cf47584a57e79780f0b1816cc1dbf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f931b138237de2e7cc1c0cac9e63b95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39e9d04a90b9d4b93d32f150afd11b49 = $(`<div id="html_39e9d04a90b9d4b93d32f150afd11b49" style="width: 100.0%; height: 100.0%;"><b>HOSP MATERN DR VICENTE ARRUDA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA JOAO PESSOA, S/N<br><b>CNES:</b> 2333899</div>`)[0];
+                popup_3f931b138237de2e7cc1c0cac9e63b95.setContent(html_39e9d04a90b9d4b93d32f150afd11b49);
+            
+        
+
+        marker_e24b2d1e1ab48f2f08e2c940e59f6fb1.bindPopup(popup_3f931b138237de2e7cc1c0cac9e63b95)
+        ;
+
+        
+    
+    
+                marker_e24b2d1e1ab48f2f08e2c940e59f6fb1.setIcon(icon_d24cf47584a57e79780f0b1816cc1dbf);
+            
+    
+            var marker_98dcd651cb4109a675ae81f65bae3c1a = L.marker(
+                [-3.7464768, -39.7839182],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_21cd8e47e020f29b0ca43283fe21e4c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d49a085f3cca2a08b1c3ef08f54705c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fecd15f29abfad4d6cf9f4a7e2a2223 = $(`<div id="html_5fecd15f29abfad4d6cf9f4a7e2a2223" style="width: 100.0%; height: 100.0%;"><b>SECRETARIA MUNICIPAL DE SAUDE DE IRAUCUBA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> AVENIDA PAULO BASTOS, 220<br><b>CNES:</b> 6454364</div>`)[0];
+                popup_6d49a085f3cca2a08b1c3ef08f54705c.setContent(html_5fecd15f29abfad4d6cf9f4a7e2a2223);
+            
+        
+
+        marker_98dcd651cb4109a675ae81f65bae3c1a.bindPopup(popup_6d49a085f3cca2a08b1c3ef08f54705c)
+        ;
+
+        
+    
+    
+                marker_98dcd651cb4109a675ae81f65bae3c1a.setIcon(icon_21cd8e47e020f29b0ca43283fe21e4c0);
+            
+    
+            var marker_ee898ba4e6093d9c22122f9a644d4121 = L.marker(
+                [-4.028, -38.306],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_9d1c39c73c3cb6f4d83dfd786c3a5802 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d751717e17614ed0869e859bc0db58e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_037aa12411455e221c9e3a8cb8d4c943 = $(`<div id="html_037aa12411455e221c9e3a8cb8d4c943" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL E CENTRO DE PARTO NORMAL DE PINDORETAMA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA PADRE EDILSON SILVA, 1385<br><b>CNES:</b> 2564769</div>`)[0];
+                popup_2d751717e17614ed0869e859bc0db58e.setContent(html_037aa12411455e221c9e3a8cb8d4c943);
+            
+        
+
+        marker_ee898ba4e6093d9c22122f9a644d4121.bindPopup(popup_2d751717e17614ed0869e859bc0db58e)
+        ;
+
+        
+    
+    
+                marker_ee898ba4e6093d9c22122f9a644d4121.setIcon(icon_9d1c39c73c3cb6f4d83dfd786c3a5802);
+            
+    
+            var marker_60e0ad370217d5bab7a67ae6e091b37a = L.marker(
+                [-6.939596, -38.9746253],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_23f73cea3049be9d0970a21a5de8a3b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32a03346e89be4e4f19b8befd54ceab9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af530e3d44d02a18f5a43f2edf650c04 = $(`<div id="html_af530e3d44d02a18f5a43f2edf650c04" style="width: 100.0%; height: 100.0%;"><b>POLICLINICA ACILON GONCALVES</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA VINOR LEITE, S/N<br><b>CNES:</b> 4010833</div>`)[0];
+                popup_32a03346e89be4e4f19b8befd54ceab9.setContent(html_af530e3d44d02a18f5a43f2edf650c04);
+            
+        
+
+        marker_60e0ad370217d5bab7a67ae6e091b37a.bindPopup(popup_32a03346e89be4e4f19b8befd54ceab9)
+        ;
+
+        
+    
+    
+                marker_60e0ad370217d5bab7a67ae6e091b37a.setIcon(icon_23f73cea3049be9d0970a21a5de8a3b9);
+            
+    
+            var marker_d6d800d9e28845f898cd3379cb53e0ac = L.marker(
+                [-4.753762430706135, -40.827813148498535],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_6519c4e61a2f08e67f9d7e64cd26241e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b83bdb881c74452e2ef40aaed7ceec33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f371a4ed55ce7933d77002f44961bb9d = $(`<div id="html_f371a4ed55ce7933d77002f44961bb9d" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE SAUDE DE ARARENDA</b><br><b>Equipes:</b> Apenas Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> ARARENDA, S/N<br><b>CNES:</b> 2480069</div>`)[0];
+                popup_b83bdb881c74452e2ef40aaed7ceec33.setContent(html_f371a4ed55ce7933d77002f44961bb9d);
+            
+        
+
+        marker_d6d800d9e28845f898cd3379cb53e0ac.bindPopup(popup_b83bdb881c74452e2ef40aaed7ceec33)
+        ;
+
+        
+    
+    
+                marker_d6d800d9e28845f898cd3379cb53e0ac.setIcon(icon_6519c4e61a2f08e67f9d7e64cd26241e);
+            
+    
+            var marker_3b07d3376cedae47dc4e2204e8cf56ea = L.marker(
+                [-4.648652805518886, -39.67480659484863],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_5529c9b49d819ed3dcb3584760124ab9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd1d55087bd3933e17da0f5702b8753c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92eff0688e994321bba3d79845b82545 = $(`<div id="html_92eff0688e994321bba3d79845b82545" style="width: 100.0%; height: 100.0%;"><b>UNIDADE BASICA DE SAUDE JOAO SILVA GUERRA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> AV NOSSA SENHORA DO CARMO, S/N<br><b>CNES:</b> 2478935</div>`)[0];
+                popup_fd1d55087bd3933e17da0f5702b8753c.setContent(html_92eff0688e994321bba3d79845b82545);
+            
+        
+
+        marker_3b07d3376cedae47dc4e2204e8cf56ea.bindPopup(popup_fd1d55087bd3933e17da0f5702b8753c)
+        ;
+
+        
+    
+    
+                marker_3b07d3376cedae47dc4e2204e8cf56ea.setIcon(icon_5529c9b49d819ed3dcb3584760124ab9);
+            
+    
+            var marker_9e13c93b1f29e4c23f89932f6ec2b29e = L.marker(
+                [-3.920737, -38.4008686],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_f1de696c0de84d278219c2d08bde7c6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b6f7497dfd7fa2c56cf18d7a6835047 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7df090e4bd3484edf21282eeebb5e5cc = $(`<div id="html_7df090e4bd3484edf21282eeebb5e5cc" style="width: 100.0%; height: 100.0%;"><b>HOSP GERAL MANUEL ASSUNCAO PIRES</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA JOAO PAULO II, 96<br><b>CNES:</b> 2561395</div>`)[0];
+                popup_7b6f7497dfd7fa2c56cf18d7a6835047.setContent(html_7df090e4bd3484edf21282eeebb5e5cc);
+            
+        
+
+        marker_9e13c93b1f29e4c23f89932f6ec2b29e.bindPopup(popup_7b6f7497dfd7fa2c56cf18d7a6835047)
+        ;
+
+        
+    
+    
+                marker_9e13c93b1f29e4c23f89932f6ec2b29e.setIcon(icon_f1de696c0de84d278219c2d08bde7c6f);
+            
+    
+            var marker_14cb30679dd69cad42f03bda81f6c6b0 = L.marker(
+                [-3.6815023500215545, -39.58917438983917],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_4a99267df8fd1352f43157c0490ea8dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_024d5dccc8b5b6687f37890f2320be19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4a31abcece119832b6472b8923c1e26 = $(`<div id="html_a4a31abcece119832b6472b8923c1e26" style="width: 100.0%; height: 100.0%;"><b>HOSP MATERN JOAO FERREIRA GOMES</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AVENIDA ANTONIO PEREIRA DE MELO, S/N<br><b>CNES:</b> 2562154</div>`)[0];
+                popup_024d5dccc8b5b6687f37890f2320be19.setContent(html_a4a31abcece119832b6472b8923c1e26);
+            
+        
+
+        marker_14cb30679dd69cad42f03bda81f6c6b0.bindPopup(popup_024d5dccc8b5b6687f37890f2320be19)
+        ;
+
+        
+    
+    
+                marker_14cb30679dd69cad42f03bda81f6c6b0.setIcon(icon_4a99267df8fd1352f43157c0490ea8dd);
+            
+    
+            var marker_2cfaff7831d9010191879fbc4157ca13 = L.marker(
+                [-3.558857, -38.9572135],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_cd38f8fd20615b93a23dae7cae2b050b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42aa338d6c51cb3125d6223e145067fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62df75b0e7cbca5c9296c8ff0a80a020 = $(`<div id="html_62df75b0e7cbca5c9296c8ff0a80a020" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL DOUTOR AMADEU SA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA CARMELITA REBOUCAS, 508<br><b>CNES:</b> 2611295</div>`)[0];
+                popup_42aa338d6c51cb3125d6223e145067fe.setContent(html_62df75b0e7cbca5c9296c8ff0a80a020);
+            
+        
+
+        marker_2cfaff7831d9010191879fbc4157ca13.bindPopup(popup_42aa338d6c51cb3125d6223e145067fe)
+        ;
+
+        
+    
+    
+                marker_2cfaff7831d9010191879fbc4157ca13.setIcon(icon_cd38f8fd20615b93a23dae7cae2b050b);
+            
+    
+            var marker_e8e050e9d646748c9073538a015fa9ad = L.marker(
+                [-3.3617741224462274, -39.82215642929077],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_ec82681c7362f13500c01dc522f53f0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96a3c14c88a2b1691ae675d270f8e903 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4e0c3ca5ee02b4b2c735e3066b8f72c = $(`<div id="html_e4e0c3ca5ee02b4b2c735e3066b8f72c" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL DR RIGOBERTO ROMERO DE BARROS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA MARTINS TEIXEIRA, 1868<br><b>CNES:</b> 2427184</div>`)[0];
+                popup_96a3c14c88a2b1691ae675d270f8e903.setContent(html_e4e0c3ca5ee02b4b2c735e3066b8f72c);
+            
+        
+
+        marker_e8e050e9d646748c9073538a015fa9ad.bindPopup(popup_96a3c14c88a2b1691ae675d270f8e903)
+        ;
+
+        
+    
+    
+                marker_e8e050e9d646748c9073538a015fa9ad.setIcon(icon_ec82681c7362f13500c01dc522f53f0b);
+            
+    
+            var marker_38a13a79666480d93e5e6e1801a10eb5 = L.marker(
+                [-3.974827232730369, -38.61943357208537],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_4032346c7eff173d219b1204e568d7c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d089a9e4d1344cd2cf686c23106d293 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4575faa507902bbfaafde987ce4451c = $(`<div id="html_a4575faa507902bbfaafde987ce4451c" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL RAIMUNDO CELIO RODRIGUES</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA MAJOR CICERO FRANKLIN, 34<br><b>CNES:</b> 2373270</div>`)[0];
+                popup_5d089a9e4d1344cd2cf686c23106d293.setContent(html_a4575faa507902bbfaafde987ce4451c);
+            
+        
+
+        marker_38a13a79666480d93e5e6e1801a10eb5.bindPopup(popup_5d089a9e4d1344cd2cf686c23106d293)
+        ;
+
+        
+    
+    
+                marker_38a13a79666480d93e5e6e1801a10eb5.setIcon(icon_4032346c7eff173d219b1204e568d7c5);
+            
+    
+            var marker_67fd2d54eb157d146abec53548505922 = L.marker(
+                [-3.607098431933364, -38.96230727434158],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_41f3f0ce3475c350410856f233a025dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8cb93d14c0c26ce2913774491e1c873c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8df660288e10c8912c6dabcc0cf9f826 = $(`<div id="html_8df660288e10c8912c6dabcc0cf9f826" style="width: 100.0%; height: 100.0%;"><b>HOSP GERAL LUIZA ALCANTARA SILVA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA DAS ACACIAS, 00270<br><b>CNES:</b> 2427125</div>`)[0];
+                popup_8cb93d14c0c26ce2913774491e1c873c.setContent(html_8df660288e10c8912c6dabcc0cf9f826);
+            
+        
+
+        marker_67fd2d54eb157d146abec53548505922.bindPopup(popup_8cb93d14c0c26ce2913774491e1c873c)
+        ;
+
+        
+    
+    
+                marker_67fd2d54eb157d146abec53548505922.setIcon(icon_41f3f0ce3475c350410856f233a025dc);
+            
+    
+            var marker_c3804590e13151fc69f716b780729f22 = L.marker(
+                [-3.6837561, -40.346963],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_67a77d3e5843c962bde451906a85ce72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36708abe2b97ee0dbeda1668af6500ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_133c46eec4bc2786d86a48cf49833002 = $(`<div id="html_133c46eec4bc2786d86a48cf49833002" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL MUNICIPAL ESTEVAM PONTE</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA BOULEVARD JOAO BARBOSA, 401<br><b>CNES:</b> 2426579</div>`)[0];
+                popup_36708abe2b97ee0dbeda1668af6500ca.setContent(html_133c46eec4bc2786d86a48cf49833002);
+            
+        
+
+        marker_c3804590e13151fc69f716b780729f22.bindPopup(popup_36708abe2b97ee0dbeda1668af6500ca)
+        ;
+
+        
+    
+    
+                marker_c3804590e13151fc69f716b780729f22.setIcon(icon_67a77d3e5843c962bde451906a85ce72);
+            
+    
+            var marker_ebcd3f1f008a1e05b24eb15a78950c3a = L.marker(
+                [-3.28825, -39.33826],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_7d215e41b7827db111d971dee221a6fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52c2030915f3d03e176f61e709a55673 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8223c364f2cedc9fa50f5128045c000f = $(`<div id="html_8223c364f2cedc9fa50f5128045c000f" style="width: 100.0%; height: 100.0%;"><b>UNIDADE DE SAUDE DA FAMILIA BOA ESPERANCA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA CENTRAL, S/N<br><b>CNES:</b> 6473296</div>`)[0];
+                popup_52c2030915f3d03e176f61e709a55673.setContent(html_8223c364f2cedc9fa50f5128045c000f);
+            
+        
+
+        marker_ebcd3f1f008a1e05b24eb15a78950c3a.bindPopup(popup_52c2030915f3d03e176f61e709a55673)
+        ;
+
+        
+    
+    
+                marker_ebcd3f1f008a1e05b24eb15a78950c3a.setIcon(icon_7d215e41b7827db111d971dee221a6fa);
+            
+    
+            var marker_f72d7fec0c9e81630cb19d47e66e7fbe = L.marker(
+                [-4.565922731906536, -37.77116775512695],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_aa8eaf150e5462bd19d45fe4ba50fcf5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_979d9b32e4c15c171d2879832c55e941 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8777ea99e54db162f8cf39ee173ce06e = $(`<div id="html_8777ea99e54db162f8cf39ee173ce06e" style="width: 100.0%; height: 100.0%;"><b>UNIDADE BASICA DE SAUDE CAMPO VERDE</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> CEL POMPEU, 583<br><b>CNES:</b> 2372975</div>`)[0];
+                popup_979d9b32e4c15c171d2879832c55e941.setContent(html_8777ea99e54db162f8cf39ee173ce06e);
+            
+        
+
+        marker_f72d7fec0c9e81630cb19d47e66e7fbe.bindPopup(popup_979d9b32e4c15c171d2879832c55e941)
+        ;
+
+        
+    
+    
+                marker_f72d7fec0c9e81630cb19d47e66e7fbe.setIcon(icon_aa8eaf150e5462bd19d45fe4ba50fcf5);
+            
+    
+            var marker_8210e0a2d903666ce7f4434551132e67 = L.marker(
+                [-7.311145, -38.950567],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_0997409b764380ecda07d9924972454f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ed9bc5911598d8ed904cab82868e024 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff08e59f3d43cef28e08dfa24af46f41 = $(`<div id="html_ff08e59f3d43cef28e08dfa24af46f41" style="width: 100.0%; height: 100.0%;"><b>UBS CARLOS DORNELLES ALVES DE CALDAS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AVENIDA SANDOVAL LINS, S/N<br><b>CNES:</b> 6947859</div>`)[0];
+                popup_3ed9bc5911598d8ed904cab82868e024.setContent(html_ff08e59f3d43cef28e08dfa24af46f41);
+            
+        
+
+        marker_8210e0a2d903666ce7f4434551132e67.bindPopup(popup_3ed9bc5911598d8ed904cab82868e024)
+        ;
+
+        
+    
+    
+                marker_8210e0a2d903666ce7f4434551132e67.setIcon(icon_0997409b764380ecda07d9924972454f);
+            
+    
+            var marker_ee960ca2dfb70838a92fcd78b681c708 = L.marker(
+                [-3.05735, -40.17149],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_84c0c3495e9fa971b7892775fac1bfed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_321eaf2f69cd87210ea07216f5600800 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d8ed02c05800986bac2ccaf8b5d599e = $(`<div id="html_5d8ed02c05800986bac2ccaf8b5d599e" style="width: 100.0%; height: 100.0%;"><b>CENTRO DE SAUDE DE BELA CRUZFNS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA CORONEL DUCA, 546<br><b>CNES:</b> 2527731</div>`)[0];
+                popup_321eaf2f69cd87210ea07216f5600800.setContent(html_5d8ed02c05800986bac2ccaf8b5d599e);
+            
+        
+
+        marker_ee960ca2dfb70838a92fcd78b681c708.bindPopup(popup_321eaf2f69cd87210ea07216f5600800)
+        ;
+
+        
+    
+    
+                marker_ee960ca2dfb70838a92fcd78b681c708.setIcon(icon_84c0c3495e9fa971b7892775fac1bfed);
+            
+    
+            var marker_d3446326cc6823aa8cf8327792b69b45 = L.marker(
+                [-3.8856149819202535, -38.62520408199455],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_a84cb6ec6f1023955181374e1a9778d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_315cee8b7fccac689e83f86911910f1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_960bc70054e2ad578ca4aa122a1e5dfc = $(`<div id="html_960bc70054e2ad578ca4aa122a1e5dfc" style="width: 100.0%; height: 100.0%;"><b>SERVICO DE ATENCAO DOMICILIAR DE MARACANAU</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AV CAPITAO WALDEMAR DE LIMA, S/N<br><b>CNES:</b> 4178106</div>`)[0];
+                popup_315cee8b7fccac689e83f86911910f1f.setContent(html_960bc70054e2ad578ca4aa122a1e5dfc);
+            
+        
+
+        marker_d3446326cc6823aa8cf8327792b69b45.bindPopup(popup_315cee8b7fccac689e83f86911910f1f)
+        ;
+
+        
+    
+    
+                marker_d3446326cc6823aa8cf8327792b69b45.setIcon(icon_a84cb6ec6f1023955181374e1a9778d9);
+            
+    
+            var marker_34c3ca59913f08a6c6667d656eecf8dc = L.marker(
+                [-6.7613182, -38.9705752],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_5e938114abc591d6c323c8a8ee5ddbc9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eee82dd7a424b0ea64dc9ec0a6b32fe8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23e188d83dcd96dc1e55ab6de912d14f = $(`<div id="html_23e188d83dcd96dc1e55ab6de912d14f" style="width: 100.0%; height: 100.0%;"><b>SERVICO DE ATENCAO DOMICILIAR</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> ANTONIO LOBO, 0<br><b>CNES:</b> 4179676</div>`)[0];
+                popup_eee82dd7a424b0ea64dc9ec0a6b32fe8.setContent(html_23e188d83dcd96dc1e55ab6de912d14f);
+            
+        
+
+        marker_34c3ca59913f08a6c6667d656eecf8dc.bindPopup(popup_eee82dd7a424b0ea64dc9ec0a6b32fe8)
+        ;
+
+        
+    
+    
+                marker_34c3ca59913f08a6c6667d656eecf8dc.setIcon(icon_5e938114abc591d6c323c8a8ee5ddbc9);
+            
+    
+            var marker_60c40b20e69b92f7cac355db5a1607c0 = L.marker(
+                [-5.5904, -39.37435],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_a584a5c4773a04ed6451dcd85dee0ec6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ad610c8a6248076700616dd821a9c96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76987ab6cc206cae1df423a8d391fb89 = $(`<div id="html_76987ab6cc206cae1df423a8d391fb89" style="width: 100.0%; height: 100.0%;"><b>SERVICO DE ATENCAO DOMICILIAR SAD DE SENADOR POMPEU</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AVENIDA FRANCISCO FRANCA CAMBRAIA, 208<br><b>CNES:</b> 4144511</div>`)[0];
+                popup_3ad610c8a6248076700616dd821a9c96.setContent(html_76987ab6cc206cae1df423a8d391fb89);
+            
+        
+
+        marker_60c40b20e69b92f7cac355db5a1607c0.bindPopup(popup_3ad610c8a6248076700616dd821a9c96)
+        ;
+
+        
+    
+    
+                marker_60c40b20e69b92f7cac355db5a1607c0.setIcon(icon_a584a5c4773a04ed6451dcd85dee0ec6);
+            
+    
+            var marker_db4a043a12a6c221b1c36aa7da6b44f8 = L.marker(
+                [-4.301376785116484, -38.49752604961395],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_b6c18ab437f007973ddbe86512b29492 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6592090955f94271a8d1ecde3d4200e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da553a7e4effe1d33bda57d2d3a9690b = $(`<div id="html_da553a7e4effe1d33bda57d2d3a9690b" style="width: 100.0%; height: 100.0%;"><b>SAD CHOROZINHO</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> AVENIDA RAIMUNDO SIMPLICIO DE CARVALHO, S/N<br><b>CNES:</b> 4200500</div>`)[0];
+                popup_6592090955f94271a8d1ecde3d4200e4.setContent(html_da553a7e4effe1d33bda57d2d3a9690b);
+            
+        
+
+        marker_db4a043a12a6c221b1c36aa7da6b44f8.bindPopup(popup_6592090955f94271a8d1ecde3d4200e4)
+        ;
+
+        
+    
+    
+                marker_db4a043a12a6c221b1c36aa7da6b44f8.setIcon(icon_b6c18ab437f007973ddbe86512b29492);
+            
+    
+            var marker_1d9c7296e2422eec2e3607281d6be8a1 = L.marker(
+                [-4.160222353594791, -40.76047897338867],
+                {
+}
+            ).addTo(marker_cluster_e7137988a7e02c31df92d4a7037b77e3);
+        
+    
+            var icon_fc20899c6abd0745b313f16e9329f230 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97740caf84e3e7df821e33aab7447f83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc71482f6c3960c30abf1ebe21e3f57a = $(`<div id="html_cc71482f6c3960c30abf1ebe21e3f57a" style="width: 100.0%; height: 100.0%;"><b>MELHOR EM CASA DE GUARACIABA DO NORTE</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA CAPITAO FERREIRA, 191<br><b>CNES:</b> 5800749</div>`)[0];
+                popup_97740caf84e3e7df821e33aab7447f83.setContent(html_cc71482f6c3960c30abf1ebe21e3f57a);
+            
+        
+
+        marker_1d9c7296e2422eec2e3607281d6be8a1.bindPopup(popup_97740caf84e3e7df821e33aab7447f83)
+        ;
+
+        
+    
+    
+                marker_1d9c7296e2422eec2e3607281d6be8a1.setIcon(icon_fc20899c6abd0745b313f16e9329f230);
+            
+    
+            marker_cluster_e7137988a7e02c31df92d4a7037b77e3.addTo(map_8616806b967c5dab96ebd91850dbe0d6);
+        
+</script>
+</html>

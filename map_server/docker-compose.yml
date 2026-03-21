@@ -1,0 +1,9 @@
+services:
+  apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: melhor-em-casa-apache
+    ports:
+      - "${HOST_PORT:-8080}:80"
+    restart: unless-stopped

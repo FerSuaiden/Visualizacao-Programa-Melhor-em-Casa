@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oferta — Programa Melhor Em Casa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Melhor Em Casa — Análise
+    </a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="oferta.html">Oferta</a></li>
+      <li><a href="composicao.html">Composição</a></li>
+      <li><a href="conformidade.html">Conformidade</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <!-- Contexto -->
+    <section>
+      <div class="section-header">
+        <h2>Oferta de Atenção Domiciliar</h2>
+        <p>Distribuição, cobertura e presença das equipes no território brasileiro.</p>
+      </div>
+      <p>
+        O Brasil conta com <strong>2.664 equipes</strong> de Atenção Domiciliar
+        distribuídas em <strong>1.218 municípios</strong> (21,9% do total de municípios), abrangendo todas as 27 Unidades Federativas.
+        Esta seção apresenta onde e quantas equipes atuam no programa Melhor em Casa,
+        incluindo um mapa interativo das equipes de São Paulo.
+      </p>
+      <div class="info-box">
+        <strong>Tipos de equipe:</strong> o programa opera com quatro tipos de equipe de Atenção Domiciliar:
+        EMAD I (equipe principal, dedicação integral),
+        EMAD II (carga horária menor),
+        EMAP (apoio multiprofissional) e
+        EMAP-R (apoio para reabilitação).
+        Detalhes sobre composição e capacidade estão na aba <a href="composicao.html">Composição</a>.
+      </div>
+    </section>
+
+    <!-- Mapa Interativo por Estado -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Mapa Interativo por Estado</h2>
+        <p>Selecione uma UF para visualizar a distribuição espacial das equipes de Atenção Domiciliar.</p>
+      </div>
+
+      <div class="state-selector">
+        <label for="oferta-state-select">Escolha o estado:</label>
+        <select id="oferta-state-select">
+          <option value="AC">Acre (AC)</option>
+          <option value="AL">Alagoas (AL)</option>
+          <option value="AM">Amazonas (AM)</option>
+          <option value="AP">Amapá (AP)</option>
+          <option value="BA">Bahia (BA)</option>
+          <option value="CE">Ceará (CE)</option>
+          <option value="DF">Distrito Federal (DF)</option>
+          <option value="ES">Espírito Santo (ES)</option>
+          <option value="GO">Goiás (GO)</option>
+          <option value="MA">Maranhão (MA)</option>
+          <option value="MG">Minas Gerais (MG)</option>
+          <option value="MS">Mato Grosso do Sul (MS)</option>
+          <option value="MT">Mato Grosso (MT)</option>
+          <option value="PA">Pará (PA)</option>
+          <option value="PB">Paraíba (PB)</option>
+          <option value="PE">Pernambuco (PE)</option>
+          <option value="PI">Piauí (PI)</option>
+          <option value="PR">Paraná (PR)</option>
+          <option value="RJ">Rio de Janeiro (RJ)</option>
+          <option value="RN">Rio Grande do Norte (RN)</option>
+          <option value="RO">Rondônia (RO)</option>
+          <option value="RR">Roraima (RR)</option>
+          <option value="RS">Rio Grande do Sul (RS)</option>
+          <option value="SC">Santa Catarina (SC)</option>
+          <option value="SE">Sergipe (SE)</option>
+          <option value="SP" selected>São Paulo (SP)</option>
+          <option value="TO">Tocantins (TO)</option>
+        </select>
+      </div>
+
+      <div class="state-grid">
+        <button class="state-btn oferta-state-btn" data-uf="AC">AC</button>
+        <button class="state-btn oferta-state-btn" data-uf="AL">AL</button>
+        <button class="state-btn oferta-state-btn" data-uf="AM">AM</button>
+        <button class="state-btn oferta-state-btn" data-uf="AP">AP</button>
+        <button class="state-btn oferta-state-btn" data-uf="BA">BA</button>
+        <button class="state-btn oferta-state-btn" data-uf="CE">CE</button>
+        <button class="state-btn oferta-state-btn" data-uf="DF">DF</button>
+        <button class="state-btn oferta-state-btn" data-uf="ES">ES</button>
+        <button class="state-btn oferta-state-btn" data-uf="GO">GO</button>
+        <button class="state-btn oferta-state-btn" data-uf="MA">MA</button>
+        <button class="state-btn oferta-state-btn" data-uf="MG">MG</button>
+        <button class="state-btn oferta-state-btn" data-uf="MS">MS</button>
+        <button class="state-btn oferta-state-btn" data-uf="MT">MT</button>
+        <button class="state-btn oferta-state-btn" data-uf="PA">PA</button>
+        <button class="state-btn oferta-state-btn" data-uf="PB">PB</button>
+        <button class="state-btn oferta-state-btn" data-uf="PE">PE</button>
+        <button class="state-btn oferta-state-btn" data-uf="PI">PI</button>
+        <button class="state-btn oferta-state-btn" data-uf="PR">PR</button>
+        <button class="state-btn oferta-state-btn" data-uf="RJ">RJ</button>
+        <button class="state-btn oferta-state-btn" data-uf="RN">RN</button>
+        <button class="state-btn oferta-state-btn" data-uf="RO">RO</button>
+        <button class="state-btn oferta-state-btn" data-uf="RR">RR</button>
+        <button class="state-btn oferta-state-btn" data-uf="RS">RS</button>
+        <button class="state-btn oferta-state-btn" data-uf="SC">SC</button>
+        <button class="state-btn oferta-state-btn" data-uf="SE">SE</button>
+        <button class="state-btn oferta-state-btn active" data-uf="SP">SP</button>
+        <button class="state-btn oferta-state-btn" data-uf="TO">TO</button>
+      </div>
+
+      <div id="oferta-map-display">
+        <div class="card card-full">
+          <div class="iframe-wrapper" style="padding-bottom:65%;">
+            <iframe src="Outputs%26Codigo/PARTE1/mapas_Equipes_Atencao_Domiciliar_por_estado/mapa_Equipes_Atencao_Domiciliar_SP.html" title="Mapa de Equipes AD em SP" loading="lazy"></iframe>
+            <button class="iframe-expand" title="Expandir">⛶</button>
+          </div>
+          <div class="card-body">
+            <h3>SP: Distribuição Espacial das Equipes</h3>
+            <p>Mapa interativo com clusters automáticos e classificação por composição (EMAD/EMAP) dos estabelecimentos.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-muted">
+        Mapa interativo: use o zoom e arraste para navegar. Círculos numerados são agrupamentos automáticos (clusters). Cores: <strong style="color:#8a2be2;">Roxo</strong> = EMAD+EMAP, <strong style="color:#3366cc;">Azul</strong> = apenas EMAD, <strong style="color:#2ca02c;">Verde</strong> = apenas EMAP. Clique nos clusters para expandir.
+      </p>
+    </section>
+
+    <!-- Distribuição por Estado -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Distribuição por Estado</h2>
+        <p>Quantidade de equipes em cada UF, por tipo.</p>
+      </div>
+      <div class="card" style="max-width:800px;margin:0 auto;">
+        <img src="Outputs%26Codigo/PARTE1/distribuicao_equipes_por_estado_empilhado.png" alt="Distribuição por estado - empilhado" />
+        <div class="card-body">
+          <h3>Equipes por Estado</h3>
+          <p>São Paulo (412), Minas Gerais (317) e Bahia (282) concentram as maiores quantidades. As cores diferenciam os quatro tipos de equipe.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cobertura Municipal -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Cobertura Municipal por Região</h2>
+        <p>Percentual de municípios atendidos pelo programa em cada região.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/resumo/cobertura_nacional_donut.png" alt="Cobertura nacional" />
+          <div class="card-body">
+            <h3>Cobertura Nacional</h3>
+            <p>Resumo da cobertura municipal do programa no Brasil: 1.218 de 5.570 municípios (21,87%).</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/cobertura_municipal/top15_cobertura_percentual.png" alt="Top 15 UFs por cobertura" />
+          <div class="card-body">
+            <h3>Top 15 UFs por Cobertura</h3>
+            <p>De 16,1% (AM) a 100% (DF), com variação significativa entre estados.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrapper mt-3">
+        <table>
+          <thead>
+            <tr>
+              <th>Região</th>
+              <th>Mun. Cobertos</th>
+              <th>Cobertura (%)</th>
+              <th>Equipes</th>
+              <th>Eq./100k hab.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Nordeste</td><td>564</td><td>31,4%</td><td>1.104</td><td>2,02</td></tr>
+            <tr><td>Norte</td><td>99</td><td>22,0%</td><td>237</td><td>1,35</td></tr>
+            <tr><td>Sudeste</td><td>359</td><td>21,5%</td><td>892</td><td>1,05</td></tr>
+            <tr><td>Centro-Oeste</td><td>89</td><td>19,1%</td><td>216</td><td>1,33</td></tr>
+            <tr><td>Sul</td><td>107</td><td>9,0%</td><td>215</td><td>0,72</td></tr>
+            <tr style="font-weight:700;"><td>Brasil</td><td>1.218</td><td>21,9%</td><td>2.664</td><td>1,31</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Densidade -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Densidade de Equipes</h2>
+        <p>Número de equipes por 100 mil habitantes em cada região e estado.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/analise_densidade_100k_habitantes/densidade_por_regiao.png" alt="Densidade por região" />
+          <div class="card-body">
+            <h3>Densidade por Região</h3>
+            <p>O Nordeste possui 2,02 equipes por 100 mil habitantes, quase o triplo do Sul (0,72).</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/analise_densidade_100k_habitantes/top15_taxa_100k_ufs.png" alt="Top 15 UFs por taxa" />
+          <div class="card-body">
+            <h3>Top 15 UFs por Taxa/100k</h3>
+            <p>Ranking das unidades federativas por número de equipes por 100 mil habitantes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Principais Estados -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Principais Estados</h2>
+        <p>Os cinco estados com maior número de equipes.</p>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Estado</th>
+              <th>Equipes</th>
+              <th>Eq./100k</th>
+              <th>Cobertura (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>São Paulo</td><td>412</td><td>0,93</td><td>24,0%</td></tr>
+            <tr><td>Minas Gerais</td><td>317</td><td>1,54</td><td>18,3%</td></tr>
+            <tr><td>Bahia</td><td>282</td><td>1,99</td><td>33,8%</td></tr>
+            <tr><td>Ceará</td><td>181</td><td>2,06</td><td>44,6%</td></tr>
+            <tr><td>Pará</td><td>154</td><td>1,90</td><td>49,3%</td></tr>
+            <tr style="font-weight:700;"><td>Brasil</td><td>2.664</td><td>1,31</td><td>21,9%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Síntese -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Síntese</h2>
+      </div>
+      <p>
+        A oferta de Atenção Domiciliar alcança 21,9% dos municípios brasileiros, com marcada concentração no Nordeste (31,4% de cobertura, 2,02 eq./100k hab.) e baixa penetração no Sul (9,0%, 0,72 eq./100k). São Paulo tem o maior número absoluto de equipes (412), mas uma das menores taxas per capita (0,93/100k). Essas assimetrias refletem diferenças populacionais e de adesão ao programa entre regiões e estados.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Fernando Alee Suaiden · Orientadora: Maristela Oliveira dos Santos · ICMC-USP</p>
+    <p>Projeto Otimização de Rotas de Atenção Domiciliar · <a href="https://github.com/fersuaiden/IC" target="_blank">GitHub</a></p>
+  </footer>
+
+  <!-- Image Viewer -->
+  <div id="lightbox" class="lightbox-overlay">
+    <div class="lb-toolbar">
+      <span class="lb-zoom-level">100%</span>
+      <button id="lb-zoom-in" title="Ampliar">+</button>
+      <button id="lb-zoom-out" title="Reduzir">−</button>
+      <button id="lb-reset" title="Resetar zoom">↺</button>
+      <button id="lb-fullscreen" title="Tela cheia">⛶</button>
+      <button id="lb-download" title="Download">⤓</button>
+      <button id="lb-close" title="Fechar">✕</button>
+    </div>
+    <div class="lb-img-container">
+      <img src="" alt="" />
+    </div>
+    <div class="lb-hint">Scroll para zoom · Arraste para mover · ESC para fechar</div>
+  </div>
+  <button class="scroll-top" aria-label="Voltar ao topo">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

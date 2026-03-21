@@ -1,0 +1,28 @@
+UF;NOME_ESTADO;REGIAO;TOTAL_EQUIPES;MUNICIPIOS_COM_AD;MUNICIPIOS_TOTAL;COBERTURA_%;EQUIPES_CONFORMES;TAXA_CONFORMIDADE_%
+SP;São Paulo;Sudeste;412;155;645;24.03;241;58.5
+MG;Minas Gerais;Sudeste;317;156;853;18.29;214;67.51
+BA;Bahia;Nordeste;282;141;417;33.81;206;73.05
+CE;Ceará;Nordeste;181;82;184;44.57;91;50.28
+PA;Pará;Norte;154;71;144;49.31;110;71.43
+RJ;Rio de Janeiro;Sudeste;153;44;92;47.83;98;64.05
+PB;Paraíba;Nordeste;146;93;223;41.7;105;71.92
+GO;Goiás;Centro-Oeste;142;67;246;27.24;102;71.83
+PE;Pernambuco;Nordeste;137;54;185;29.19;80;58.39
+AL;Alagoas;Nordeste;99;46;102;45.1;81;81.82
+MA;Maranhão;Nordeste;89;44;217;20.28;76;85.39
+PR;Paraná;Sul;88;36;399;9.02;50;56.82
+RS;Rio Grande do Sul;Sul;80;43;497;8.65;49;61.25
+PI;Piauí;Nordeste;72;53;224;23.66;55;76.39
+SE;Sergipe;Nordeste;50;26;75;34.67;47;94.0
+RN;Rio Grande do Norte;Nordeste;48;25;167;14.97;38;79.17
+SC;Santa Catarina;Sul;47;28;295;9.49;33;70.21
+AM;Amazonas;Norte;39;10;62;16.13;34;87.18
+DF;Distrito Federal;Centro-Oeste;27;1;1;100.0;21;77.78
+MT;Mato Grosso;Centro-Oeste;24;11;141;7.8;20;83.33
+MS;Mato Grosso do Sul;Centro-Oeste;23;10;79;12.66;16;69.57
+RO;Rondônia;Norte;16;8;52;15.38;8;50.0
+TO;Tocantins;Norte;12;5;139;3.6;8;66.67
+ES;Espírito Santo;Sudeste;10;4;78;5.13;7;70.0
+AP;Amapá;Norte;9;2;16;12.5;7;77.78
+AC;Acre;Norte;5;2;22;9.09;4;80.0
+RR;Roraima;Norte;2;1;15;6.67;0;0.0

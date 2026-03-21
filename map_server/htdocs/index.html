@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programa Melhor Em Casa — Análise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Melhor Em Casa — Análise
+    </a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="oferta.html">Oferta</a></li>
+      <li><a href="composicao.html">Composição</a></li>
+      <li><a href="conformidade.html">Conformidade</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <h1>Programa Melhor Em Casa — Análise</h1>
+    <p>Visualizações da Análise Exploratória de Dados sobre as Equipes de Atenção Domiciliar no Brasil</p>
+    <div class="hero-badges">
+      <span class="badge">CNES/DATASUS</span>
+      <span class="badge">Melhor em Casa</span>
+      <span class="badge">CBO</span>
+      <span class="badge">IBGE</span>
+    </div>
+  </header>
+
+  <!-- ===== Conteúdo ===== -->
+  <main class="container">
+
+    <!-- Sobre -->
+    <section>
+      <div class="section-header">
+        <h2>Sobre</h2>
+      </div>
+      <p>
+        O <strong>Programa Melhor em Casa</strong>, instituído pelo Ministério da Saúde em 2011, oferece atendimento domiciliar por meio de equipes multiprofissionais que realizam visitas regulares a pacientes que necessitam de cuidados contínuos.
+      </p>
+      <p>
+        Este site reúne as visualizações produzidas na Análise Exploratória de Dados (AED) do projeto de Iniciação Científica <strong>Otimização de Rotas de Atenção Domiciliar</strong>, utilizando dados públicos do CNES/DATASUS, da Classificação Brasileira de Ocupações (CBO) e do IBGE para caracterizar as equipes de Atenção Domiciliar em todo o Brasil.
+      </p>
+      <p>
+        Além de descrever o panorama atual do programa, a AED serviu para levantar os parâmetros reais que alimentam o modelo de otimização do projeto, como a <strong>oferta</strong> de equipes por localidade, a <strong>capacidade operacional</strong> (Carga Horária Semanal) de cada equipe, as <strong>habilidades</strong> profissionais disponíveis e a <strong>conformidade legal</strong> de cada unidade.
+      </p>
+    </section>
+
+    <!-- Navegação rápida -->
+    <section class="mt-3">
+      <div class="section-header">
+        <h2>Explore a Análise</h2>
+      </div>
+      <div class="grid-3">
+        <a href="oferta.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-body text-center" style="padding:2rem;">
+            <h3>Oferta</h3>
+            <p>Distribuição, cobertura e densidade das 2.664 equipes no território brasileiro.</p>
+          </div>
+        </a>
+        <a href="composicao.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-body text-center" style="padding:2rem;">
+            <h3>Composição</h3>
+            <p>Tipos de equipe, perfil profissional e capacidade operacional (CHS).</p>
+          </div>
+        </a>
+        <a href="conformidade.html" class="card" style="text-decoration:none;color:inherit;">
+          <div class="card-body text-center" style="padding:2rem;">
+            <h3>Conformidade Legal</h3>
+            <p>Verificação dos requisitos da Portaria 3.005/2024 por tipo, região e estado.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>Fernando Alee Suaiden · Orientadora: Maristela Oliveira dos Santos · ICMC-USP</p>
+    <p>Projeto Otimização de Rotas de Atenção Domiciliar · <a href="https://github.com/fersuaiden/IC" target="_blank">GitHub</a></p>
+  </footer>
+
+  <!-- Image Viewer -->
+  <div id="lightbox" class="lightbox-overlay">
+    <div class="lb-toolbar">
+      <span class="lb-zoom-level">100%</span>
+      <button id="lb-zoom-in" title="Ampliar">+</button>
+      <button id="lb-zoom-out" title="Reduzir">−</button>
+      <button id="lb-reset" title="Resetar zoom">↺</button>
+      <button id="lb-fullscreen" title="Tela cheia">⛶</button>
+      <button id="lb-download" title="Download">⤓</button>
+      <button id="lb-close" title="Fechar">✕</button>
+    </div>
+    <div class="lb-img-container">
+      <img src="" alt="" />
+    </div>
+    <div class="lb-hint">Scroll para zoom · Arraste para mover · ESC para fechar</div>
+  </div>
+
+  <!-- Scroll-to-top -->
+  <button class="scroll-top" aria-label="Voltar ao topo">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
