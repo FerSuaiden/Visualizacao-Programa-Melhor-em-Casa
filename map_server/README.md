@@ -81,3 +81,12 @@ Se houver conflito de porta, ele pode usar:
 ```bash
 HOST_PORT=8081 docker compose up --build -d
 ```
+
+
+## Deploy - 10.4.0.21 Server (USP/C4AI)
+
+1. Connect to VPN
+1. Run `sh scripts/deploy.sh`
+1. Connect to the campari server via SSH: `ssh <user>@10.4.0.21`
+1. Access project folder: `cd /etc/visualizacao-programa-melhor-em-casa`
+1. Run `docker compose up -d`
