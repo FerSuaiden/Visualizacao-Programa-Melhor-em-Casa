@@ -1,10 +1,11 @@
 # Site em Docker com Apache
 
-Este diretorio ja esta preparado para servir o site estatico completo em Apache usando Docker.
+Este diretorio esta preparado para servir o site estatico completo em Apache usando Docker.
+Agora a estrutura esta autonoma: o build usa apenas arquivos dentro de map_server.
 
 ## Estrutura importante
 
-- `htdocs/`: arquivos do site e visualizacoes (o Apache serve esse conteudo)
+- `htdocs/`: arquivos do site e visualizacoes servidos pelo Apache
 - `Dockerfile`: imagem Apache que copia `htdocs` para `/usr/local/apache2/htdocs`
 - `docker-compose.yml`: sobe o container mapeando a porta local (padrao `8080`) para `80` no container
 
@@ -13,7 +14,7 @@ Este diretorio ja esta preparado para servir o site estatico completo em Apache 
 No terminal, entre neste diretorio:
 
 ```bash
-cd site/map_server
+cd map_server
 ```
 
 Suba o servidor:
@@ -57,11 +58,13 @@ Este pacote ja inclui:
 
 - Paginas principais: `index.html`, `oferta.html`, `composicao.html`, `conformidade.html`
 - Assets locais: `css/` e `js/`
-- Visualizacoes referenciadas nas paginas em `Outputs&Codigo/PARTE1`, `Outputs&Codigo/PARTE2` e `Outputs&Codigo/PARTE4/visualizacoes`
+- Visualizacoes referenciadas nas paginas em `Outputs&Codigo/OFERTA`, `Outputs&Codigo/COMPOSICAO` e `Outputs&Codigo/CONFORMIDADE/visualizacoes`
+
+Observacao: a pasta `site/` nao e necessaria para subir o container. Se quiser, pode remover essa pasta e manter apenas `htdocs/`.
 
 ## Entrega para o professor
 
-Envie a pasta `site/map_server` contendo:
+Envie a pasta `map_server` contendo:
 
 - `Dockerfile`
 - `docker-compose.yml`

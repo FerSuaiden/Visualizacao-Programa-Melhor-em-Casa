@@ -7,6 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico?v=20260401" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260401" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=20260401" />
+  <link rel="apple-touch-icon" href="favicon.png?v=20260401" />
+  <link rel="shortcut icon" href="favicon.ico?v=20260401" />
 </head>
 <body>
 
@@ -14,7 +19,7 @@
   <nav class="navbar">
     <a href="index.html" class="logo">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      Melhor Em Casa — Análise
+      Melhor Em Casa
     </a>
     <button class="nav-toggle" aria-label="Menu">&#9776;</button>
     <ul class="nav-links">
@@ -38,12 +43,9 @@
       </p>
 
       <p>
-        A <strong>Portaria GM/MS nº 3.005/2024</strong> estabelece os requisitos mínimos de
-        Carga Horária Semanal (CHS)
-        e categorias profissionais para cada tipo de equipe de Atenção Domiciliar.
-        A verificação consistiu em agregar as CHS por categoria profissional
-        (via prefixos da Classificação Brasileira de Ocupações)
-        para cada equipe, descartar profissionais com CHS inferior a 20h, e comparar os valores com os requisitos mínimos.
+        A <strong>Portaria GM/MS nº 3.005/2024</strong> estabelece requisitos mínimos de composição.
+        Na tabela abaixo, os valores de CHS representam a carga horária semanal total mínima da equipe
+        (soma das cargas horárias dos profissionais), e não a carga horária individual de cada profissional.
       </p>
 
       <!-- Requisitos por tipo -->
@@ -67,7 +69,13 @@
           </tbody>
         </table>
       </div>
-      <p class="text-muted">Requisito adicional: nenhum profissional de EMAD pode ter CHS inferior a 20h (Art. 547, §1º).</p>
+      <p class="text-muted">Requisito adicional de CHS individual: mínimo de 20h por profissional em todas as equipes.</p>
+      <p class="text-muted">
+        A composição ocupacional de EMAP e EMAP-R é parcialmente sobreposta. Na EMAP (Portaria 825/2016),
+        as ocupações explicitadas são assistente social, fisioterapeuta, fonoaudiólogo, nutricionista,
+        odontólogo, psicólogo, farmacêutico e terapeuta ocupacional; na EMAP-R (Portaria 3.005/2024),
+        são fisioterapeuta, fonoaudiólogo, nutricionista, terapeuta ocupacional, psicólogo e enfermeiro.
+      </p>
     </section>
 
     <!-- Resultados Nacionais -->
@@ -120,14 +128,14 @@
       </div>
       <div class="grid-2">
         <div class="card">
-          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/conformidade_legal/conformidade_por_tipo.png" alt="Conformidade por tipo" />
+          <img src="Outputs%26Codigo/CONFORMIDADE/visualizacoes/nacional/conformidade_legal/conformidade_por_tipo.png" alt="Conformidade por tipo" />
           <div class="card-body">
             <h3>Por Tipo de Equipe</h3>
             <p>A EMAD I (tipo mais numeroso e central) apresenta a menor taxa: 48,9%. EMAD II e EMAP têm 83,7% e 81,8%, respectivamente.</p>
           </div>
         </div>
         <div class="card">
-          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/conformidade_legal/conformidade_por_regiao.png" alt="Conformidade por região" />
+          <img src="Outputs%26Codigo/CONFORMIDADE/visualizacoes/nacional/conformidade_legal/conformidade_por_regiao.png" alt="Conformidade por região" />
           <div class="card-body">
             <h3>Por Região</h3>
             <p>Regiões com mais EMAD I (Sudeste/Sul) tendem a menor conformidade geral.</p>
@@ -144,7 +152,7 @@
       </div>
       <p>
         A EMAD I é o tipo mais numeroso (1.093 equipes, 41% do total) e o principal responsável pelo atendimento direto aos pacientes. Ao mesmo tempo, é o tipo com a menor taxa de conformidade (48,9%), o que justifica uma análise detalhada dos seus déficits específicos.
-      </div>
+      </p>
       <p>
         <strong>Causa principal:</strong> A Portaria 3.005/2024 elevou o requisito de enfermeiro para EMAD I de 40h (Portaria 825/2016) para 60h, o que aumentou substancialmente a dificuldade de conformidade desse tipo de equipe.
       </p>
@@ -251,7 +259,7 @@
       <!-- Display dinâmico -->
       <div id="state-display" class="grid-2">
         <div class="card card-full">
-          <img src="Outputs%26Codigo/PARTE4/visualizacoes/estados/SP/SP_equipes_conformidade.png" alt="Conformidade SP" />
+          <img src="Outputs%26Codigo/CONFORMIDADE/visualizacoes/estados/SP/SP_equipes_conformidade.png" alt="Conformidade SP" />
           <div class="card-body">
             <h3>SP: Conformidade das Equipes</h3>
             <p>Distribuição de equipes conformes e não-conformes no estado, por tipo de equipe (Portaria 3.005/2024).</p>
@@ -274,7 +282,8 @@
 
   <footer class="footer">
     <p>Fernando Alee Suaiden · Orientadora: Maristela Oliveira dos Santos · ICMC-USP</p>
-    <p>Projeto Otimização de Rotas de Atenção Domiciliar · <a href="https://github.com/fersuaiden/IC" target="_blank">GitHub</a></p>
+    <p>Projeto Otimização de Rotas de Atenção Domiciliar · <a href="https://github.com/FerSuaiden/Fapesp---Otimiza-o-de-Rotas-Atendimento-Domiciliar" target="_blank">GitHub</a></p>
+    <p>Processo FAPESP 2025/21835-0 · <a href="https://bv.fapesp.br/pt/bolsas/232802/metodos-de-solucao-para-o-agendamento-e-roteamento-de-equipes-para-a-assistencia-domiciliar/" target="_blank">Bolsa FAPESP</a></p>
   </footer>
 
   <!-- Image Viewer -->

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0f34273a7e7ae0859ad30343382db8e3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <div style="position: fixed;
+                bottom: 50px; left: 50px; width: 420px; height: auto;
+                border:2px solid grey; z-index:9999; font-size:14px;
+                background-color:white; opacity: .92; padding: 14px;
+                line-height: 1.6;
+                ">
+                <b style="font-size:16px;">Legenda - Programa Melhor em Casa (DF)</b><br><br>
+                <i class="fa fa-map-marker fa-2x" style="color:purple"></i>&nbsp; <b>Atendimento + Apoio</b> (EMAD + EMAP)<br>
+                <i class="fa fa-map-marker fa-2x" style="color:blue"></i>&nbsp; <b>Apenas EMAD</b> (Equipe de Atendimento)<br>
+                <i class="fa fa-map-marker fa-2x" style="color:green"></i>&nbsp; <b>Apenas EMAP</b> (Equipe de Apoio)<br>
+                <hr style="margin: 10px 0;">
+                <span style="line-height: 1.7; font-size: 13px;">
+                <b>EMAD I/II:</b> Equipe Multiprofissional de Atenção Domiciliar<br>
+                <b>EMAP:</b> Equipe Multiprofissional de Apoio<br>
+                <b>EMAP-R:</b> Equipe Multiprofissional de Apoio para Reabilitação
+                </span>
+    </div>
+    
+    
+            <div class="folium-map" id="map_0f34273a7e7ae0859ad30343382db8e3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0f34273a7e7ae0859ad30343382db8e3 = L.map(
+                "map_0f34273a7e7ae0859ad30343382db8e3",
+                {
+                    center: [-15.80455325914851, -47.96287572553644],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_92dd5af0c79558d502378cdb839c53c3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_92dd5af0c79558d502378cdb839c53c3.addTo(map_0f34273a7e7ae0859ad30343382db8e3);
+        
+    
+            var marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9 = L.markerClusterGroup(
+                {
+  "disableClusteringAtZoom": 17,
+  "maxClusterRadius": 40,
+}
+            );
+        
+    
+            var marker_7a96a334132c5247135d08043f1779aa = L.marker(
+                [-16.039668091645513, -48.03666830062866],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_acb054af176e39c3b59d3db5dd563d43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5300c62c7a2804bd95fd221eb0ab7cb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f4186a318edf1bdb9f2ddbaf2e4e204 = $(`<div id="html_3f4186a318edf1bdb9f2ddbaf2e4e204" style="width: 100.0%; height: 100.0%;"><b>HRSM</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> AC 102, S/N<br><b>CNES:</b> 5717515</div>`)[0];
+                popup_5300c62c7a2804bd95fd221eb0ab7cb5.setContent(html_3f4186a318edf1bdb9f2ddbaf2e4e204);
+            
+        
+
+        marker_7a96a334132c5247135d08043f1779aa.bindPopup(popup_5300c62c7a2804bd95fd221eb0ab7cb5)
+        ;
+
+        
+    
+    
+                marker_7a96a334132c5247135d08043f1779aa.setIcon(icon_acb054af176e39c3b59d3db5dd563d43);
+            
+    
+            var marker_e87f9fa144278c329d7ba6a770e5b446 = L.marker(
+                [-15.7784810544865, -47.78233051300049],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_7d29d2fd4f4ebdbf71d1934ab386ad78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48bac7a62595ac8a31d4a50b8ab7b4b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_130593c71e47a582d8788b3efc3725f8 = $(`<div id="html_130593c71e47a582d8788b3efc3725f8" style="width: 100.0%; height: 100.0%;"><b>HRL</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> QD 02 CONJ K, 1<br><b>CNES:</b> 2645157</div>`)[0];
+                popup_48bac7a62595ac8a31d4a50b8ab7b4b5.setContent(html_130593c71e47a582d8788b3efc3725f8);
+            
+        
+
+        marker_e87f9fa144278c329d7ba6a770e5b446.bindPopup(popup_48bac7a62595ac8a31d4a50b8ab7b4b5)
+        ;
+
+        
+    
+    
+                marker_e87f9fa144278c329d7ba6a770e5b446.setIcon(icon_7d29d2fd4f4ebdbf71d1934ab386ad78);
+            
+    
+            var marker_133b282a41dc70cca406c58bbe1703a4 = L.marker(
+                [-15.648370437680098, -47.79267311096192],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_3d7ba9dedb8f3e02bbb3b255200de962 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12b4c06efc491131066e09003fa696ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b287ff694ad7c6534088352db62f5083 = $(`<div id="html_b287ff694ad7c6534088352db62f5083" style="width: 100.0%; height: 100.0%;"><b>HRS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> QUADRA 12 AREA RESERVADA, 01<br><b>CNES:</b> 0010502</div>`)[0];
+                popup_12b4c06efc491131066e09003fa696ae.setContent(html_b287ff694ad7c6534088352db62f5083);
+            
+        
+
+        marker_133b282a41dc70cca406c58bbe1703a4.bindPopup(popup_12b4c06efc491131066e09003fa696ae)
+        ;
+
+        
+    
+    
+                marker_133b282a41dc70cca406c58bbe1703a4.setIcon(icon_3d7ba9dedb8f3e02bbb3b255200de962);
+            
+    
+            var marker_7785332390a94c0bbafed78ca9460690 = L.marker(
+                [-15.8531584, -48.07300662],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_630f0d167915055c18c39778aa764883 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71628f8592454fa4fbc485501e033996 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c6500570cdde673da2ecdf8aedf924c = $(`<div id="html_4c6500570cdde673da2ecdf8aedf924c" style="width: 100.0%; height: 100.0%;"><b>HRSAM HOSPITAL REGIONAL DE SAMAMBAIA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> QS 614 CONJUNTO C, 12<br><b>CNES:</b> 2672197</div>`)[0];
+                popup_71628f8592454fa4fbc485501e033996.setContent(html_4c6500570cdde673da2ecdf8aedf924c);
+            
+        
+
+        marker_7785332390a94c0bbafed78ca9460690.bindPopup(popup_71628f8592454fa4fbc485501e033996)
+        ;
+
+        
+    
+    
+                marker_7785332390a94c0bbafed78ca9460690.setIcon(icon_630f0d167915055c18c39778aa764883);
+            
+    
+            var marker_c29953992746ebcee9fc07eb225ca561 = L.marker(
+                [-15.815563535970762, -48.09593439102173],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_b477cf08f05694d597504751b95016ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb90f43c01fcf04d8afad50557ee0d8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_349e6c2a175301c937e003eb2d1ace56 = $(`<div id="html_349e6c2a175301c937e003eb2d1ace56" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL REGIONAL DE CEILANDIA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AREA ESPECIAL, 1<br><b>CNES:</b> 0010480</div>`)[0];
+                popup_cb90f43c01fcf04d8afad50557ee0d8f.setContent(html_349e6c2a175301c937e003eb2d1ace56);
+            
+        
+
+        marker_c29953992746ebcee9fc07eb225ca561.bindPopup(popup_cb90f43c01fcf04d8afad50557ee0d8f)
+        ;
+
+        
+    
+    
+                marker_c29953992746ebcee9fc07eb225ca561.setIcon(icon_b477cf08f05694d597504751b95016ae);
+            
+    
+            var marker_2aa40ea0fadf3b4f6b25fa1c9ab85a66 = L.marker(
+                [-15.67514708650334, -48.203630447387695],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_2044bb55f0f65424bd73a044ddbb80a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a79d0210afbb41a5d44979de7b0b5b2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aac3fc6fa6a3d980a8c4913ba16faff2 = $(`<div id="html_aac3fc6fa6a3d980a8c4913ba16faff2" style="width: 100.0%; height: 100.0%;"><b>HRBZ</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> AREA ESPECIAL, 06<br><b>CNES:</b> 0010545</div>`)[0];
+                popup_a79d0210afbb41a5d44979de7b0b5b2c.setContent(html_aac3fc6fa6a3d980a8c4913ba16faff2);
+            
+        
+
+        marker_2aa40ea0fadf3b4f6b25fa1c9ab85a66.bindPopup(popup_a79d0210afbb41a5d44979de7b0b5b2c)
+        ;
+
+        
+    
+    
+                marker_2aa40ea0fadf3b4f6b25fa1c9ab85a66.setIcon(icon_2044bb55f0f65424bd73a044ddbb80a2);
+            
+    
+            var marker_5e3c4d03fb57c641744d5af7099c8c56 = L.marker(
+                [-16.023221098308856, -48.069326877594],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_b91a69c88e54b9f8477a1f17e59dda9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9581461aa27aae0b3c5c4d736fbbc1b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_177f887c1f772e2c72013283791c6028 = $(`<div id="html_177f887c1f772e2c72013283791c6028" style="width: 100.0%; height: 100.0%;"><b>HRG</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AREA ESPECIAL, S/N<br><b>CNES:</b> 0010472</div>`)[0];
+                popup_9581461aa27aae0b3c5c4d736fbbc1b7.setContent(html_177f887c1f772e2c72013283791c6028);
+            
+        
+
+        marker_5e3c4d03fb57c641744d5af7099c8c56.bindPopup(popup_9581461aa27aae0b3c5c4d736fbbc1b7)
+        ;
+
+        
+    
+    
+                marker_5e3c4d03fb57c641744d5af7099c8c56.setIcon(icon_b91a69c88e54b9f8477a1f17e59dda9f);
+            
+    
+            var marker_883ca100f9d736aac4c64febe31c50fe = L.marker(
+                [-15.783333, -47.933333],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_96d9b945f3b33b3986c845a78fe1f4e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aea7bc14c5f73a85b42b460dbfa0f7b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d76e329b65ff739b9a40bf37a452e3b = $(`<div id="html_2d76e329b65ff739b9a40bf37a452e3b" style="width: 100.0%; height: 100.0%;"><b>HOSPITAL REGIONAL DO GUARA I</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AREA ESPECIAL QI, 06<br><b>CNES:</b> 2814897</div>`)[0];
+                popup_aea7bc14c5f73a85b42b460dbfa0f7b6.setContent(html_2d76e329b65ff739b9a40bf37a452e3b);
+            
+        
+
+        marker_883ca100f9d736aac4c64febe31c50fe.bindPopup(popup_aea7bc14c5f73a85b42b460dbfa0f7b6)
+        ;
+
+        
+    
+    
+                marker_883ca100f9d736aac4c64febe31c50fe.setIcon(icon_96d9b945f3b33b3986c845a78fe1f4e9);
+            
+    
+            var marker_39207680348f842593f2d24a4f9d82c0 = L.marker(
+                [-15.7857462, -47.8827625],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_0b9bc5ed036f2d6d9b5542f034e82381 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed26fd048b2cac0a64efe85a4d9dcaf3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de44247533fc19724bf3ff4e58f61e5a = $(`<div id="html_de44247533fc19724bf3ff4e58f61e5a" style="width: 100.0%; height: 100.0%;"><b>HRAN</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> SMHN QUADRA, 101<br><b>CNES:</b> 0010464</div>`)[0];
+                popup_ed26fd048b2cac0a64efe85a4d9dcaf3.setContent(html_de44247533fc19724bf3ff4e58f61e5a);
+            
+        
+
+        marker_39207680348f842593f2d24a4f9d82c0.bindPopup(popup_ed26fd048b2cac0a64efe85a4d9dcaf3)
+        ;
+
+        
+    
+    
+                marker_39207680348f842593f2d24a4f9d82c0.setIcon(icon_0b9bc5ed036f2d6d9b5542f034e82381);
+            
+    
+            var marker_173c1a8131cfd5951d4ae2ef95489dec = L.marker(
+                [-15.624917329234314, -47.652747631073],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_f1e931ffc4b210451c3b9c0c55516faf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b04e6ae4c7daee1f1f2e6811b938a701 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d07ec6bf02bdecbdfe27de3d058e792e = $(`<div id="html_d07ec6bf02bdecbdfe27de3d058e792e" style="width: 100.0%; height: 100.0%;"><b>HRPL</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AVENIDA W L 04, S/N<br><b>CNES:</b> 0010529</div>`)[0];
+                popup_b04e6ae4c7daee1f1f2e6811b938a701.setContent(html_d07ec6bf02bdecbdfe27de3d058e792e);
+            
+        
+
+        marker_173c1a8131cfd5951d4ae2ef95489dec.bindPopup(popup_b04e6ae4c7daee1f1f2e6811b938a701)
+        ;
+
+        
+    
+    
+                marker_173c1a8131cfd5951d4ae2ef95489dec.setIcon(icon_f1e931ffc4b210451c3b9c0c55516faf);
+            
+    
+            var marker_b9349b4270f98ea7b7ed2dcfb7639dcd = L.marker(
+                [-15.82247961680422, -48.0692195892334],
+                {
+}
+            ).addTo(marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9);
+        
+    
+            var icon_923086dcf8d922ab5918a1764ddb761c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92a8b78dea64d0ffb98ff6178d4cb362 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_787f69ca99af2b12772e1905e8a0c79f = $(`<div id="html_787f69ca99af2b12772e1905e8a0c79f" style="width: 100.0%; height: 100.0%;"><b>HRT HOSPITAL REGIONAL DE TAGUATINGA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> SETOR C NORTE, 024<br><b>CNES:</b> 0010499</div>`)[0];
+                popup_92a8b78dea64d0ffb98ff6178d4cb362.setContent(html_787f69ca99af2b12772e1905e8a0c79f);
+            
+        
+
+        marker_b9349b4270f98ea7b7ed2dcfb7639dcd.bindPopup(popup_92a8b78dea64d0ffb98ff6178d4cb362)
+        ;
+
+        
+    
+    
+                marker_b9349b4270f98ea7b7ed2dcfb7639dcd.setIcon(icon_923086dcf8d922ab5918a1764ddb761c);
+            
+    
+            marker_cluster_7ec9cb7d21bd702e25d072c182f5e0f9.addTo(map_0f34273a7e7ae0859ad30343382db8e3);
+        
+</script>
+</html>

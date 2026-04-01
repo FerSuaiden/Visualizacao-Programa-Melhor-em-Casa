@@ -7,6 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico?v=20260401" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260401" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png?v=20260401" />
+  <link rel="apple-touch-icon" href="favicon.png?v=20260401" />
+  <link rel="shortcut icon" href="favicon.ico?v=20260401" />
 </head>
 <body>
 
@@ -14,7 +19,7 @@
   <nav class="navbar">
     <a href="index.html" class="logo">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      Melhor Em Casa — Análise
+      Melhor Em Casa
     </a>
     <button class="nav-toggle" aria-label="Menu">&#9776;</button>
     <ul class="nav-links">
@@ -120,14 +125,10 @@
       </div>
 
       <div id="oferta-map-display">
-        <div class="card card-full">
-          <div class="iframe-wrapper" style="padding-bottom:65%;">
-            <iframe src="Outputs%26Codigo/PARTE1/mapas_Equipes_Atencao_Domiciliar_por_estado/mapa_Equipes_Atencao_Domiciliar_SP.html" title="Mapa de Equipes AD em SP" loading="lazy"></iframe>
+        <div class="card card-full oferta-map-card">
+          <div class="iframe-wrapper oferta-map-frame">
+            <iframe src="Outputs%26Codigo/OFERTA/mapas_Equipes_Atencao_Domiciliar_por_estado/mapa_Equipes_Atencao_Domiciliar_SP.html" title="Mapa de equipes de atendimento domiciliar em SP" loading="lazy"></iframe>
             <button class="iframe-expand" title="Expandir">⛶</button>
-          </div>
-          <div class="card-body">
-            <h3>SP: Distribuição Espacial das Equipes</h3>
-            <p>Mapa interativo com clusters automáticos e classificação por composição (EMAD/EMAP) dos estabelecimentos.</p>
           </div>
         </div>
       </div>
@@ -144,7 +145,7 @@
         <p>Quantidade de equipes em cada UF, por tipo.</p>
       </div>
       <div class="card" style="max-width:800px;margin:0 auto;">
-        <img src="Outputs%26Codigo/PARTE1/distribuicao_equipes_por_estado_empilhado.png" alt="Distribuição por estado - empilhado" />
+        <img src="Outputs%26Codigo/OFERTA/distribuicao_equipes_por_estado_empilhado.png" alt="Distribuição por estado - empilhado" />
         <div class="card-body">
           <h3>Equipes por Estado</h3>
           <p>São Paulo (412), Minas Gerais (317) e Bahia (282) concentram as maiores quantidades. As cores diferenciam os quatro tipos de equipe.</p>
@@ -155,23 +156,31 @@
     <!-- Cobertura Municipal -->
     <section class="mt-3">
       <div class="section-header">
-        <h2>Cobertura Municipal por Região</h2>
-        <p>Percentual de municípios atendidos pelo programa em cada região.</p>
+        <h2>Cobertura Municipal e Evolução no Tempo</h2>
+        <p>Leituras complementares da presença da Atenção Domiciliar no Brasil: resumo nacional, comparação entre UFs e evolução histórica por região.</p>
       </div>
       <div class="grid-2">
         <div class="card">
-          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/resumo/cobertura_nacional_donut.png" alt="Cobertura nacional" />
+          <img src="Outputs%26Codigo/CONFORMIDADE/visualizacoes/nacional/resumo/cobertura_nacional_donut.png" alt="Cobertura nacional" />
           <div class="card-body">
             <h3>Cobertura Nacional</h3>
-            <p>Resumo da cobertura municipal do programa no Brasil: 1.218 de 5.570 municípios (21,87%).</p>
+            <p>Panorama nacional da cobertura municipal de atendimento domiciliar: 1.218 dos 5.570 municípios brasileiros possuem ao menos uma equipe ativa (21,87%).</p>
           </div>
         </div>
         <div class="card">
-          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/cobertura_municipal/top15_cobertura_percentual.png" alt="Top 15 UFs por cobertura" />
+          <img src="Outputs%26Codigo/CONFORMIDADE/visualizacoes/nacional/cobertura_municipal/top15_cobertura_percentual.png" alt="Top 15 UFs por cobertura" />
           <div class="card-body">
             <h3>Top 15 UFs por Cobertura</h3>
-            <p>De 16,1% (AM) a 100% (DF), com variação significativa entre estados.</p>
+            <p>Percentual de municípios com atendimento domiciliar em cada UF (municípios com pelo menos uma equipe ativa dividido pelo total de municípios da UF). O gráfico mostra grande variação entre estados.</p>
           </div>
+        </div>
+      </div>
+
+      <div class="card coverage-evolution-card" style="max-width:980px;margin-left:auto;margin-right:auto;">
+        <img src="Outputs%26Codigo/OFERTA/serie_temporal_cobertura/evolucao_cobertura_percentual_por_regiao.png" alt="Evolução da cobertura percentual por região" />
+        <div class="card-body">
+          <h3>Evolução da Cobertura por Região</h3>
+          <p>Série temporal do percentual de municípios com atendimento domiciliar em cada região, mostrando como a cobertura se expandiu ao longo do tempo e onde o crescimento foi mais acelerado.</p>
         </div>
       </div>
 
@@ -206,14 +215,14 @@
       </div>
       <div class="grid-2">
         <div class="card">
-          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/analise_densidade_100k_habitantes/densidade_por_regiao.png" alt="Densidade por região" />
+          <img src="Outputs%26Codigo/CONFORMIDADE/visualizacoes/nacional/analise_densidade_100k_habitantes/densidade_por_regiao.png" alt="Densidade por região" />
           <div class="card-body">
             <h3>Densidade por Região</h3>
             <p>O Nordeste possui 2,02 equipes por 100 mil habitantes, quase o triplo do Sul (0,72).</p>
           </div>
         </div>
         <div class="card">
-          <img src="Outputs%26Codigo/PARTE4/visualizacoes/nacional/analise_densidade_100k_habitantes/top15_taxa_100k_ufs.png" alt="Top 15 UFs por taxa" />
+          <img src="Outputs%26Codigo/CONFORMIDADE/visualizacoes/nacional/analise_densidade_100k_habitantes/top15_taxa_100k_ufs.png" alt="Top 15 UFs por taxa" />
           <div class="card-body">
             <h3>Top 15 UFs por Taxa/100k</h3>
             <p>Ranking das unidades federativas por número de equipes por 100 mil habitantes.</p>
@@ -264,7 +273,8 @@
 
   <footer class="footer">
     <p>Fernando Alee Suaiden · Orientadora: Maristela Oliveira dos Santos · ICMC-USP</p>
-    <p>Projeto Otimização de Rotas de Atenção Domiciliar · <a href="https://github.com/fersuaiden/IC" target="_blank">GitHub</a></p>
+    <p>Projeto Otimização de Rotas de Atenção Domiciliar · <a href="https://github.com/FerSuaiden/Fapesp---Otimiza-o-de-Rotas-Atendimento-Domiciliar" target="_blank">GitHub</a></p>
+    <p>Processo FAPESP 2025/21835-0 · <a href="https://bv.fapesp.br/pt/bolsas/232802/metodos-de-solucao-para-o-agendamento-e-roteamento-de-equipes-para-a-assistencia-domiciliar/" target="_blank">Bolsa FAPESP</a></p>
   </footer>
 
   <!-- Image Viewer -->

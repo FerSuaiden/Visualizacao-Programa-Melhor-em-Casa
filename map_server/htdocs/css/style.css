@@ -265,6 +265,31 @@ a:hover { opacity: .8; }
   grid-column: 1 / -1;
 }
 
+.team-types-card {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.team-types-card img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.coverage-evolution-card {
+  margin-top: 2rem;
+}
+
+.oferta-map-card .iframe-wrapper {
+  margin-bottom: 0;
+}
+
+.iframe-wrapper.oferta-map-frame {
+  padding-bottom: 52%;
+}
+
+
 /* ---------- Tables ---------- */
 .table-wrapper {
   overflow-x: auto;
@@ -391,6 +416,42 @@ main strong {
   background: rgba(0,0,0,.75);
 }
 
+/* Optional legend toggle button for interactive maps */
+.iframe-legend-toggle {
+  position: absolute;
+  top: .6rem;
+  right: 3.4rem;
+  z-index: 10;
+  min-width: 88px;
+  height: 36px;
+  padding: 0 .65rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  font-size: .95rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition), background var(--transition);
+  backdrop-filter: blur(4px);
+}
+
+.iframe-wrapper:hover .iframe-legend-toggle {
+  opacity: 1;
+}
+
+.iframe-legend-toggle:hover {
+  background: rgba(0,0,0,.75);
+}
+
+.iframe-legend-toggle.active {
+  background: rgba(28, 94, 54, .85);
+}
+
 /* Iframe fullscreen mode (CSS modal approach) */
 .iframe-wrapper.iframe-fullscreen {
   position: fixed;
@@ -399,11 +460,29 @@ main strong {
   width: 100vw;
   height: 100vh;
   padding-bottom: 0 !important;
-  overflow: visible !important;
+  overflow: hidden !important;
   border: none;
   border-radius: 0;
   margin: 0;
   box-shadow: none;
+  background: #fff;
+}
+
+.iframe-wrapper:fullscreen,
+.iframe-wrapper:-webkit-full-screen,
+.iframe-wrapper:-ms-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 0 !important;
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  box-shadow: none;
+  background: #fff;
 }
 
 .iframe-wrapper.iframe-fullscreen .iframe-expand {
@@ -416,12 +495,62 @@ main strong {
   background: rgba(0,0,0,.7);
 }
 
+.iframe-wrapper.iframe-fullscreen .iframe-legend-toggle {
+  opacity: 1;
+  top: 1rem;
+  right: 4.1rem;
+  min-width: 106px;
+  height: 42px;
+  font-size: 1rem;
+}
+
+.iframe-wrapper:fullscreen .iframe-expand,
+.iframe-wrapper:-webkit-full-screen .iframe-expand,
+.iframe-wrapper:-ms-fullscreen .iframe-expand {
+  opacity: 1;
+  top: 1rem;
+  right: 1rem;
+  width: 42px;
+  height: 42px;
+  font-size: 1.3rem;
+  background: rgba(0,0,0,.7);
+}
+
+.iframe-wrapper:fullscreen .iframe-legend-toggle,
+.iframe-wrapper:-webkit-full-screen .iframe-legend-toggle,
+.iframe-wrapper:-ms-fullscreen .iframe-legend-toggle {
+  opacity: 1;
+  top: 1rem;
+  right: 4.1rem;
+  min-width: 106px;
+  height: 42px;
+  font-size: 1rem;
+}
+
 .iframe-wrapper.iframe-fullscreen iframe {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw !important;
+  min-width: 100vw;
+  max-width: none;
+  height: 100dvh !important;
+  min-height: 100vh;
+  max-height: none;
+}
+
+.iframe-wrapper:fullscreen iframe,
+.iframe-wrapper:-webkit-full-screen iframe,
+.iframe-wrapper:-ms-fullscreen iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  min-width: 100vw;
+  max-width: none;
+  height: 100dvh !important;
+  min-height: 100vh;
+  max-height: none;
 }
 
 /* ---------- Lightbox / Image Viewer ---------- */
@@ -612,6 +741,10 @@ main strong {
   .kpi-row {
     grid-template-columns: repeat(2, 1fr);
     margin-top: -1.5rem;
+  }
+
+  .iframe-wrapper.oferta-map-frame {
+    padding-bottom: 68%;
   }
 }
 

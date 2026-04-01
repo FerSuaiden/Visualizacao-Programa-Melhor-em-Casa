@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6d8cb9e373a22baf474c71b34eb1b8e3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <div style="position: fixed;
+                bottom: 50px; left: 50px; width: 420px; height: auto;
+                border:2px solid grey; z-index:9999; font-size:14px;
+                background-color:white; opacity: .92; padding: 14px;
+                line-height: 1.6;
+                ">
+                <b style="font-size:16px;">Legenda - Programa Melhor em Casa (AP)</b><br><br>
+                <i class="fa fa-map-marker fa-2x" style="color:purple"></i>&nbsp; <b>Atendimento + Apoio</b> (EMAD + EMAP)<br>
+                <i class="fa fa-map-marker fa-2x" style="color:blue"></i>&nbsp; <b>Apenas EMAD</b> (Equipe de Atendimento)<br>
+                <i class="fa fa-map-marker fa-2x" style="color:green"></i>&nbsp; <b>Apenas EMAP</b> (Equipe de Apoio)<br>
+                <hr style="margin: 10px 0;">
+                <span style="line-height: 1.7; font-size: 13px;">
+                <b>EMAD I/II:</b> Equipe Multiprofissional de Atenção Domiciliar<br>
+                <b>EMAP:</b> Equipe Multiprofissional de Apoio<br>
+                <b>EMAP-R:</b> Equipe Multiprofissional de Apoio para Reabilitação
+                </span>
+    </div>
+    
+    
+            <div class="folium-map" id="map_6d8cb9e373a22baf474c71b34eb1b8e3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6d8cb9e373a22baf474c71b34eb1b8e3 = L.map(
+                "map_6d8cb9e373a22baf474c71b34eb1b8e3",
+                {
+                    center: [0.0304871996428473, -51.09996901848272],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_26b342cba16084fe8082baac7b231994 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_26b342cba16084fe8082baac7b231994.addTo(map_6d8cb9e373a22baf474c71b34eb1b8e3);
+        
+    
+            var marker_cluster_5d5b9381c93cc6b25b674c8631f6c111 = L.markerClusterGroup(
+                {
+  "disableClusteringAtZoom": 17,
+  "maxClusterRadius": 40,
+}
+            );
+        
+    
+            var marker_76be1bb48ed741f933ca8e069a1b6a30 = L.marker(
+                [0.031587, -51.0822442],
+                {
+}
+            ).addTo(marker_cluster_5d5b9381c93cc6b25b674c8631f6c111);
+        
+    
+            var icon_aeb1d6398269ae36e8430e34ab8118ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_505aaa2a2ffc2856de1faf26349bdd77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_490ec8831b16dac73ff30cc2d323f47c = $(`<div id="html_490ec8831b16dac73ff30cc2d323f47c" style="width: 100.0%; height: 100.0%;"><b>PMM U B S CONCEICAO ROSA MOITA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AVENIDA RAIMUNDO PEQUILO GOES DE ALMEIDA, 0294<br><b>CNES:</b> 2021366</div>`)[0];
+                popup_505aaa2a2ffc2856de1faf26349bdd77.setContent(html_490ec8831b16dac73ff30cc2d323f47c);
+            
+        
+
+        marker_76be1bb48ed741f933ca8e069a1b6a30.bindPopup(popup_505aaa2a2ffc2856de1faf26349bdd77)
+        ;
+
+        
+    
+    
+                marker_76be1bb48ed741f933ca8e069a1b6a30.setIcon(icon_aeb1d6398269ae36e8430e34ab8118ca);
+            
+    
+            var marker_a4b270c92ac1285f5352565fbb87ff13 = L.marker(
+                [-0.0290966021429162, -51.1765319108963],
+                {
+}
+            ).addTo(marker_cluster_5d5b9381c93cc6b25b674c8631f6c111);
+        
+    
+            var icon_88fbb7dc2c7236426b321652023e674e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08691bc0bd953b0422ebd381c4f77f87 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41b64d03e885be4dc7adf8193602eb83 = $(`<div id="html_41b64d03e885be4dc7adf8193602eb83" style="width: 100.0%; height: 100.0%;"><b>PM STN POLICLINICA MARIA TADEU AGUIAR</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> PRESIDENTE JUSCELINO KUBITSCHEK DE OLIVEIRA, 529<br><b>CNES:</b> 2020963</div>`)[0];
+                popup_08691bc0bd953b0422ebd381c4f77f87.setContent(html_41b64d03e885be4dc7adf8193602eb83);
+            
+        
+
+        marker_a4b270c92ac1285f5352565fbb87ff13.bindPopup(popup_08691bc0bd953b0422ebd381c4f77f87)
+        ;
+
+        
+    
+    
+                marker_a4b270c92ac1285f5352565fbb87ff13.setIcon(icon_88fbb7dc2c7236426b321652023e674e);
+            
+    
+            var marker_c1183f9cf52665c272161a4383319847 = L.marker(
+                [0.008569, -51.0984823],
+                {
+}
+            ).addTo(marker_cluster_5d5b9381c93cc6b25b674c8631f6c111);
+        
+    
+            var icon_2053bdcd4252d81ca528966469e6a31b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29059d7c64fd3c9ac16d9c4039de1edf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad5595f3a64ade08e06a6809d81d26f7 = $(`<div id="html_ad5595f3a64ade08e06a6809d81d26f7" style="width: 100.0%; height: 100.0%;"><b>PMM U B S CONGOS</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA BENEDITO LINO DO CARMO, 1648<br><b>CNES:</b> 2021358</div>`)[0];
+                popup_29059d7c64fd3c9ac16d9c4039de1edf.setContent(html_ad5595f3a64ade08e06a6809d81d26f7);
+            
+        
+
+        marker_c1183f9cf52665c272161a4383319847.bindPopup(popup_29059d7c64fd3c9ac16d9c4039de1edf)
+        ;
+
+        
+    
+    
+                marker_c1183f9cf52665c272161a4383319847.setIcon(icon_2053bdcd4252d81ca528966469e6a31b);
+            
+    
+            var marker_ef80f7b5b930397490936caacdb92bd2 = L.marker(
+                [0.0445527, -51.1295901],
+                {
+}
+            ).addTo(marker_cluster_5d5b9381c93cc6b25b674c8631f6c111);
+        
+    
+            var icon_9e17c3f77ee89643006dc3fb048364be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_491143c1cd9d4bf329c46acaa7be14c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c302d10fb38de265aa66dcfa7230c0d3 = $(`<div id="html_c302d10fb38de265aa66dcfa7230c0d3" style="width: 100.0%; height: 100.0%;"><b>PMM U B S MARABAIXO</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA QUATRO, S/N<br><b>CNES:</b> 6585604</div>`)[0];
+                popup_491143c1cd9d4bf329c46acaa7be14c1.setContent(html_c302d10fb38de265aa66dcfa7230c0d3);
+            
+        
+
+        marker_ef80f7b5b930397490936caacdb92bd2.bindPopup(popup_491143c1cd9d4bf329c46acaa7be14c1)
+        ;
+
+        
+    
+    
+                marker_ef80f7b5b930397490936caacdb92bd2.setIcon(icon_9e17c3f77ee89643006dc3fb048364be);
+            
+    
+            var marker_8af6ae67c57ad657b64fdc4df7429934 = L.marker(
+                [0.0448956, -51.0487568],
+                {
+}
+            ).addTo(marker_cluster_5d5b9381c93cc6b25b674c8631f6c111);
+        
+    
+            var icon_ec9a5c5114a19e992b42397eb6065791 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5e15dafa72e06f56471e516db7290d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_603690b05e454833e3ccf2dc1cdb93b9 = $(`<div id="html_603690b05e454833e3ccf2dc1cdb93b9" style="width: 100.0%; height: 100.0%;"><b>PMM U B S PERPETUO SOCORRO</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA RIO XINGU, 01<br><b>CNES:</b> 9421955</div>`)[0];
+                popup_c5e15dafa72e06f56471e516db7290d8.setContent(html_603690b05e454833e3ccf2dc1cdb93b9);
+            
+        
+
+        marker_8af6ae67c57ad657b64fdc4df7429934.bindPopup(popup_c5e15dafa72e06f56471e516db7290d8)
+        ;
+
+        
+    
+    
+                marker_8af6ae67c57ad657b64fdc4df7429934.setIcon(icon_ec9a5c5114a19e992b42397eb6065791);
+            
+    
+            var marker_490ac83e2b849bed1be372550810a157 = L.marker(
+                [0.0824155, -51.0642088],
+                {
+}
+            ).addTo(marker_cluster_5d5b9381c93cc6b25b674c8631f6c111);
+        
+    
+            var icon_2ece072784df2266877128e7cc8a7e0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a21997eee42ab830566f3bc310dc48d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a47ec5dde02803d200e80d483847ce15 = $(`<div id="html_a47ec5dde02803d200e80d483847ce15" style="width: 100.0%; height: 100.0%;"><b>PMM U B S DR MARCELO CANDIA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> VEREADOR JULIO MARIA PINTO PEREIRA, 1329<br><b>CNES:</b> 2020599</div>`)[0];
+                popup_6a21997eee42ab830566f3bc310dc48d.setContent(html_a47ec5dde02803d200e80d483847ce15);
+            
+        
+
+        marker_490ac83e2b849bed1be372550810a157.bindPopup(popup_6a21997eee42ab830566f3bc310dc48d)
+        ;
+
+        
+    
+    
+                marker_490ac83e2b849bed1be372550810a157.setIcon(icon_2ece072784df2266877128e7cc8a7e0c);
+            
+    
+            marker_cluster_5d5b9381c93cc6b25b674c8631f6c111.addTo(map_6d8cb9e373a22baf474c71b34eb1b8e3);
+        
+</script>
+</html>

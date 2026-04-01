@@ -1,0 +1,2665 @@
+SEQ_EQUIPE;UF;REGIAO;TIPO;CONFORME
+2261502;PB;Nordeste;EMAP;False
+2286904;MG;Sudeste;EMAD I;False
+2286912;MG;Sudeste;EMAP;True
+2286890;AM;Norte;EMAP;True
+2492946;RO;Norte;EMAP;True
+1527339;SP;Sudeste;EMAD I;False
+1562436;GO;Centro-Oeste;EMAD II;True
+1562444;GO;Centro-Oeste;EMAP;True
+1522981;PI;Nordeste;EMAD II;True
+1523074;PI;Nordeste;EMAP;True
+367907;SP;Sudeste;EMAP;True
+1707086;CE;Nordeste;EMAD I;False
+1711733;CE;Nordeste;EMAP;True
+1643428;BA;Nordeste;EMAD I;True
+1698311;GO;Centro-Oeste;EMAP;True
+1564536;MG;Sudeste;EMAD II;True
+1548344;MG;Sudeste;EMAP;True
+1672533;PA;Norte;EMAD I;False
+1697595;SP;Sudeste;EMAD I;False
+1548646;CE;Nordeste;EMAD II;True
+2192500;SP;Sudeste;EMAD I;True
+2192594;SP;Sudeste;EMAP;True
+277231;MG;Sudeste;EMAP;True
+210137;BA;Nordeste;EMAD I;False
+1674560;PB;Nordeste;EMAP;True
+1674552;PB;Nordeste;EMAD I;True
+1677489;RN;Nordeste;EMAD II;True
+1616161;SP;Sudeste;EMAD II;True
+1480162;CE;Nordeste;EMAD I;True
+1521705;PE;Nordeste;EMAD I;False
+1616676;GO;Centro-Oeste;EMAP;False
+1616668;GO;Centro-Oeste;EMAD I;False
+1589326;PA;Norte;EMAD I;False
+1541544;MG;Sudeste;EMAD II;False
+1541552;MG;Sudeste;EMAP;False
+454710;GO;Centro-Oeste;EMAD I;True
+454745;GO;Centro-Oeste;EMAD I;False
+454737;GO;Centro-Oeste;EMAD I;False
+454729;GO;Centro-Oeste;EMAP;True
+2156202;SP;Sudeste;EMAD I;False
+189901;BA;Nordeste;EMAD I;True
+189898;BA;Nordeste;EMAP;True
+2153939;MA;Nordeste;EMAP;False
+1511378;RN;Nordeste;EMAD I;True
+109223;RN;Nordeste;EMAP;True
+1685732;CE;Nordeste;EMAD II;True
+1697641;CE;Nordeste;EMAD II;True
+1697668;CE;Nordeste;EMAP;True
+2058855;ES;Sudeste;EMAP;True
+1656678;MG;Sudeste;EMAP;True
+1517139;GO;Centro-Oeste;EMAD I;False
+1517120;GO;Centro-Oeste;EMAP;True
+1696076;BA;Nordeste;EMAD I;True
+1618083;SE;Nordeste;EMAP;True
+1618075;SE;Nordeste;EMAD I;True
+349127;SP;Sudeste;EMAD I;True
+349119;SP;Sudeste;EMAP;True
+1705016;PB;Nordeste;EMAD I;True
+1705040;PB;Nordeste;EMAP;True
+1671774;RJ;Sudeste;EMAD I;False
+1671782;RJ;Sudeste;EMAD I;True
+1672150;RJ;Sudeste;EMAD I;True
+2255766;SP;Sudeste;EMAD I;True
+2255758;SP;Sudeste;EMAP;True
+2255847;PI;Nordeste;EMAD II;True
+1485865;SP;Sudeste;EMAD I;False
+2255855;PI;Nordeste;EMAP;True
+2247941;MG;Sudeste;EMAD I;True
+1712144;CE;Nordeste;EMAD I;False
+1698656;BA;Nordeste;EMAD II;False
+1698664;BA;Nordeste;EMAP;True
+1589768;BA;Nordeste;EMAD I;True
+1512676;TO;Norte;EMAD I;True
+1504444;AL;Nordeste;EMAD I;False
+1504452;AL;Nordeste;EMAP;True
+1535331;GO;Centro-Oeste;EMAD II;False
+1616072;SP;Sudeste;EMAD I;True
+1616129;SP;Sudeste;EMAP;True
+1477455;SP;Sudeste;EMAD I;True
+1477463;SP;Sudeste;EMAP;True
+1606271;SP;Sudeste;EMAD I;False
+382736;PR;Sul;EMAD I;False
+473456;PR;Sul;EMAP;True
+1709674;PR;Sul;EMAD I;True
+473480;PR;Sul;EMAD I;False
+2198215;PA;Norte;EMAD I;True
+2184028;PA;Norte;EMAP;True
+1675354;AL;Nordeste;EMAD II;True
+1704575;AL;Nordeste;EMAP;True
+2129760;MS;Centro-Oeste;EMAD II;False
+1543334;PE;Nordeste;EMAD II;False
+1543342;PE;Nordeste;EMAP;True
+2491052;PI;Nordeste;EMAP-R;False
+2489317;PB;Nordeste;EMAP-R;False
+2287587;CE;Nordeste;EMAP;False
+1677144;PB;Nordeste;EMAD II;True
+1677152;PB;Nordeste;EMAP;True
+1614878;AM;Norte;EMAD I;True
+1503804;GO;Centro-Oeste;EMAD II;True
+1503790;GO;Centro-Oeste;EMAP;True
+2230518;PA;Norte;EMAD I;False
+2230623;PA;Norte;EMAP;True
+2241498;PR;Sul;EMAD II;True
+2241501;PR;Sul;EMAP;True
+2240548;BA;Nordeste;EMAD I;False
+2244527;SE;Nordeste;EMAP;True
+2244535;SE;Nordeste;EMAD II;True
+2244101;BA;Nordeste;EMAD II;True
+2244047;BA;Nordeste;EMAP;True
+2152401;MS;Centro-Oeste;EMAD I;False
+2236133;RS;Sul;EMAD I;True
+2166585;GO;Centro-Oeste;EMAD II;True
+1619934;SP;Sudeste;EMAD I;False
+140031;PE;Nordeste;EMAP;True
+1509276;SP;Sudeste;EMAD I;False
+1526243;PR;Sul;EMAD I;False
+1536141;PR;Sul;EMAP;True
+1657089;GO;Centro-Oeste;EMAD I;True
+334839;SP;Sudeste;EMAD I;False
+334847;SP;Sudeste;EMAP;True
+1524364;AM;Norte;EMAP;True
+1524372;AM;Norte;EMAD I;True
+1696505;PA;Norte;EMAP;True
+1571400;SP;Sudeste;EMAD II;True
+1708511;PE;Nordeste;EMAD I;True
+1657097;GO;Centro-Oeste;EMAD I;True
+1657100;GO;Centro-Oeste;EMAP;True
+2178915;SP;Sudeste;EMAD I;False
+2495120;PI;Nordeste;EMAP-R;True
+2508184;PB;Nordeste;EMAP-R;True
+2531666;PR;Sul;EMAD II;False
+2531674;PR;Sul;EMAP;False
+2536374;PI;Nordeste;EMAP-R;True
+2528533;SP;Sudeste;EMAD II;True
+2534746;MG;Sudeste;EMAD II;True
+2534754;MG;Sudeste;EMAP;True
+2528878;AL;Nordeste;EMAP-R;True
+2524732;BA;Nordeste;EMAP-R;False
+2524678;PB;Nordeste;EMAP-R;True
+2525879;MA;Nordeste;EMAD I;True
+2527499;MA;Nordeste;EMAP;True
+1711113;SP;Sudeste;EMAP;True
+1711105;SP;Sudeste;EMAD I;True
+2494035;RJ;Sudeste;EMAP-R;True
+2451824;MG;Sudeste;EMAP;True
+2505010;MA;Nordeste;EMAP;True
+2510375;RN;Nordeste;EMAP;True
+2520400;SE;Nordeste;EMAP-R;True
+2522470;MA;Nordeste;EMAD I;True
+2500078;PB;Nordeste;EMAP-R;False
+2469413;CE;Nordeste;EMAD II;False
+2418614;AM;Norte;EMAD I;True
+2418622;AM;Norte;EMAD I;True
+469556;DF;Centro-Oeste;EMAD I;False
+2526263;RR;Norte;EMAD I;False
+2526522;PE;Nordeste;EMAD II;True
+2504464;SP;Sudeste;EMAP;True
+2512688;PB;Nordeste;EMAP-R;True
+2522691;RS;Sul;EMAD I;True
+2330806;CE;Nordeste;EMAD II;True
+2330822;CE;Nordeste;EMAP;False
+2485907;PI;Nordeste;EMAP-R;False
+1671618;AL;Nordeste;EMAD II;True
+1549855;SP;Sudeste;EMAD I;False
+2462877;MT;Centro-Oeste;EMAP;True
+2523841;PA;Norte;EMAD I;True
+2523868;PA;Norte;EMAP;True
+2507889;RJ;Sudeste;EMAD II;True
+224642;MG;Sudeste;EMAD I;False
+2487705;PI;Nordeste;EMAP-R;False
+2513218;MA;Nordeste;EMAD I;True
+2538938;CE;Nordeste;EMAP-R;False
+1715992;PA;Norte;EMAD I;False
+1716018;PA;Norte;EMAP;True
+2316358;PA;Norte;EMAD I;False
+2457512;BA;Nordeste;EMAD II;True
+2246600;MG;Sudeste;EMAD II;True
+2499959;PI;Nordeste;EMAP-R;True
+2492121;PB;Nordeste;EMAP-R;True
+2445964;AM;Norte;EMAD I;True
+2487969;PI;Nordeste;EMAP-R;True
+2488418;BA;Nordeste;EMAD II;True
+2488426;BA;Nordeste;EMAP;False
+2513269;PA;Norte;EMAP-R;True
+1487582;GO;Centro-Oeste;EMAP;True
+1487590;GO;Centro-Oeste;EMAD I;False
+2529386;MG;Sudeste;EMAP-R;True
+2500019;PB;Nordeste;EMAP-R;True
+2536188;AL;Nordeste;EMAP-R;True
+2519356;BA;Nordeste;EMAD I;False
+2519364;BA;Nordeste;EMAP;True
+2510340;PB;Nordeste;EMAP-R;True
+2533618;BA;Nordeste;EMAP;False
+2528525;SC;Sul;EMAD II;True
+2520656;CE;Nordeste;EMAD I;True
+2534924;CE;Nordeste;EMAP;True
+2510995;PB;Nordeste;EMAP;True
+2504480;PR;Sul;EMAP-R;True
+2518023;MG;Sudeste;EMAD II;False
+2520958;BA;Nordeste;EMAP-R;True
+2535610;BA;Nordeste;EMAP-R;True
+2537400;MG;Sudeste;EMAP-R;True
+2536471;SC;Sul;EMAD II;True
+2539527;SP;Sudeste;EMAP;True
+1626701;SE;Nordeste;EMAD I;True
+1627244;SE;Nordeste;EMAP;True
+1675974;SE;Nordeste;EMAD I;True
+2491281;BA;Nordeste;EMAP-R;False
+2130955;AP;Norte;EMAD I;True
+2435845;BA;Nordeste;EMAD I;True
+2537737;SP;Sudeste;EMAP-R;True
+2519704;RR;Norte;EMAD I;False
+2528509;MG;Sudeste;EMAP-R;True
+2539500;PB;Nordeste;EMAP;False
+2526166;MG;Sudeste;EMAP-R;True
+2524805;PB;Nordeste;EMAP;False
+2524147;PB;Nordeste;EMAP-R;True
+2524716;AL;Nordeste;EMAP-R;False
+2541165;MG;Sudeste;EMAP-R;False
+2532409;PE;Nordeste;EMAD II;False
+2534444;SE;Nordeste;EMAD II;True
+2534460;SE;Nordeste;EMAP;True
+2534916;SP;Sudeste;EMAP-R;True
+2487160;MG;Sudeste;EMAP-R;False
+2509970;MA;Nordeste;EMAP-R;True
+2541025;MG;Sudeste;EMAP-R;True
+2445638;GO;Centro-Oeste;EMAP;True
+2449951;BA;Nordeste;EMAD I;True
+2454289;BA;Nordeste;EMAD I;True
+1595954;SP;Sudeste;EMAD I;False
+1524054;SP;Sudeste;EMAD I;False
+1477412;RO;Norte;EMAD I;False
+2477718;BA;Nordeste;EMAP;False
+2477696;BA;Nordeste;EMAD I;False
+2497867;RS;Sul;EMAD I;True
+2497875;RS;Sul;EMAP;True
+2516373;GO;Centro-Oeste;EMAP-R;True
+2535394;PI;Nordeste;EMAP-R;True
+2536056;RO;Norte;EMAP;False
+230049;MG;Sudeste;EMAD I;False
+2140330;SE;Nordeste;EMAD I;True
+2510782;CE;Nordeste;EMAD II;True
+1646478;RJ;Sudeste;EMAD I;False
+1709291;RJ;Sudeste;EMAD I;True
+2532697;BA;Nordeste;EMAP-R;True
+2433745;PB;Nordeste;EMAD II;True
+2433753;PB;Nordeste;EMAP;False
+323667;SP;Sudeste;EMAD I;True
+2485176;PI;Nordeste;EMAP-R;True
+1618857;BA;Nordeste;EMAD II;True
+2493322;MG;Sudeste;EMAP-R;True
+2485060;MA;Nordeste;EMAP-R;True
+2496496;CE;Nordeste;EMAP-R;False
+2491761;MA;Nordeste;EMAD I;True
+2528169;PI;Nordeste;EMAP-R;False
+2520990;BA;Nordeste;EMAP-R;False
+2500752;PI;Nordeste;EMAP-R;True
+2521830;PA;Norte;EMAD I;True
+2540770;PI;Nordeste;EMAP-R;True
+2531127;RN;Nordeste;EMAD II;True
+2244357;MG;Sudeste;EMAD II;True
+2338483;PE;Nordeste;EMAP;True
+2338548;PE;Nordeste;EMAD II;False
+2541211;SP;Sudeste;EMAP-R;False
+2505517;PI;Nordeste;EMAP-R;True
+2508672;PB;Nordeste;EMAP-R;False
+2438984;BA;Nordeste;EMAP;False
+2510480;RJ;Sudeste;EMAD II;True
+2492679;MG;Sudeste;EMAP-R;False
+2500337;PI;Nordeste;EMAP-R;True
+2524309;PR;Sul;EMAD I;False
+2525348;PB;Nordeste;EMAP-R;True
+2332442;RJ;Sudeste;EMAD I;False
+2534894;MG;Sudeste;EMAP-R;False
+1619241;CE;Nordeste;EMAD I;False
+1619268;CE;Nordeste;EMAP;True
+2487381;RS;Sul;EMAP-R;False
+2526921;BA;Nordeste;EMAP-R;False
+2327384;BA;Nordeste;EMAD II;True
+2327392;BA;Nordeste;EMAP;True
+2377756;CE;Nordeste;EMAD I;False
+2501449;PA;Norte;EMAD II;True
+2501457;PA;Norte;EMAP;True
+2510561;PB;Nordeste;EMAP-R;True
+2513242;PB;Nordeste;EMAP-R;True
+2515539;MG;Sudeste;EMAP-R;True
+2476991;CE;Nordeste;EMAD I;False
+2510170;MG;Sudeste;EMAP-R;True
+1597078;SP;Sudeste;EMAD I;False
+1597094;SP;Sudeste;EMAD I;False
+428973;RS;Sul;EMAD I;False
+1524992;CE;Nordeste;EMAD I;False
+1525026;CE;Nordeste;EMAP;True
+2516497;PB;Nordeste;EMAP-R;True
+2513714;GO;Centro-Oeste;EMAD I;True
+2516764;MG;Sudeste;EMAD I;False
+2333864;SP;Sudeste;EMAD I;False
+2503689;CE;Nordeste;EMAD II;False
+2514516;BA;Nordeste;EMAD I;True
+2514524;BA;Nordeste;EMAP;False
+2517779;PR;Sul;EMAP-R;True
+2489864;MG;Sudeste;EMAP-R;False
+2489791;MG;Sudeste;EMAD II;True
+2207370;PA;Norte;EMAP;True
+2522535;MG;Sudeste;EMAP-R;True
+1530372;PI;Nordeste;EMAD I;True
+1539930;PI;Nordeste;EMAP;True
+2402955;MG;Sudeste;EMAD II;True
+2402963;MG;Sudeste;EMAP;True
+2516438;MG;Sudeste;EMAP;False
+1515780;MT;Centro-Oeste;EMAD I;True
+1515837;MT;Centro-Oeste;EMAP;True
+2521733;GO;Centro-Oeste;EMAD II;True
+2530767;RJ;Sudeste;EMAD I;False
+2518325;AM;Norte;EMAD I;False
+2426080;PA;Norte;EMAD II;True
+2426102;PA;Norte;EMAP;True
+2505037;MA;Nordeste;EMAP;True
+2508001;PB;Nordeste;EMAP-R;True
+152803;PE;Nordeste;EMAP;True
+2533375;SP;Sudeste;EMAP-R;True
+2522322;PB;Nordeste;EMAP-R;True
+2524872;MG;Sudeste;EMAP-R;True
+2526050;PB;Nordeste;EMAP-R;True
+2523949;SP;Sudeste;EMAP-R;True
+2511878;MG;Sudeste;EMAP-R;False
+2500264;MA;Nordeste;EMAD I;True
+471461;DF;Centro-Oeste;EMAD I;True
+2500256;MA;Nordeste;EMAD I;True
+2487861;RS;Sul;EMAD I;True
+2489090;CE;Nordeste;EMAP;True
+2524287;PB;Nordeste;EMAP-R;True
+2530953;MG;Sudeste;EMAP;False
+1475894;SP;Sudeste;EMAD I;False
+2522810;MG;Sudeste;EMAD II;False
+2522829;MG;Sudeste;EMAP;False
+2440792;RJ;Sudeste;EMAP;True
+1700693;CE;Nordeste;EMAD I;False
+2526654;MG;Sudeste;EMAP-R;False
+2536617;SP;Sudeste;EMAD I;True
+1591207;SP;Sudeste;EMAD I;True
+2451174;BA;Nordeste;EMAD II;False
+2525593;AM;Norte;EMAD II;True
+2524945;MG;Sudeste;EMAP-R;True
+2540444;PB;Nordeste;EMAP-R;False
+2524333;SC;Sul;EMAD I;True
+2524368;SC;Sul;EMAP;True
+2216299;MT;Centro-Oeste;EMAP;True
+2524988;BA;Nordeste;EMAP-R;True
+2518562;MA;Nordeste;EMAP;True
+2395975;PR;Sul;EMAP;True
+2538385;SP;Sudeste;EMAD I;True
+2253402;SP;Sudeste;EMAD I;False
+2533081;RJ;Sudeste;EMAD I;False
+2525461;PB;Nordeste;EMAP-R;False
+2533073;MG;Sudeste;EMAP-R;True
+1525727;RS;Sul;EMAD I;False
+2525488;PB;Nordeste;EMAP-R;True
+2527669;CE;Nordeste;EMAD II;True
+2527677;CE;Nordeste;EMAP;True
+2531801;PB;Nordeste;EMAP-R;False
+2533901;SP;Sudeste;EMAP-R;False
+2528193;PI;Nordeste;EMAP-R;True
+2511967;PB;Nordeste;EMAP-R;False
+2528711;AL;Nordeste;EMAD I;False
+2529076;PA;Norte;EMAD I;False
+2540673;PR;Sul;EMAP-R;True
+2250217;SP;Sudeste;EMAD II;True
+2530449;RN;Nordeste;EMAP-R;False
+2536145;BA;Nordeste;EMAP-R;True
+2526778;MG;Sudeste;EMAP-R;True
+2540061;MA;Nordeste;EMAP-R;True
+2225425;BA;Nordeste;EMAD II;True
+2525585;PB;Nordeste;EMAP-R;True
+2531755;SP;Sudeste;EMAP-R;True
+2536994;SP;Sudeste;EMAP-R;False
+2525828;SP;Sudeste;EMAP-R;True
+2533545;RO;Norte;EMAD II;True
+2536986;SP;Sudeste;EMAD II;False
+1709755;RJ;Sudeste;EMAP;True
+2534762;SE;Nordeste;EMAP-R;False
+2520370;MG;Sudeste;EMAP-R;True
+2510715;PB;Nordeste;EMAP-R;False
+1566334;AL;Nordeste;EMAD II;True
+1566326;AL;Nordeste;EMAP;True
+1584413;DF;Centro-Oeste;EMAD I;True
+1526138;MA;Nordeste;EMAP;True
+1526111;MA;Nordeste;EMAD I;True
+184748;BA;Nordeste;EMAD I;True
+1707388;BA;Nordeste;EMAP;True
+1707361;BA;Nordeste;EMAD I;False
+1567888;MT;Centro-Oeste;EMAD II;True
+383171;PR;Sul;EMAD I;False
+383317;PR;Sul;EMAD I;False
+1637738;RO;Norte;EMAD I;False
+2292386;GO;Centro-Oeste;EMAD II;True
+2244217;PB;Nordeste;EMAD II;False
+2167956;MG;Sudeste;EMAD II;True
+2513781;PA;Norte;EMAD II;True
+2513803;PA;Norte;EMAP;True
+1555537;MA;Nordeste;EMAD I;True
+2228580;RS;Sul;EMAD II;True
+1585878;MA;Nordeste;EMAD I;True
+1577298;MA;Nordeste;EMAP;True
+1689606;MS;Centro-Oeste;EMAD I;True
+1485199;AL;Nordeste;EMAD I;True
+2251604;BA;Nordeste;EMAP;True
+275565;MG;Sudeste;EMAD I;True
+1511769;SP;Sudeste;EMAD I;False
+1638785;CE;Nordeste;EMAD I;True
+1652214;CE;Nordeste;EMAP;True
+1484761;MG;Sudeste;EMAD I;True
+1484788;MG;Sudeste;EMAP;True
+1517694;PI;Nordeste;EMAD II;True
+1517821;PI;Nordeste;EMAP;True
+1498339;PI;Nordeste;EMAP;True
+1601466;CE;Nordeste;EMAD II;True
+2491737;MG;Sudeste;EMAP-R;False
+1552139;MG;Sudeste;EMAP;True
+276375;MG;Sudeste;EMAP;True
+1483870;SP;Sudeste;EMAD I;False
+1480170;RJ;Sudeste;EMAP;True
+1480189;RJ;Sudeste;EMAD I;False
+2493659;PB;Nordeste;EMAP-R;False
+1656643;MG;Sudeste;EMAD I;False
+1620193;CE;Nordeste;EMAD I;False
+1620290;CE;Nordeste;EMAP;True
+50687;MA;Nordeste;EMAD I;True
+1619829;RJ;Sudeste;EMAD I;False
+1619845;RJ;Sudeste;EMAP;True
+2248735;PE;Nordeste;EMAD II;False
+1510347;SC;Sul;EMAD I;True
+1651188;MS;Centro-Oeste;EMAD I;True
+1682571;GO;Centro-Oeste;EMAD II;True
+1682598;GO;Centro-Oeste;EMAP;True
+470899;DF;Centro-Oeste;EMAD I;True
+1696742;PB;Nordeste;EMAP;True
+1696734;PB;Nordeste;EMAD II;True
+2207354;SE;Nordeste;EMAP;True
+2220059;MG;Sudeste;EMAP;True
+1682148;RJ;Sudeste;EMAD I;True
+1565257;BA;Nordeste;EMAD II;True
+1709453;MG;Sudeste;EMAD I;True
+1701533;RS;Sul;EMAD II;True
+1698672;BA;Nordeste;EMAD I;True
+1698680;BA;Nordeste;EMAP;True
+1709224;MG;Sudeste;EMAD II;True
+1579843;MG;Sudeste;EMAP;True
+1486039;SP;Sudeste;EMAD I;True
+2263041;BA;Nordeste;EMAD II;True
+1646788;PA;Norte;EMAD I;False
+1646842;PA;Norte;EMAP;True
+1589849;MG;Sudeste;EMAD I;True
+1676245;MG;Sudeste;EMAD I;True
+1676261;MG;Sudeste;EMAP;True
+240133;MG;Sudeste;EMAD I;True
+240125;MG;Sudeste;EMAD I;True
+2113147;RS;Sul;EMAD I;True
+1709852;MG;Sudeste;EMAP;False
+1706772;BA;Nordeste;EMAD II;True
+1706780;BA;Nordeste;EMAP;True
+1710117;RJ;Sudeste;EMAD II;True
+5649;AC;Norte;EMAD I;True
+1710125;RJ;Sudeste;EMAP;True
+1465465;RN;Nordeste;EMAD I;False
+113751;RN;Nordeste;EMAD I;False
+113778;RN;Nordeste;EMAP;True
+1682776;GO;Centro-Oeste;EMAD II;True
+1682784;GO;Centro-Oeste;EMAP;True
+1527789;MG;Sudeste;EMAD I;True
+1676253;MG;Sudeste;EMAP;True
+2275899;SP;Sudeste;EMAD I;False
+2294850;PE;Nordeste;EMAD I;False
+2294869;PE;Nordeste;EMAD II;True
+2294877;PE;Nordeste;EMAP;True
+1540505;PA;Norte;EMAD II;True
+1695983;BA;Nordeste;EMAD II;False
+1540513;PA;Norte;EMAP;True
+1696009;BA;Nordeste;EMAP;False
+2282151;CE;Nordeste;EMAD II;True
+2282178;CE;Nordeste;EMAP;False
+1624121;PB;Nordeste;EMAD I;False
+1624148;PB;Nordeste;EMAP;True
+2229323;RJ;Sudeste;EMAP;True
+308374;RJ;Sudeste;EMAD I;False
+2244438;GO;Centro-Oeste;EMAD II;False
+2241420;GO;Centro-Oeste;EMAP;True
+2257491;CE;Nordeste;EMAP;False
+1683896;GO;Centro-Oeste;EMAD II;True
+1683918;GO;Centro-Oeste;EMAP;False
+2244748;SC;Sul;EMAD I;False
+2229609;CE;Nordeste;EMAD I;False
+1681184;SC;Sul;EMAP;True
+1603051;SP;Sudeste;EMAD I;False
+1479288;PE;Nordeste;EMAP;False
+1708473;RJ;Sudeste;EMAP;True
+1549251;SP;Sudeste;EMAD I;True
+2210029;PI;Nordeste;EMAD I;True
+2237954;BA;Nordeste;EMAD II;True
+473499;PR;Sul;EMAD I;False
+1711636;MG;Sudeste;EMAD II;True
+2150409;MA;Nordeste;EMAD II;True
+2150417;MA;Nordeste;EMAP;True
+1479385;SP;Sudeste;EMAP;True
+1500473;MG;Sudeste;EMAD I;False
+1523325;PB;Nordeste;EMAP;True
+2231239;PE;Nordeste;EMAP;True
+2231247;PE;Nordeste;EMAD II;False
+2184257;MT;Centro-Oeste;EMAD II;True
+2224186;BA;Nordeste;EMAD I;True
+2224178;BA;Nordeste;EMAP;True
+330396;SP;Sudeste;EMAD I;True
+1709232;RJ;Sudeste;EMAD I;False
+1709240;RJ;Sudeste;EMAP;True
+1589105;SP;Sudeste;EMAD I;True
+1589067;SP;Sudeste;EMAP;True
+1707957;PR;Sul;EMAD I;False
+1640615;SP;Sudeste;EMAP;True
+1620363;MG;Sudeste;EMAD I;True
+1710613;BA;Nordeste;EMAD I;False
+1531824;SP;Sudeste;EMAP;True
+1536249;PR;Sul;EMAD I;True
+1505165;RN;Nordeste;EMAD I;False
+1505203;RN;Nordeste;EMAP;True
+1709550;PB;Nordeste;EMAD I;True
+1520555;DF;Centro-Oeste;EMAP;True
+1705903;AL;Nordeste;EMAD II;True
+1705911;AL;Nordeste;EMAP;False
+1486802;SP;Sudeste;EMAD I;False
+1494120;MA;Nordeste;EMAD II;True
+1494139;MA;Nordeste;EMAP;True
+1577123;SP;Sudeste;EMAP;True
+1709534;BA;Nordeste;EMAD II;True
+2171686;PR;Sul;EMAD I;False
+2240556;BA;Nordeste;EMAP;False
+2248468;BA;Nordeste;EMAP;False
+2248476;BA;Nordeste;EMAD I;False
+1710893;CE;Nordeste;EMAD I;False
+1710907;CE;Nordeste;EMAP;True
+1700626;CE;Nordeste;EMAD I;False
+1700634;CE;Nordeste;EMAD I;False
+1607871;TO;Norte;EMAD I;True
+2245116;MA;Nordeste;EMAD II;False
+2287072;SP;Sudeste;EMAD I;True
+2287099;SP;Sudeste;EMAP;True
+2279371;CE;Nordeste;EMAD II;True
+1696084;MG;Sudeste;EMAD I;True
+1696092;MG;Sudeste;EMAP;True
+2167433;MG;Sudeste;EMAD II;True
+356816;SP;Sudeste;EMAD I;False
+1505289;BA;Nordeste;EMAP;True
+1505297;BA;Nordeste;EMAD II;True
+1472720;MA;Nordeste;EMAD I;True
+1569945;DF;Centro-Oeste;EMAP;True
+468568;DF;Centro-Oeste;EMAP;True
+1715232;SP;Sudeste;EMAD I;False
+1711881;GO;Centro-Oeste;EMAD II;True
+1711903;GO;Centro-Oeste;EMAP;True
+1476505;BA;Nordeste;EMAD I;False
+1476513;BA;Nordeste;EMAP;True
+1688081;CE;Nordeste;EMAP;True
+1688073;CE;Nordeste;EMAD I;False
+1483528;GO;Centro-Oeste;EMAD I;False
+1483536;GO;Centro-Oeste;EMAP;True
+1616382;CE;Nordeste;EMAD I;True
+1618903;CE;Nordeste;EMAP;True
+2244063;CE;Nordeste;EMAD II;True
+2175126;RS;Sul;EMAP;True
+1656554;AL;Nordeste;EMAD I;True
+1656562;AL;Nordeste;EMAD I;False
+1592351;PI;Nordeste;EMAP;False
+1592335;PI;Nordeste;EMAD I;False
+1667912;BA;Nordeste;EMAP;True
+1695827;SP;Sudeste;EMAD I;False
+2436817;BA;Nordeste;EMAD I;True
+1669923;SP;Sudeste;EMAD I;True
+1688464;BA;Nordeste;EMAD I;True
+1688472;BA;Nordeste;EMAP;True
+1697552;BA;Nordeste;EMAD II;True
+1697579;BA;Nordeste;EMAP;True
+1704001;AL;Nordeste;EMAD I;True
+1704028;AL;Nordeste;EMAP;True
+1706853;PA;Norte;EMAD I;False
+1709046;PA;Norte;EMAP;True
+2190761;PB;Nordeste;EMAD II;True
+1618830;PB;Nordeste;EMAP;True
+1469037;RJ;Sudeste;EMAP;True
+1580353;RJ;Sudeste;EMAD I;False
+310409;RJ;Sudeste;EMAP;True
+1542281;AM;Norte;EMAD I;True
+1708015;BA;Nordeste;EMAD II;True
+1708023;BA;Nordeste;EMAP;True
+1489976;PB;Nordeste;EMAP;False
+1489984;PB;Nordeste;EMAD II;True
+1474278;RJ;Sudeste;EMAD I;True
+1594524;RJ;Sudeste;EMAP;True
+468398;DF;Centro-Oeste;EMAD I;True
+2159864;CE;Nordeste;EMAD II;True
+1681176;SC;Sul;EMAD I;True
+2264358;SP;Sudeste;EMAP;True
+151262;PE;Nordeste;EMAD I;False
+151548;PE;Nordeste;EMAD I;False
+151572;PE;Nordeste;EMAP;True
+1486101;PE;Nordeste;EMAD I;False
+1512749;TO;Norte;EMAP;False
+2209683;PA;Norte;EMAD I;True
+2197987;BA;Nordeste;EMAD I;False
+348341;SP;Sudeste;EMAD I;True
+348333;SP;Sudeste;EMAP;True
+1537288;SP;Sudeste;EMAD I;True
+2291045;PR;Sul;EMAD I;True
+1561375;PB;Nordeste;EMAD II;True
+1561189;PB;Nordeste;EMAP;True
+1533657;SP;Sudeste;EMAD I;False
+1533851;SP;Sudeste;EMAD I;False
+1535870;BA;Nordeste;EMAD II;True
+1536265;BA;Nordeste;EMAP;True
+1543415;PA;Norte;EMAD I;True
+1543423;PA;Norte;EMAP;True
+199141;BA;Nordeste;EMAD I;False
+199168;BA;Nordeste;EMAP;True
+2167646;PE;Nordeste;EMAD II;False
+1571311;PE;Nordeste;EMAD I;False
+2232618;PA;Norte;EMAD I;False
+1481959;RJ;Sudeste;EMAD I;True
+1698176;MG;Sudeste;EMAD I;True
+368164;SP;Sudeste;EMAP;True
+1528122;SP;Sudeste;EMAD I;True
+1528130;SP;Sudeste;EMAP;True
+1677578;SE;Nordeste;EMAD II;True
+1677586;SE;Nordeste;EMAP;True
+1666991;PA;Norte;EMAD I;True
+1667009;PA;Norte;EMAP;True
+2255782;SE;Nordeste;EMAD II;True
+2264420;SP;Sudeste;EMAP;True
+1570463;RS;Sul;EMAD I;True
+2301865;PB;Nordeste;EMAP;True
+1485180;AL;Nordeste;EMAP;False
+1485172;AL;Nordeste;EMAD I;True
+2178877;MG;Sudeste;EMAP;True
+2190982;PA;Norte;EMAD I;True
+2190990;PA;Norte;EMAP;True
+2204940;PR;Sul;EMAD I;True
+2204959;PR;Sul;EMAP;True
+2303132;SP;Sudeste;EMAD I;False
+1561049;PI;Nordeste;EMAD II;True
+1561057;PI;Nordeste;EMAP;True
+1505173;CE;Nordeste;EMAD I;False
+1505211;CE;Nordeste;EMAP;True
+1584731;SP;Sudeste;EMAD I;False
+1495933;SC;Sul;EMAD II;True
+2170191;SC;Sul;EMAP;True
+1623397;PB;Nordeste;EMAD II;True
+1487000;RS;Sul;EMAD I;False
+1699350;SP;Sudeste;EMAD I;False
+1698389;PA;Norte;EMAD II;True
+232327;MG;Sudeste;EMAD I;True
+1711644;MG;Sudeste;EMAP;True
+1484362;AL;Nordeste;EMAD I;True
+2233789;PB;Nordeste;EMAP;False
+2233797;PB;Nordeste;EMAD II;True
+2141108;PR;Sul;EMAD I;False
+1660292;SC;Sul;EMAD II;True
+1656694;MG;Sudeste;EMAP;True
+1711660;PR;Sul;EMAD I;False
+1711679;PR;Sul;EMAP;True
+2260611;PR;Sul;EMAP;False
+1688596;BA;Nordeste;EMAD I;False
+1688618;BA;Nordeste;EMAP;True
+1534882;SC;Sul;EMAD I;False
+1579819;SC;Sul;EMAP;True
+1663674;SP;Sudeste;EMAD I;False
+1667610;AL;Nordeste;EMAP;True
+1667629;AL;Nordeste;EMAD II;True
+1680315;SC;Sul;EMAP;True
+1680323;SC;Sul;EMAD I;True
+2274027;RJ;Sudeste;EMAD I;False
+2277425;BA;Nordeste;EMAD I;True
+2277719;SC;Sul;EMAD II;True
+2256088;AM;Norte;EMAD I;True
+2295997;PR;Sul;EMAD I;True
+2298848;PR;Sul;EMAD I;False
+2298899;PR;Sul;EMAP;False
+2275074;PR;Sul;EMAD II;False
+2279053;PE;Nordeste;EMAP;True
+2284200;AL;Nordeste;EMAD II;True
+2284219;AL;Nordeste;EMAP;True
+2299356;PR;Sul;EMAD II;True
+2299364;PR;Sul;EMAP;True
+2496488;CE;Nordeste;EMAD II;True
+1619942;BA;Nordeste;EMAD II;True
+1619950;BA;Nordeste;EMAP;True
+2287013;SP;Sudeste;EMAD I;False
+2283026;AL;Nordeste;EMAD II;False
+2283034;AL;Nordeste;EMAP;False
+347566;SP;Sudeste;EMAD I;False
+2288281;PE;Nordeste;EMAD II;True
+2288303;PE;Nordeste;EMAP;True
+2021617;PR;Sul;EMAD II;True
+1698796;PB;Nordeste;EMAP;False
+2270218;PE;Nordeste;EMAD I;True
+2270226;PE;Nordeste;EMAP;True
+2269252;SC;Sul;EMAD II;True
+1698303;GO;Centro-Oeste;EMAD II;True
+365270;SP;Sudeste;EMAD I;False
+1689835;SP;Sudeste;EMAD I;False
+1703811;MG;Sudeste;EMAD I;False
+1707183;MG;Sudeste;EMAP;True
+389579;PR;Sul;EMAP;True
+1560743;PA;Norte;EMAP;True
+1697226;SP;Sudeste;EMAD I;False
+1697234;SP;Sudeste;EMAP;True
+1710737;SP;Sudeste;EMAD I;False
+1566105;RJ;Sudeste;EMAD II;True
+1484869;RS;Sul;EMAP;True
+1505564;RS;Sul;EMAD I;True
+1597051;SP;Sudeste;EMAP;True
+1570447;RS;Sul;EMAD I;True
+1708694;AL;Nordeste;EMAD II;True
+1708716;AL;Nordeste;EMAP;True
+2280590;ES;Sudeste;EMAD I;False
+2280612;ES;Sudeste;EMAP;True
+316857;SP;Sudeste;EMAD I;True
+316873;SP;Sudeste;EMAD I;True
+316865;SP;Sudeste;EMAP;True
+2494663;MA;Nordeste;EMAP;True
+2189550;RS;Sul;EMAD II;False
+310379;RJ;Sudeste;EMAD I;False
+2318849;TO;Norte;EMAD II;True
+2318857;TO;Norte;EMAP;True
+2318792;PE;Nordeste;EMAD II;True
+2318806;PE;Nordeste;EMAP;False
+1593706;MT;Centro-Oeste;EMAP;True
+2156628;SP;Sudeste;EMAD I;True
+2366355;SP;Sudeste;EMAP;True
+2374498;MA;Nordeste;EMAP;True
+2395053;PA;Norte;EMAP;True
+1548654;CE;Nordeste;EMAP;False
+2324385;BA;Nordeste;EMAP;True
+1656597;MG;Sudeste;EMAD I;False
+2243229;MG;Sudeste;EMAD I;True
+2393980;MG;Sudeste;EMAP;True
+2264129;SP;Sudeste;EMAD I;False
+2337908;BA;Nordeste;EMAP;True
+1691821;SP;Sudeste;EMAD I;False
+2510847;PA;Norte;EMAD I;False
+2513293;CE;Nordeste;EMAD II;True
+2516004;GO;Centro-Oeste;EMAP-R;True
+2539152;RJ;Sudeste;EMAD I;False
+2379155;BA;Nordeste;EMAP;False
+2422654;BA;Nordeste;EMAD I;True
+2516179;PB;Nordeste;EMAP-R;False
+2510243;BA;Nordeste;EMAD II;True
+1709844;BA;Nordeste;EMAD I;True
+1710478;BA;Nordeste;EMAP;True
+2495082;MG;Sudeste;EMAP-R;True
+2496909;PB;Nordeste;EMAP-R;True
+2518058;SE;Nordeste;EMAP-R;False
+2518864;PA;Norte;EMAP-R;False
+2520133;SP;Sudeste;EMAD I;False
+2520141;SP;Sudeste;EMAP;True
+2402998;SP;Sudeste;EMAP;True
+2533677;RS;Sul;EMAP-R;False
+2536544;RN;Nordeste;EMAP-R;True
+2418207;RN;Nordeste;EMAD II;True
+2418215;RN;Nordeste;EMAP;True
+1520652;MG;Sudeste;EMAD I;False
+1498320;PI;Nordeste;EMAD II;True
+2418649;AM;Norte;EMAD I;True
+2418657;AM;Norte;EMAP;True
+2522799;CE;Nordeste;EMAD I;True
+2524430;BA;Nordeste;EMAD II;True
+2524449;BA;Nordeste;EMAP;True
+2524074;PI;Nordeste;EMAP-R;False
+1521713;PE;Nordeste;EMAP;False
+2475340;MT;Centro-Oeste;EMAD II;True
+2487403;MT;Centro-Oeste;EMAP;True
+2510251;BA;Nordeste;EMAP;False
+2409844;MA;Nordeste;EMAD I;False
+2422689;RN;Nordeste;EMAD I;False
+2461900;PB;Nordeste;EMAD II;True
+2499835;PI;Nordeste;EMAP-R;True
+2510057;ES;Sudeste;EMAD II;False
+2510065;ES;Sudeste;EMAP;True
+1498088;BA;Nordeste;EMAD I;False
+2507722;MG;Sudeste;EMAP-R;True
+2527642;MS;Centro-Oeste;EMAP;False
+2520222;MG;Sudeste;EMAP-R;True
+2516632;PB;Nordeste;EMAP-R;False
+2517388;SP;Sudeste;EMAD I;True
+2527928;MA;Nordeste;EMAP-R;False
+2522551;PB;Nordeste;EMAP-R;False
+2490447;RS;Sul;EMAD I;True
+2516861;MG;Sudeste;EMAD II;True
+2516233;PR;Sul;EMAD I;True
+2489902;MG;Sudeste;EMAP-R;False
+2465353;PE;Nordeste;EMAD I;False
+1700588;CE;Nordeste;EMAD I;False
+1700596;CE;Nordeste;EMAD I;False
+1710796;CE;Nordeste;EMAD I;False
+1710826;CE;Nordeste;EMAD I;False
+1710850;CE;Nordeste;EMAD I;False
+2492881;MG;Sudeste;EMAP-R;False
+2493470;MG;Sudeste;EMAD II;True
+2512831;PE;Nordeste;EMAP;False
+2509547;PB;Nordeste;EMAP-R;True
+2375249;MA;Nordeste;EMAP;True
+2373726;MA;Nordeste;EMAD II;True
+2486067;MG;Sudeste;EMAD I;False
+2510855;BA;Nordeste;EMAP-R;True
+2511517;BA;Nordeste;EMAD II;True
+2522381;MG;Sudeste;EMAP-R;True
+2418630;AM;Norte;EMAD I;True
+2504995;MA;Nordeste;EMAP;True
+2447797;MG;Sudeste;EMAD I;False
+2499843;PB;Nordeste;EMAP-R;True
+2500116;PB;Nordeste;EMAP-R;True
+1706861;SE;Nordeste;EMAD I;True
+1706888;SE;Nordeste;EMAP;True
+2486059;CE;Nordeste;EMAP-R;False
+2514133;PE;Nordeste;EMAP;False
+2477211;PA;Norte;EMAP;True
+2485559;PI;Nordeste;EMAP-R;True
+2488000;PI;Nordeste;EMAP-R;True
+1716336;SE;Nordeste;EMAD II;True
+2485583;BA;Nordeste;EMAP-R;True
+2488450;PI;Nordeste;EMAP-R;True
+2490307;MG;Sudeste;EMAD II;True
+2493160;RS;Sul;EMAP;True
+2428970;SP;Sudeste;EMAD I;False
+2481693;RS;Sul;EMAD II;True
+2309394;SE;Nordeste;EMAP;True
+2485036;GO;Centro-Oeste;EMAP;False
+2461625;RJ;Sudeste;EMAD I;False
+2461633;RJ;Sudeste;EMAD I;True
+2461668;RJ;Sudeste;EMAP;True
+2461676;RJ;Sudeste;EMAD I;True
+2496046;PI;Nordeste;EMAP-R;True
+2498162;PI;Nordeste;EMAP-R;True
+2308630;PE;Nordeste;EMAD II;False
+2508052;PB;Nordeste;EMAD II;False
+1709194;PB;Nordeste;EMAD II;True
+2489872;PI;Nordeste;EMAP-R;False
+2488302;MG;Sudeste;EMAP-R;False
+2488531;SP;Sudeste;EMAD II;False
+2520621;PB;Nordeste;EMAP-R;False
+2533170;BA;Nordeste;EMAD I;True
+2533189;BA;Nordeste;EMAD I;True
+2497735;GO;Centro-Oeste;EMAD I;True
+2488868;PI;Nordeste;EMAP-R;True
+2532999;MA;Nordeste;EMAP-R;True
+2532751;CE;Nordeste;EMAP-R;True
+2533685;MG;Sudeste;EMAD II;False
+2532913;SP;Sudeste;EMAD II;True
+1493671;RJ;Sudeste;EMAD I;False
+2512947;MG;Sudeste;EMAP-R;False
+2535386;BA;Nordeste;EMAP-R;False
+2244284;SC;Sul;EMAD I;False
+2490579;RN;Nordeste;EMAD I;True
+2492199;MG;Sudeste;EMAP-R;True
+2365367;SP;Sudeste;EMAP;True
+2507420;PB;Nordeste;EMAP-R;True
+2293595;SC;Sul;EMAP;True
+2227274;BA;Nordeste;EMAD I;True
+2244799;BA;Nordeste;EMAP;True
+2534770;PE;Nordeste;EMAP;True
+2535408;BA;Nordeste;EMAD II;True
+2537370;BA;Nordeste;EMAD II;True
+2489058;MG;Sudeste;EMAD I;False
+2489066;MG;Sudeste;EMAP;True
+2494418;PB;Nordeste;EMAP-R;True
+2537699;MG;Sudeste;EMAP;False
+2505827;GO;Centro-Oeste;EMAP-R;False
+2507773;MG;Sudeste;EMAP-R;True
+2207346;SE;Nordeste;EMAD I;False
+2538245;BA;Nordeste;EMAP;True
+2520001;MG;Sudeste;EMAD II;True
+2537303;BA;Nordeste;EMAP-R;True
+323039;SP;Sudeste;EMAD I;True
+2287137;ES;Sudeste;EMAD I;True
+1700618;CE;Nordeste;EMAD I;False
+1710885;CE;Nordeste;EMAD I;False
+2308231;PE;Nordeste;EMAP;False
+1682024;RJ;Sudeste;EMAD I;False
+1708465;RJ;Sudeste;EMAD I;False
+401897;SC;Sul;EMAD I;True
+2360810;MT;Centro-Oeste;EMAD I;True
+2170183;SC;Sul;EMAD I;True
+1700642;CE;Nordeste;EMAD I;False
+1523309;PB;Nordeste;EMAD I;False
+2444046;MA;Nordeste;EMAD I;True
+2315610;RJ;Sudeste;EMAD I;False
+2384841;PA;Norte;EMAP;True
+1700650;CE;Nordeste;EMAD I;False
+1700669;CE;Nordeste;EMAD I;False
+2425688;PE;Nordeste;EMAD II;True
+310417;RJ;Sudeste;EMAD I;False
+1469797;RJ;Sudeste;EMAD I;False
+1466003;SP;Sudeste;EMAD I;False
+2321556;MG;Sudeste;EMAD II;True
+2321564;MG;Sudeste;EMAP;True
+1581120;SC;Sul;EMAD I;True
+2512149;MG;Sudeste;EMAP-R;True
+2384876;PA;Norte;EMAD II;True
+2324873;BA;Nordeste;EMAD II;True
+2431149;AM;Norte;EMAD I;True
+2445158;PI;Nordeste;EMAD II;True
+1531891;MG;Sudeste;EMAD I;True
+1531905;MG;Sudeste;EMAP;True
+318981;SP;Sudeste;EMAD I;True
+401889;SC;Sul;EMAD I;True
+276405;MG;Sudeste;EMAD I;False
+369071;SP;Sudeste;EMAD I;False
+2458519;MG;Sudeste;EMAD II;False
+2458500;MG;Sudeste;EMAP;True
+152374;PE;Nordeste;EMAD I;False
+152358;PE;Nordeste;EMAD I;False
+152838;PE;Nordeste;EMAD I;False
+152811;PE;Nordeste;EMAD I;False
+152331;PE;Nordeste;EMAP;True
+152323;PE;Nordeste;EMAD I;False
+152315;PE;Nordeste;EMAD I;False
+152366;PE;Nordeste;EMAD I;False
+1520644;PE;Nordeste;EMAD I;True
+1526812;PE;Nordeste;EMAD I;False
+152390;PE;Nordeste;EMAP;True
+1656570;MG;Sudeste;EMAD I;True
+2324490;CE;Nordeste;EMAD I;False
+2324504;CE;Nordeste;EMAP;True
+2416646;BA;Nordeste;EMAP;False
+2416654;BA;Nordeste;EMAD II;True
+2303965;PE;Nordeste;EMAD II;True
+2243237;SP;Sudeste;EMAD I;False
+1648977;MG;Sudeste;EMAD I;True
+194328;BA;Nordeste;EMAD I;True
+1712136;MG;Sudeste;EMAP;True
+2320606;SP;Sudeste;EMAP;True
+367877;SP;Sudeste;EMAD I;True
+2406012;BA;Nordeste;EMAD I;True
+1674773;RS;Sul;EMAD I;False
+2170396;SC;Sul;EMAD I;True
+2408864;SP;Sudeste;EMAP;True
+2408856;SP;Sudeste;EMAD I;True
+2194465;SE;Nordeste;EMAP;True
+2412268;MG;Sudeste;EMAP;True
+2251582;RJ;Sudeste;EMAD I;False
+2256363;MG;Sudeste;EMAD I;True
+2467038;SP;Sudeste;EMAP;True
+231517;MG;Sudeste;EMAD I;False
+230006;MG;Sudeste;EMAD I;False
+2324377;BA;Nordeste;EMAD I;False
+2162644;BA;Nordeste;EMAD II;True
+368121;SP;Sudeste;EMAD I;True
+2369311;CE;Nordeste;EMAD II;True
+2171783;CE;Nordeste;EMAP;True
+2372568;BA;Nordeste;EMAD I;True
+1667408;PA;Norte;EMAP;True
+2406039;BA;Nordeste;EMAD I;True
+2162997;GO;Centro-Oeste;EMAD I;False
+2130947;AP;Norte;EMAD I;True
+2130963;AP;Norte;EMAP;True
+2286599;AP;Norte;EMAD I;True
+1477676;RO;Norte;EMAD I;True
+2395770;BA;Nordeste;EMAD I;False
+2476932;MA;Nordeste;EMAD II;False
+2476940;MA;Nordeste;EMAP;True
+2488272;MG;Sudeste;EMAD II;True
+2323818;RN;Nordeste;EMAP;True
+2514303;PB;Nordeste;EMAP-R;True
+2444356;RN;Nordeste;EMAP;False
+2514443;SE;Nordeste;EMAP-R;True
+2512033;MG;Sudeste;EMAP-R;True
+1583417;SP;Sudeste;EMAD I;False
+2151367;PB;Nordeste;EMAD II;True
+2151359;PB;Nordeste;EMAP;True
+1576283;SP;Sudeste;EMAD I;True
+2451298;SP;Sudeste;EMAD II;True
+2476916;CE;Nordeste;EMAD I;True
+2476924;CE;Nordeste;EMAP;True
+1705210;MT;Centro-Oeste;EMAD I;False
+2488752;PI;Nordeste;EMAP-R;True
+1621718;SP;Sudeste;EMAP;True
+2425904;BA;Nordeste;EMAD I;True
+2436825;BA;Nordeste;EMAP;True
+2490188;PI;Nordeste;EMAP-R;True
+2492024;SP;Sudeste;EMAP-R;True
+2448904;BA;Nordeste;EMAP;True
+2166593;GO;Centro-Oeste;EMAP;True
+1705164;MT;Centro-Oeste;EMAD I;False
+2464608;BA;Nordeste;EMAD II;False
+2464616;BA;Nordeste;EMAP;True
+2197995;BA;Nordeste;EMAP;False
+2287080;SP;Sudeste;EMAD I;True
+2422166;MG;Sudeste;EMAD I;True
+2422174;MG;Sudeste;EMAP;True
+2455250;BA;Nordeste;EMAP;True
+2455234;BA;Nordeste;EMAD II;True
+2493810;RO;Norte;EMAD II;False
+2489880;RN;Nordeste;EMAD I;True
+1486756;MG;Sudeste;EMAD I;False
+1522892;RJ;Sudeste;EMAP;True
+1522906;RJ;Sudeste;EMAD I;True
+1522914;RJ;Sudeste;EMAD I;True
+1542001;MG;Sudeste;EMAD I;True
+2220539;MA;Nordeste;EMAP;True
+2286491;RJ;Sudeste;EMAD II;True
+1497804;RJ;Sudeste;EMAP;True
+2436809;BA;Nordeste;EMAD I;True
+2500140;PI;Nordeste;EMAP-R;True
+2483238;PI;Nordeste;EMAP-R;True
+1663569;SP;Sudeste;EMAD I;False
+2472929;CE;Nordeste;EMAP-R;False
+2409062;SP;Sudeste;EMAD I;True
+2484846;SE;Nordeste;EMAP-R;True
+1515500;GO;Centro-Oeste;EMAD I;False
+1935461;GO;Centro-Oeste;EMAP;True
+1656783;MG;Sudeste;EMAD I;False
+2484943;BA;Nordeste;EMAD II;True
+2501740;SP;Sudeste;EMAD II;False
+2491869;BA;Nordeste;EMAP-R;False
+2506971;MA;Nordeste;EMAP-R;True
+1700723;CE;Nordeste;EMAD I;False
+2487373;MG;Sudeste;EMAD I;True
+2477912;PE;Nordeste;EMAD II;False
+2488698;MA;Nordeste;EMAD II;False
+2483777;SP;Sudeste;EMAD I;False
+1482971;PB;Nordeste;EMAD I;False
+1717243;MG;Sudeste;EMAP;False
+1711075;MG;Sudeste;EMAD II;True
+2509962;BA;Nordeste;EMAP-R;False
+2504561;AL;Nordeste;EMAP-R;True
+2479265;MG;Sudeste;EMAD I;True
+1589172;MG;Sudeste;EMAD I;True
+2497476;PI;Nordeste;EMAP-R;True
+1545388;PE;Nordeste;EMAD I;False
+1710591;PE;Nordeste;EMAD I;False
+2428431;GO;Centro-Oeste;EMAP;True
+2510723;PA;Norte;EMAP-R;True
+2511886;PB;Nordeste;EMAP-R;True
+2512254;SP;Sudeste;EMAP-R;True
+2436485;MG;Sudeste;EMAD I;True
+2488922;BA;Nordeste;EMAD II;False
+2488892;GO;Centro-Oeste;EMAD I;True
+2202255;BA;Nordeste;EMAP;True
+2460610;SP;Sudeste;EMAD I;False
+2284987;SC;Sul;EMAP;True
+2187582;SC;Sul;EMAD II;True
+113263;RN;Nordeste;EMAD I;False
+2490285;RS;Sul;EMAD I;True
+2444305;PE;Nordeste;EMAD II;True
+2418517;PA;Norte;EMAD I;False
+342009;SP;Sudeste;EMAD I;False
+1656791;MG;Sudeste;EMAD I;False
+2388871;PR;Sul;EMAP;True
+226696;MG;Sudeste;EMAD I;True
+2490293;RS;Sul;EMAD I;True
+1674765;RS;Sul;EMAD I;True
+2381745;PA;Norte;EMAP;True
+2164388;GO;Centro-Oeste;EMAD II;True
+2223414;GO;Centro-Oeste;EMAP;True
+2325888;GO;Centro-Oeste;EMAD I;False
+2418509;PA;Norte;EMAD I;False
+2154196;MA;Nordeste;EMAD I;True
+2452251;MT;Centro-Oeste;EMAP;True
+1563106;DF;Centro-Oeste;EMAP;False
+1477773;DF;Centro-Oeste;EMAD I;False
+340189;SP;Sudeste;EMAD I;True
+383465;PR;Sul;EMAD I;False
+340170;SP;Sudeste;EMAP;True
+2521032;PB;Nordeste;EMAP-R;True
+1656600;MG;Sudeste;EMAD I;False
+2458160;MT;Centro-Oeste;EMAD II;True
+2459574;MA;Nordeste;EMAD II;True
+2365197;PA;Norte;EMAD II;True
+2331594;AP;Norte;EMAD I;False
+2426595;MA;Nordeste;EMAP;True
+2331608;AP;Norte;EMAP;True
+34681;AP;Norte;EMAD I;True
+2206633;AP;Norte;EMAD I;True
+1571451;SP;Sudeste;EMAD I;True
+2477831;PA;Norte;EMAP;True
+2384337;GO;Centro-Oeste;EMAD II;True
+2316005;BA;Nordeste;EMAD I;True
+1656112;MS;Centro-Oeste;EMAD I;False
+2513943;PB;Nordeste;EMAP-R;False
+1608436;SP;Sudeste;EMAD I;False
+1669184;SP;Sudeste;EMAP;True
+2424282;BA;Nordeste;EMAD I;True
+2424290;BA;Nordeste;EMAD I;True
+1656716;MG;Sudeste;EMAD I;False
+1589083;SP;Sudeste;EMAD I;True
+2352192;MG;Sudeste;EMAD II;True
+2395959;PR;Sul;EMAD I;True
+2408996;PE;Nordeste;EMAP;True
+2408988;PE;Nordeste;EMAD II;True
+2456613;MG;Sudeste;EMAD II;True
+2524899;PB;Nordeste;EMAP-R;True
+2382172;BA;Nordeste;EMAD I;False
+1710877;CE;Nordeste;EMAD I;False
+2380692;SP;Sudeste;EMAD I;False
+2484234;PE;Nordeste;EMAD I;True
+2484242;PE;Nordeste;EMAP;True
+2480956;MG;Sudeste;EMAP-R;True
+2391732;PA;Norte;EMAD II;True
+2391740;PA;Norte;EMAP;False
+2418525;PA;Norte;EMAP;True
+2426587;PI;Nordeste;EMAD II;True
+2455919;PI;Nordeste;EMAP;False
+2465124;RN;Nordeste;EMAD II;True
+2441764;PR;Sul;EMAP;True
+2485672;RJ;Sudeste;EMAD I;True
+1705156;MT;Centro-Oeste;EMAD I;True
+230030;MG;Sudeste;EMAD I;False
+2442639;MG;Sudeste;EMAP;False
+2446863;SP;Sudeste;EMAD I;True
+2446960;SP;Sudeste;EMAP;True
+2455412;BA;Nordeste;EMAD I;False
+1656651;MG;Sudeste;EMAP;True
+1705121;MT;Centro-Oeste;EMAD I;False
+2478234;MG;Sudeste;EMAP-R;False
+2326531;PE;Nordeste;EMAP;False
+2326558;PE;Nordeste;EMAD II;True
+227765;MG;Sudeste;EMAD I;True
+2412985;BA;Nordeste;EMAD II;True
+2444909;RO;Norte;EMAD I;False
+1480979;RO;Norte;EMAP;True
+1608304;SP;Sudeste;EMAD I;True
+2244411;GO;Centro-Oeste;EMAD II;False
+2469790;PR;Sul;EMAD I;False
+2384043;GO;Centro-Oeste;EMAD I;False
+2130971;AP;Norte;EMAP;False
+1603647;SP;Sudeste;EMAD I;True
+1686119;SP;Sudeste;EMAD I;True
+2395746;BA;Nordeste;EMAD I;True
+1680579;SC;Sul;EMAD I;False
+2352826;PE;Nordeste;EMAP;False
+350524;SP;Sudeste;EMAD I;False
+2486865;PB;Nordeste;EMAP-R;True
+2488833;PE;Nordeste;EMAP;True
+2488809;SP;Sudeste;EMAD II;False
+2487888;SP;Sudeste;EMAD I;False
+2488981;MG;Sudeste;EMAP-R;True
+2312212;SC;Sul;EMAD II;True
+2293870;CE;Nordeste;EMAP;True
+2407515;SP;Sudeste;EMAD I;False
+2456494;ES;Sudeste;EMAD I;True
+1710818;CE;Nordeste;EMAD I;False
+1710842;CE;Nordeste;EMAD I;False
+1710869;CE;Nordeste;EMAD I;False
+2422190;MG;Sudeste;EMAD II;True
+2422859;MG;Sudeste;EMAP;True
+2485680;PI;Nordeste;EMAP-R;True
+2488183;SP;Sudeste;EMAP;True
+2488248;BA;Nordeste;EMAD II;True
+2340062;SP;Sudeste;EMAP;True
+2328526;MG;Sudeste;EMAP;True
+2327015;RS;Sul;EMAD I;True
+2140314;SE;Nordeste;EMAD I;True
+2285819;BA;Nordeste;EMAD II;True
+2374927;BA;Nordeste;EMAP;True
+2374730;BA;Nordeste;EMAD II;True
+2152282;SP;Sudeste;EMAD I;False
+2395207;AM;Norte;EMAP;True
+2366630;PA;Norte;EMAP;True
+2366622;PA;Norte;EMAD II;True
+1477331;RO;Norte;EMAD I;False
+2413353;GO;Centro-Oeste;EMAD I;False
+2413388;GO;Centro-Oeste;EMAP;True
+1700715;CE;Nordeste;EMAD I;False
+2382210;SP;Sudeste;EMAD I;True
+2185709;MG;Sudeste;EMAD I;False
+2382253;MG;Sudeste;EMAD I;False
+2395967;PA;Norte;EMAP;True
+2411172;BA;Nordeste;EMAD I;True
+2411199;BA;Nordeste;EMAD I;True
+1578650;SP;Sudeste;EMAP;False
+2333171;SE;Nordeste;EMAD II;True
+2381699;MG;Sudeste;EMAP;True
+2388855;PR;Sul;EMAD I;False
+2388812;PR;Sul;EMAD I;True
+2316285;AM;Norte;EMAD II;True
+2359774;PA;Norte;EMAP;True
+2359731;PA;Norte;EMAD II;True
+1541129;RS;Sul;EMAD I;True
+1508784;PA;Norte;EMAD II;True
+1508792;PA;Norte;EMAP;True
+1480774;RJ;Sudeste;EMAD I;False
+1700561;CE;Nordeste;EMAD I;False
+2403021;SP;Sudeste;EMAP;False
+2410370;SP;Sudeste;EMAD II;True
+1579134;SP;Sudeste;EMAD I;True
+2233908;PR;Sul;EMAD I;False
+2300907;PR;Sul;EMAD II;True
+2451468;PB;Nordeste;EMAD II;True
+2453762;MG;Sudeste;EMAD II;False
+1607170;SP;Sudeste;EMAD I;False
+2372967;MT;Centro-Oeste;EMAP;True
+2369885;BA;Nordeste;EMAP;True
+1518569;CE;Nordeste;EMAD I;False
+276391;MG;Sudeste;EMAD I;True
+1549731;BA;Nordeste;EMAD II;True
+1661116;BA;Nordeste;EMAP;True
+2303973;PE;Nordeste;EMAD II;True
+2303981;PE;Nordeste;EMAP;True
+1522612;BA;Nordeste;EMAD II;True
+1466593;SP;Sudeste;EMAP;True
+1691805;SP;Sudeste;EMAD I;False
+1691945;SP;Sudeste;EMAP;True
+1588958;PA;Norte;EMAD I;True
+2239566;BA;Nordeste;EMAD I;True
+97322;CE;Nordeste;EMAD I;False
+97314;CE;Nordeste;EMAP;False
+2184273;PA;Norte;EMAP;False
+2514680;MG;Sudeste;EMAD I;True
+355070;SP;Sudeste;EMAD I;False
+2279045;PE;Nordeste;EMAD II;True
+2494612;PI;Nordeste;EMAP-R;True
+2293528;PB;Nordeste;EMAP;True
+2185806;BA;Nordeste;EMAD I;False
+2185814;BA;Nordeste;EMAP;True
+134317;PE;Nordeste;EMAP;False
+2494132;PI;Nordeste;EMAD I;False
+276154;MG;Sudeste;EMAD I;False
+276162;MG;Sudeste;EMAP;True
+276170;MG;Sudeste;EMAD I;False
+2494140;PI;Nordeste;EMAP;True
+1706187;MG;Sudeste;EMAD II;True
+1706195;MG;Sudeste;EMAP;True
+2268051;PA;Norte;EMAP;True
+1708244;BA;Nordeste;EMAD I;True
+1708678;BA;Nordeste;EMAP;True
+2193531;SP;Sudeste;EMAD I;False
+1524690;RJ;Sudeste;EMAD II;True
+1707043;MG;Sudeste;EMAD I;False
+1707051;MG;Sudeste;EMAP;True
+1491288;MG;Sudeste;EMAD I;True
+1565230;BA;Nordeste;EMAP;True
+2286874;AM;Norte;EMAD I;True
+2270684;PA;Norte;EMAD II;True
+2270692;PA;Norte;EMAP;True
+1505882;MG;Sudeste;EMAD I;False
+1576429;MG;Sudeste;EMAD I;True
+1676288;MG;Sudeste;EMAP;True
+1710486;PA;Norte;EMAD II;True
+1710516;PA;Norte;EMAP;True
+2102803;RS;Sul;EMAP;True
+1478796;SP;Sudeste;EMAD I;True
+2290790;PB;Nordeste;EMAD II;True
+1682296;MG;Sudeste;EMAD I;False
+1473395;SP;Sudeste;EMAD I;False
+2213621;PE;Nordeste;EMAD I;False
+232084;MG;Sudeste;EMAD I;False
+161098;PE;Nordeste;EMAD I;False
+1484427;MG;Sudeste;EMAD I;False
+1484435;MG;Sudeste;EMAP;True
+1503383;MG;Sudeste;EMAP;False
+1620355;MG;Sudeste;EMAP;True
+53856;MA;Nordeste;EMAP;True
+53899;MA;Nordeste;EMAD I;True
+1698761;PB;Nordeste;EMAD II;True
+1488244;MA;Nordeste;EMAP;True
+1488406;MA;Nordeste;EMAD I;True
+1506323;RS;Sul;EMAD II;True
+2252333;GO;Centro-Oeste;EMAD II;True
+2295482;CE;Nordeste;EMAP;False
+2225883;MA;Nordeste;EMAD II;True
+2225891;MA;Nordeste;EMAP;True
+1708600;MG;Sudeste;EMAD I;False
+190810;BA;Nordeste;EMAD I;False
+1518798;AL;Nordeste;EMAD I;True
+1518801;AL;Nordeste;EMAP;True
+1713078;RS;Sul;EMAD I;False
+1466534;SP;Sudeste;EMAP;False
+2172267;SE;Nordeste;EMAD I;True
+2172275;SE;Nordeste;EMAP;True
+1684949;PR;Sul;EMAD I;False
+2242370;GO;Centro-Oeste;EMAD II;True
+2205645;SC;Sul;EMAD I;False
+2205653;SC;Sul;EMAD I;False
+2205661;SC;Sul;EMAP;True
+1504924;MG;Sudeste;EMAD I;True
+2258242;RN;Nordeste;EMAD I;True
+2271265;PE;Nordeste;EMAP;True
+300179;RJ;Sudeste;EMAD I;True
+1701657;RS;Sul;EMAP;True
+1570811;RS;Sul;EMAD I;False
+1570838;RS;Sul;EMAP;True
+1577360;BA;Nordeste;EMAD I;False
+2185326;AM;Norte;EMAD I;True
+2021374;PR;Sul;EMAP;True
+1616935;BA;Nordeste;EMAD I;False
+1560840;BA;Nordeste;EMAD II;True
+1616943;BA;Nordeste;EMAP;True
+1700898;BA;Nordeste;EMAP;True
+2221055;SE;Nordeste;EMAP;True
+1558358;RS;Sul;EMAD I;True
+1558374;RS;Sul;EMAP;True
+1696564;GO;Centro-Oeste;EMAD II;True
+1696580;GO;Centro-Oeste;EMAP;True
+1617443;PA;Norte;EMAD I;True
+2182378;AC;Norte;EMAP;True
+1617451;PA;Norte;EMAP;True
+1503391;MG;Sudeste;EMAP;True
+1503405;MG;Sudeste;EMAD I;True
+1700553;CE;Nordeste;EMAD I;False
+2279282;GO;Centro-Oeste;EMAD I;False
+2279290;GO;Centro-Oeste;EMAP;False
+1685236;PA;Norte;EMAD I;False
+1672495;PA;Norte;EMAD I;True
+1709585;PA;Norte;EMAD I;True
+103306;CE;Nordeste;EMAD I;False
+103314;CE;Nordeste;EMAP;True
+1504762;SP;Sudeste;EMAD I;False
+1706365;MG;Sudeste;EMAD I;False
+2150921;CE;Nordeste;EMAD II;True
+2150948;CE;Nordeste;EMAP;False
+428965;RS;Sul;EMAP;True
+428981;RS;Sul;EMAD I;True
+429007;RS;Sul;EMAD I;True
+1548530;RS;Sul;EMAD II;True
+1614118;SP;Sudeste;EMAP;True
+1475428;BA;Nordeste;EMAD I;False
+1475436;BA;Nordeste;EMAP;True
+2159767;MG;Sudeste;EMAP;True
+2180286;RJ;Sudeste;EMAD I;True
+2180308;RJ;Sudeste;EMAP;True
+2210436;MA;Nordeste;EMAP;True
+2210428;MA;Nordeste;EMAD I;True
+1708589;SP;Sudeste;EMAD I;True
+1479911;RJ;Sudeste;EMAD I;False
+1479938;RJ;Sudeste;EMAP;False
+1519166;RJ;Sudeste;EMAD I;True
+1669338;PA;Norte;EMAD I;False
+1669346;PA;Norte;EMAP;False
+1683829;RS;Sul;EMAD I;True
+2182769;BA;Nordeste;EMAD II;True
+2182777;BA;Nordeste;EMAP;True
+2286653;MG;Sudeste;EMAD I;True
+2278820;MA;Nordeste;EMAP;False
+2278812;MA;Nordeste;EMAD II;True
+2295393;MG;Sudeste;EMAD II;True
+1511572;SC;Sul;EMAD I;False
+1710672;SP;Sudeste;EMAD I;False
+1710680;SP;Sudeste;EMAP;True
+2241757;CE;Nordeste;EMAD I;False
+2242419;CE;Nordeste;EMAP;False
+2242478;CE;Nordeste;EMAD I;True
+2242486;CE;Nordeste;EMAP;True
+1662910;PE;Nordeste;EMAD II;True
+1662929;PE;Nordeste;EMAP;True
+1675508;AL;Nordeste;EMAP;True
+1714805;AL;Nordeste;EMAD II;True
+1714813;AL;Nordeste;EMAP;True
+2291622;PE;Nordeste;EMAD II;True
+1469673;RJ;Sudeste;EMAD I;True
+2273020;SC;Sul;EMAD I;True
+2273047;SC;Sul;EMAP;False
+2275384;RS;Sul;EMAD I;True
+2280310;PB;Nordeste;EMAD II;True
+1678973;AL;Nordeste;EMAD II;True
+1704818;AL;Nordeste;EMAP;True
+2145154;SP;Sudeste;EMAP;True
+342017;SP;Sudeste;EMAP;True
+341991;SP;Sudeste;EMAD I;True
+2254344;PR;Sul;EMAP;True
+22;PE;Nordeste;EMAP;False
+2162881;PA;Norte;EMAD I;True
+2163268;PA;Norte;EMAP;True
+1710656;AM;Norte;EMAD I;False
+1498924;SP;Sudeste;EMAD I;False
+2256398;GO;Centro-Oeste;EMAD II;False
+1531441;SP;Sudeste;EMAP;True
+333662;SP;Sudeste;EMAD I;False
+295469;RJ;Sudeste;EMAD I;False
+295477;RJ;Sudeste;EMAP;True
+2135744;CE;Nordeste;EMAD I;True
+1657046;PA;Norte;EMAD I;False
+1682172;GO;Centro-Oeste;EMAD I;True
+1698184;GO;Centro-Oeste;EMAP;True
+1709879;PB;Nordeste;EMAP;True
+2167468;PA;Norte;EMAD I;True
+2169215;AL;Nordeste;EMAD I;True
+2169169;GO;Centro-Oeste;EMAD II;True
+2172631;GO;Centro-Oeste;EMAP;False
+2251264;CE;Nordeste;EMAP;True
+2256010;AM;Norte;EMAP;True
+1683365;GO;Centro-Oeste;EMAD I;True
+1683373;GO;Centro-Oeste;EMAP;True
+1506234;SP;Sudeste;EMAD I;False
+2152037;SP;Sudeste;EMAD I;True
+1700928;AL;Nordeste;EMAP;True
+1708856;AM;Norte;EMAD I;False
+1708864;AM;Norte;EMAP;True
+1526448;PR;Sul;EMAP;True
+1709267;CE;Nordeste;EMAD II;False
+1709356;CE;Nordeste;EMAP;True
+2232820;PR;Sul;EMAD II;True
+2232839;PR;Sul;EMAP;True
+1850695;BA;Nordeste;EMAD I;False
+1708082;SP;Sudeste;EMAD II;False
+1708635;SP;Sudeste;EMAP;True
+2243768;PE;Nordeste;EMAD II;True
+2243601;SC;Sul;EMAD II;True
+2239442;BA;Nordeste;EMAD II;True
+1484052;AL;Nordeste;EMAD I;False
+1654144;AL;Nordeste;EMAD II;True
+1654195;AL;Nordeste;EMAP;False
+2179849;RJ;Sudeste;EMAD I;True
+1531220;GO;Centro-Oeste;EMAD II;True
+1531255;GO;Centro-Oeste;EMAP;True
+1715151;BA;Nordeste;EMAD II;True
+1715178;BA;Nordeste;EMAP;True
+1481606;PI;Nordeste;EMAD I;False
+1481622;PI;Nordeste;EMAP;True
+1727990;MG;Sudeste;EMAP;True
+1534866;MG;Sudeste;EMAD II;False
+1534874;MG;Sudeste;EMAP;False
+2308207;PE;Nordeste;EMAD II;False
+2248093;BA;Nordeste;EMAP;True
+2244144;GO;Centro-Oeste;EMAD I;False
+276383;MG;Sudeste;EMAD I;True
+2232650;BA;Nordeste;EMAD II;True
+2232669;BA;Nordeste;EMAP;True
+2227975;GO;Centro-Oeste;EMAD II;True
+2227983;GO;Centro-Oeste;EMAP;True
+2234971;CE;Nordeste;EMAD II;True
+2234998;CE;Nordeste;EMAP;True
+1493272;MG;Sudeste;EMAP;True
+1584308;PA;Norte;EMAD I;True
+1591398;PA;Norte;EMAP;True
+435384;RS;Sul;EMAD I;False
+1483552;SP;Sudeste;EMAD I;False
+324698;SP;Sudeste;EMAP;True
+1483579;SP;Sudeste;EMAD I;False
+1483757;SP;Sudeste;EMAD I;False
+1483811;SP;Sudeste;EMAD I;False
+2280868;AL;Nordeste;EMAD II;False
+2295350;MG;Sudeste;EMAP;False
+2047047;BA;Nordeste;EMAP;True
+1899856;BA;Nordeste;EMAD II;False
+290289;RJ;Sudeste;EMAD I;True
+1555529;MA;Nordeste;EMAD I;True
+1573594;MG;Sudeste;EMAD II;True
+219487;BA;Nordeste;EMAD I;False
+219495;BA;Nordeste;EMAP;True
+1620630;PE;Nordeste;EMAP;True
+354430;SP;Sudeste;EMAD I;False
+2235692;CE;Nordeste;EMAD I;False
+2242265;GO;Centro-Oeste;EMAP;True
+1708333;PB;Nordeste;EMAP;True
+1513079;CE;Nordeste;EMAP;True
+2233932;PR;Sul;EMAD I;False
+2243210;MG;Sudeste;EMAD I;True
+2256029;AM;Norte;EMAD I;True
+308420;RJ;Sudeste;EMAD I;False
+2129744;BA;Nordeste;EMAP;False
+1708627;BA;Nordeste;EMAD II;True
+1717235;BA;Nordeste;EMAP;True
+1714821;PB;Nordeste;EMAD II;True
+1617605;GO;Centro-Oeste;EMAD II;True
+1617613;GO;Centro-Oeste;EMAP;True
+2280493;MG;Sudeste;EMAP;False
+2280507;MG;Sudeste;EMAD II;True
+1675842;RN;Nordeste;EMAD II;True
+1675400;SP;Sudeste;EMAD I;True
+1675419;SP;Sudeste;EMAP;True
+2227649;PR;Sul;EMAD II;True
+2227630;PR;Sul;EMAP;True
+2258382;GO;Centro-Oeste;EMAD II;True
+2258390;GO;Centro-Oeste;EMAP;True
+1507494;CE;Nordeste;EMAD I;True
+1666819;PA;Norte;EMAD I;False
+1705024;PA;Norte;EMAP;True
+1622048;PB;Nordeste;EMAP;False
+1518534;PB;Nordeste;EMAD II;True
+1518550;PB;Nordeste;EMAP;False
+1505580;MA;Nordeste;EMAD II;True
+1505599;MA;Nordeste;EMAP;True
+1504975;MG;Sudeste;EMAD I;True
+1713612;SP;Sudeste;EMAD II;True
+1707124;PB;Nordeste;EMAD II;True
+1711822;PB;Nordeste;EMAP;True
+1682679;SP;Sudeste;EMAD I;False
+1686674;SP;Sudeste;EMAP;True
+31488;PA;Norte;EMAD I;False
+1789236;PB;Nordeste;EMAD II;True
+31496;PA;Norte;EMAP;True
+1529269;SC;Sul;EMAD I;True
+1704605;PB;Nordeste;EMAD II;True
+1704613;PB;Nordeste;EMAP;True
+401870;SC;Sul;EMAP;True
+1535994;GO;Centro-Oeste;EMAD I;False
+1536001;GO;Centro-Oeste;EMAP;True
+1502468;PA;Norte;EMAP;True
+1502476;PA;Norte;EMAD I;True
+1710524;PB;Nordeste;EMAD II;True
+1487086;SP;Sudeste;EMAD I;False
+1544322;SP;Sudeste;EMAP;True
+1544284;SP;Sudeste;EMAP;True
+1544314;SP;Sudeste;EMAP;True
+184756;BA;Nordeste;EMAP;True
+1717294;RS;Sul;EMAD II;True
+1705237;PE;Nordeste;EMAD II;True
+1705245;PE;Nordeste;EMAP;False
+2137879;PR;Sul;EMAD II;True
+2283999;GO;Centro-Oeste;EMAD I;False
+1564757;PB;Nordeste;EMAP;False
+1564765;PB;Nordeste;EMAD II;True
+2292696;PE;Nordeste;EMAD I;True
+2292718;PE;Nordeste;EMAP;True
+1708554;MG;Sudeste;EMAP;False
+1541110;RS;Sul;EMAD I;True
+1598872;RS;Sul;EMAP;True
+1598880;RS;Sul;EMAP;True
+1481827;RJ;Sudeste;EMAD I;True
+1570455;RS;Sul;EMAD I;True
+1491946;GO;Centro-Oeste;EMAD I;True
+1491954;GO;Centro-Oeste;EMAP;True
+1619802;RJ;Sudeste;EMAD I;True
+1710419;RS;Sul;EMAP;False
+2207605;TO;Norte;EMAD I;False
+2212684;SE;Nordeste;EMAP;True
+2212617;SE;Nordeste;EMAD II;True
+1672169;SP;Sudeste;EMAP;True
+1550683;CE;Nordeste;EMAP;True
+1576534;SP;Sudeste;EMAD I;True
+1586564;SP;Sudeste;EMAP;True
+1598856;RS;Sul;EMAD I;True
+1709836;PB;Nordeste;EMAD I;False
+2156768;SP;Sudeste;EMAD II;True
+1709771;MG;Sudeste;EMAP;True
+1709739;PA;Norte;EMAD I;False
+352128;SP;Sudeste;EMAD I;True
+352101;SP;Sudeste;EMAP;False
+1682873;GO;Centro-Oeste;EMAP;False
+1545396;SP;Sudeste;EMAD I;True
+1545418;SP;Sudeste;EMAP;True
+1513060;CE;Nordeste;EMAD II;True
+1500694;SP;Sudeste;EMAD I;True
+1668803;RJ;Sudeste;EMAD I;True
+365130;SP;Sudeste;EMAD I;True
+1668013;RJ;Sudeste;EMAP;False
+1670018;RJ;Sudeste;EMAD I;False
+1667963;RJ;Sudeste;EMAP;False
+1671065;RJ;Sudeste;EMAD I;True
+2194015;TO;Norte;EMAD I;False
+2155389;MA;Nordeste;EMAD II;True
+2155397;MA;Nordeste;EMAP;True
+352608;SP;Sudeste;EMAD I;False
+352616;SP;Sudeste;EMAP;True
+352543;SP;Sudeste;EMAD I;False
+2183889;MG;Sudeste;EMAD I;False
+1562266;RS;Sul;EMAD I;False
+1582003;AL;Nordeste;EMAP;True
+1680706;CE;Nordeste;EMAD I;False
+1637061;RJ;Sudeste;EMAD I;True
+1637088;RJ;Sudeste;EMAP;True
+2168456;PE;Nordeste;EMAD I;False
+2168472;PE;Nordeste;EMAP;False
+2140322;SE;Nordeste;EMAP;True
+2208644;BA;Nordeste;EMAD II;False
+2208660;BA;Nordeste;EMAP;True
+2224348;MA;Nordeste;EMAP;True
+1483137;SP;Sudeste;EMAD I;True
+2229676;RN;Nordeste;EMAP;True
+2229536;RN;Nordeste;EMAD II;True
+2230844;PE;Nordeste;EMAD I;False
+2230852;PE;Nordeste;EMAP;True
+1583778;GO;Centro-Oeste;EMAD I;False
+2284189;RS;Sul;EMAD I;True
+2292963;PA;Norte;EMAD I;False
+2292971;PA;Norte;EMAP;True
+1709038;SP;Sudeste;EMAP;True
+1708996;SP;Sudeste;EMAD I;True
+124737;PB;Nordeste;EMAD I;True
+124745;PB;Nordeste;EMAD I;True
+124753;PB;Nordeste;EMAD I;False
+1628623;SP;Sudeste;EMAP;True
+1671626;AL;Nordeste;EMAP;False
+1566407;BA;Nordeste;EMAD I;True
+1574965;BA;Nordeste;EMAP;True
+469335;DF;Centro-Oeste;EMAD I;True
+2139057;RJ;Sudeste;EMAP;True
+1981803;MG;Sudeste;EMAP;True
+1966707;MG;Sudeste;EMAD II;True
+1712101;SP;Sudeste;EMAD I;False
+1559478;BA;Nordeste;EMAD I;False
+1559486;BA;Nordeste;EMAP;True
+1513850;PI;Nordeste;EMAD II;True
+1516485;PI;Nordeste;EMAP;True
+2253623;PR;Sul;EMAD I;True
+1699458;PA;Norte;EMAD I;False
+1699539;PA;Norte;EMAP;True
+1499114;GO;Centro-Oeste;EMAD I;True
+1499149;GO;Centro-Oeste;EMAP;True
+352136;SP;Sudeste;EMAD I;False
+373826;SP;Sudeste;EMAD I;True
+352098;SP;Sudeste;EMAD I;True
+352071;SP;Sudeste;EMAD I;True
+1483269;SP;Sudeste;EMAD I;False
+1501054;MG;Sudeste;EMAD I;False
+1670026;PA;Norte;EMAD II;True
+1618202;PI;Nordeste;EMAD II;False
+1566075;PI;Nordeste;EMAP;False
+278009;MG;Sudeste;EMAD I;False
+278017;MG;Sudeste;EMAP;False
+1710494;PB;Nordeste;EMAD I;False
+1710508;PB;Nordeste;EMAP;False
+2193787;PE;Nordeste;EMAP;False
+2193825;PE;Nordeste;EMAD II;True
+1706276;MA;Nordeste;EMAD I;True
+1512625;CE;Nordeste;EMAD I;True
+1512668;CE;Nordeste;EMAP;True
+2131382;SC;Sul;EMAD I;False
+1510657;AC;Norte;EMAD I;False
+1510673;AC;Norte;EMAP;True
+1710443;PB;Nordeste;EMAP;True
+1710435;PB;Nordeste;EMAD II;True
+140066;PE;Nordeste;EMAD I;True
+232130;MG;Sudeste;EMAD I;True
+232092;MG;Sudeste;EMAP;True
+1470698;SP;Sudeste;EMAP;True
+348732;SP;Sudeste;EMAD I;False
+1690981;ES;Sudeste;EMAD I;True
+1691007;ES;Sudeste;EMAP;True
+1655620;MG;Sudeste;EMAD I;False
+1655639;MG;Sudeste;EMAD I;True
+1655647;MG;Sudeste;EMAD I;False
+1655655;MG;Sudeste;EMAP;True
+1501925;MS;Centro-Oeste;EMAD II;True
+1501933;MS;Centro-Oeste;EMAP;True
+1569961;SP;Sudeste;EMAD I;True
+1531565;PI;Nordeste;EMAD II;True
+1476300;BA;Nordeste;EMAD I;True
+1476319;BA;Nordeste;EMAP;True
+1674676;MG;Sudeste;EMAD I;True
+200352;BA;Nordeste;EMAD I;True
+200360;BA;Nordeste;EMAP;True
+310182;RJ;Sudeste;EMAD I;False
+1483722;SP;Sudeste;EMAD I;False
+1538578;RJ;Sudeste;EMAP;True
+1670352;RO;Norte;EMAD I;False
+1698907;MA;Nordeste;EMAD II;True
+1576941;AM;Norte;EMAD I;True
+1484346;CE;Nordeste;EMAD I;False
+1477277;CE;Nordeste;EMAP;True
+1477242;CE;Nordeste;EMAD I;True
+1681613;GO;Centro-Oeste;EMAD II;True
+1681621;GO;Centro-Oeste;EMAP;True
+1479164;RJ;Sudeste;EMAD I;True
+1593714;MT;Centro-Oeste;EMAD I;True
+1547240;SP;Sudeste;EMAD I;True
+1547267;SP;Sudeste;EMAP;True
+2216477;PE;Nordeste;EMAD I;True
+1553313;SP;Sudeste;EMAP;True
+1701401;RS;Sul;EMAD II;False
+1585584;RJ;Sudeste;EMAD I;True
+389560;PR;Sul;EMAD I;False
+1698583;AL;Nordeste;EMAD II;True
+1698591;AL;Nordeste;EMAP;True
+1568140;DF;Centro-Oeste;EMAP;True
+469408;DF;Centro-Oeste;EMAD I;False
+2156377;GO;Centro-Oeste;EMAD II;True
+1556681;PA;Norte;EMAD II;True
+1556746;PA;Norte;EMAP;True
+471453;DF;Centro-Oeste;EMAP;True
+1571141;BA;Nordeste;EMAD I;True
+1571168;BA;Nordeste;EMAP;True
+1620754;PE;Nordeste;EMAP;True
+1620746;PE;Nordeste;EMAD I;True
+1522183;AL;Nordeste;EMAD I;True
+1522191;AL;Nordeste;EMAP;True
+1705334;PB;Nordeste;EMAD II;True
+1500139;AL;Nordeste;EMAD I;True
+2213613;PE;Nordeste;EMAP;False
+1620584;MG;Sudeste;EMAD I;True
+2111780;SP;Sudeste;EMAD II;True
+1584626;SC;Sul;EMAP;True
+1631802;SP;Sudeste;EMAD I;False
+1631810;SP;Sudeste;EMAP;False
+2130998;MS;Centro-Oeste;EMAP;True
+1700677;CE;Nordeste;EMAD I;False
+1700707;CE;Nordeste;EMAD I;False
+373702;SP;Sudeste;EMAD I;True
+373710;SP;Sudeste;EMAP;True
+1701673;MG;Sudeste;EMAD I;True
+1708163;MG;Sudeste;EMAP;True
+1705946;AL;Nordeste;EMAD II;True
+1481940;RJ;Sudeste;EMAD I;True
+356085;SP;Sudeste;EMAD I;True
+1600362;GO;Centro-Oeste;EMAD I;False
+2243245;GO;Centro-Oeste;EMAD II;True
+2243253;GO;Centro-Oeste;EMAP;True
+2219832;PE;Nordeste;EMAP;True
+2228459;PA;Norte;EMAP;True
+1530399;SP;Sudeste;EMAD I;False
+1530402;SP;Sudeste;EMAD I;False
+1530410;SP;Sudeste;EMAP;True
+1508180;AL;Nordeste;EMAD I;True
+1508199;AL;Nordeste;EMAP;True
+1712438;MG;Sudeste;EMAD I;True
+1712403;MG;Sudeste;EMAP;True
+1472739;MA;Nordeste;EMAP;True
+1508369;SP;Sudeste;EMAD II;True
+1508482;SP;Sudeste;EMAP;True
+1526650;RJ;Sudeste;EMAP;True
+1526677;RJ;Sudeste;EMAD I;False
+1625764;PE;Nordeste;EMAD II;True
+1542664;MA;Nordeste;EMAD II;True
+1542699;MA;Nordeste;EMAP;False
+1582747;SP;Sudeste;EMAP;True
+1547690;SP;Sudeste;EMAD I;False
+83135;CE;Nordeste;EMAP;True
+83178;CE;Nordeste;EMAD I;False
+275557;MG;Sudeste;EMAP;False
+2094495;GO;Centro-Oeste;EMAP;False
+1709704;GO;Centro-Oeste;EMAD II;True
+1469762;RJ;Sudeste;EMAP;True
+1484451;PA;Norte;EMAP;True
+1484443;PA;Norte;EMAD I;False
+1598864;RS;Sul;EMAD I;True
+1701002;CE;Nordeste;EMAP;False
+1679090;SP;Sudeste;EMAP;True
+1701037;CE;Nordeste;EMAP;False
+1701096;CE;Nordeste;EMAP;False
+1697242;MG;Sudeste;EMAP;True
+112925;RN;Nordeste;EMAD I;False
+112933;RN;Nordeste;EMAP;True
+2158574;SP;Sudeste;EMAD I;False
+2164353;SP;Sudeste;EMAP;True
+2183935;PE;Nordeste;EMAP;True
+2185660;MG;Sudeste;EMAD I;True
+2185679;MG;Sudeste;EMAP;True
+2188023;PB;Nordeste;EMAD I;False
+2188007;PB;Nordeste;EMAP;False
+2229994;RJ;Sudeste;EMAD I;True
+2245973;BA;Nordeste;EMAP;False
+1469754;RJ;Sudeste;EMAP;True
+2251868;PA;Norte;EMAD II;True
+2250020;PA;Norte;EMAP;True
+2252465;MG;Sudeste;EMAD II;True
+2252694;MG;Sudeste;EMAP;True
+1512064;SP;Sudeste;EMAD I;True
+2298961;RS;Sul;EMAP;True
+2256401;GO;Centro-Oeste;EMAP;True
+2252457;SP;Sudeste;EMAD I;True
+366781;SP;Sudeste;EMAD I;False
+2256002;AM;Norte;EMAD I;True
+2297949;PE;Nordeste;EMAD I;False
+2297957;PE;Nordeste;EMAP;False
+2281295;CE;Nordeste;EMAP;False
+2270579;BA;Nordeste;EMAD I;False
+1696963;MA;Nordeste;EMAD I;False
+2196174;SP;Sudeste;EMAD II;True
+2224712;PB;Nordeste;EMAP;True
+1710605;PE;Nordeste;EMAD I;False
+1700049;AL;Nordeste;EMAD II;True
+1700057;AL;Nordeste;EMAP;True
+2220636;SE;Nordeste;EMAD II;True
+2215721;MA;Nordeste;EMAP;False
+1550675;CE;Nordeste;EMAD II;True
+368156;SP;Sudeste;EMAP;True
+1707132;MG;Sudeste;EMAD I;False
+368148;SP;Sudeste;EMAD I;True
+1552287;BA;Nordeste;EMAD II;True
+1552309;BA;Nordeste;EMAP;True
+1710095;SE;Nordeste;EMAD I;True
+1710109;SE;Nordeste;EMAP;True
+1567748;SP;Sudeste;EMAD I;True
+1511874;BA;Nordeste;EMAP;True
+1682970;SP;Sudeste;EMAD I;False
+1503529;CE;Nordeste;EMAD I;False
+1503561;CE;Nordeste;EMAP;True
+1537911;SP;Sudeste;EMAD II;False
+43;SP;Sudeste;EMAD I;False
+44;SP;Sudeste;EMAD I;False
+46;SP;Sudeste;EMAP;False
+2274833;SP;Sudeste;EMAP;True
+1476750;PE;Nordeste;EMAP;True
+1476734;PE;Nordeste;EMAD I;True
+1535315;GO;Centro-Oeste;EMAP;True
+1617230;BA;Nordeste;EMAD I;False
+1617249;BA;Nordeste;EMAP;False
+2218585;MG;Sudeste;EMAD II;True
+2205513;MA;Nordeste;EMAD II;True
+2246597;MG;Sudeste;EMAD I;True
+1656287;SP;Sudeste;EMAD II;True
+1466526;SP;Sudeste;EMAD I;False
+353108;SP;Sudeste;EMAD I;False
+353116;SP;Sudeste;EMAP;False
+1551183;BA;Nordeste;EMAD II;True
+1551191;BA;Nordeste;EMAP;True
+383139;PR;Sul;EMAD I;False
+473421;PR;Sul;EMAP;True
+473448;PR;Sul;EMAD I;False
+1705091;PA;Norte;EMAD II;True
+1705113;PA;Norte;EMAP;False
+1547461;PR;Sul;EMAD II;False
+1547488;PR;Sul;EMAP;False
+2098741;SP;Sudeste;EMAP;True
+1477641;SP;Sudeste;EMAD I;True
+1516779;MS;Centro-Oeste;EMAD II;True
+1576992;MS;Centro-Oeste;EMAP;True
+1708341;PB;Nordeste;EMAD II;True
+1513990;MG;Sudeste;EMAD II;False
+1511963;BA;Nordeste;EMAD II;True
+1613707;RJ;Sudeste;EMAD I;False
+1710397;RS;Sul;EMAD I;False
+2284693;GO;Centro-Oeste;EMAP;True
+2284685;GO;Centro-Oeste;EMAD I;False
+1487914;SP;Sudeste;EMAD I;False
+2169649;RJ;Sudeste;EMAD II;True
+1532200;PA;Norte;EMAD I;False
+1532219;PA;Norte;EMAP;True
+85391;CE;Nordeste;EMAD I;False
+1679023;SE;Nordeste;EMAD I;True
+1679031;SE;Nordeste;EMAP;True
+1706683;MG;Sudeste;EMAD II;False
+347574;SP;Sudeste;EMAP;True
+1483250;SP;Sudeste;EMAD I;False
+1570900;SP;Sudeste;EMAD I;False
+1619047;PB;Nordeste;EMAD II;True
+1619039;PB;Nordeste;EMAP;False
+1699636;AL;Nordeste;EMAD II;True
+1699644;AL;Nordeste;EMAP;True
+1654578;AL;Nordeste;EMAD I;True
+1470485;RS;Sul;EMAD I;False
+1595938;SP;Sudeste;EMAD I;False
+1714015;MG;Sudeste;EMAD I;False
+1511653;SP;Sudeste;EMAD I;False
+2250829;PR;Sul;EMAD I;True
+2269201;SC;Sul;EMAD I;False
+2252236;MS;Centro-Oeste;EMAD I;True
+2291606;CE;Nordeste;EMAD II;True
+1546465;SP;Sudeste;EMAD I;True
+318329;SP;Sudeste;EMAD I;True
+324701;SP;Sudeste;EMAD I;False
+1548255;MG;Sudeste;EMAD I;True
+300160;RJ;Sudeste;EMAP;False
+1541773;SP;Sudeste;EMAD I;False
+2185377;BA;Nordeste;EMAP;True
+2185393;BA;Nordeste;EMAD II;True
+1701282;BA;Nordeste;EMAD I;False
+1701290;BA;Nordeste;EMAP;False
+323047;SP;Sudeste;EMAD I;True
+1539620;SP;Sudeste;EMAP;True
+1631934;SP;Sudeste;EMAP;True
+1631926;SP;Sudeste;EMAD II;True
+1628666;BA;Nordeste;EMAD I;False
+1628682;BA;Nordeste;EMAP;False
+2251663;GO;Centro-Oeste;EMAP;True
+354449;SP;Sudeste;EMAP;True
+2251671;GO;Centro-Oeste;EMAD I;True
+2251078;GO;Centro-Oeste;EMAD I;True
+1815121;MG;Sudeste;EMAD I;False
+468851;DF;Centro-Oeste;EMAD I;True
+2195615;SP;Sudeste;EMAD I;False
+1620452;SP;Sudeste;EMAD I;True
+1620479;SP;Sudeste;EMAP;True
+1506595;SP;Sudeste;EMAD I;False
+2224321;MA;Nordeste;EMAD II;True
+2047020;BA;Nordeste;EMAD I;False
+1487604;GO;Centro-Oeste;EMAD I;True
+2185121;DF;Centro-Oeste;EMAD I;True
+1657429;SP;Sudeste;EMAD I;True
+1577379;BA;Nordeste;EMAP;True
+1483099;SP;Sudeste;EMAD I;False
+1621025;PR;Sul;EMAD II;True
+1559605;PA;Norte;EMAD I;True
+1675591;SE;Nordeste;EMAD II;True
+1677012;SE;Nordeste;EMAP;True
+1584685;SP;Sudeste;EMAD I;True
+1584693;SP;Sudeste;EMAP;True
+1578693;PE;Nordeste;EMAP;True
+1577751;PE;Nordeste;EMAD II;True
+1533495;BA;Nordeste;EMAD I;True
+1534009;BA;Nordeste;EMAP;True
+1618989;MG;Sudeste;EMAD I;True
+1618997;MG;Sudeste;EMAP;True
+1525964;GO;Centro-Oeste;EMAD I;True
+1525972;GO;Centro-Oeste;EMAP;True
+2304856;CE;Nordeste;EMAP;False
+2141337;SP;Sudeste;EMAD I;True
+2308754;BA;Nordeste;EMAD II;True
+2308746;BA;Nordeste;EMAP;True
+2280604;ES;Sudeste;EMAD I;False
+2236710;RJ;Sudeste;EMAD I;True
+465054;GO;Centro-Oeste;EMAD I;True
+465062;GO;Centro-Oeste;EMAP;True
+2303868;SP;Sudeste;EMAD II;True
+2303760;BA;Nordeste;EMAD II;True
+1697633;RS;Sul;EMAD II;True
+2303914;CE;Nordeste;EMAD II;True
+1495631;RS;Sul;EMAD I;False
+1541250;AM;Norte;EMAD I;False
+1697021;MG;Sudeste;EMAD II;True
+1541269;AM;Norte;EMAP;True
+1618024;MS;Centro-Oeste;EMAD I;False
+1618156;MS;Centro-Oeste;EMAP;True
+1573268;CE;Nordeste;EMAD II;True
+2202719;MT;Centro-Oeste;EMAP;True
+2177862;RJ;Sudeste;EMAD I;True
+2177870;RJ;Sudeste;EMAP;True
+2206978;RN;Nordeste;EMAD II;True
+2278170;PB;Nordeste;EMAP;True
+1597086;SP;Sudeste;EMAD I;False
+2241161;GO;Centro-Oeste;EMAD I;True
+2241196;GO;Centro-Oeste;EMAP;True
+1690124;MS;Centro-Oeste;EMAP;True
+2293382;GO;Centro-Oeste;EMAD I;False
+1549987;PA;Norte;EMAD I;False
+1550063;PA;Norte;EMAP;True
+1677411;SE;Nordeste;EMAD II;True
+1677500;SE;Nordeste;EMAP;True
+1611623;SP;Sudeste;EMAD I;False
+2177528;PR;Sul;EMAD I;True
+2166089;SC;Sul;EMAD I;True
+2165007;DF;Centro-Oeste;EMAD I;True
+288713;RJ;Sudeste;EMAD I;False
+2245256;PR;Sul;EMAD II;True
+2254301;PR;Sul;EMAD I;False
+2254328;PR;Sul;EMAD I;True
+2250799;GO;Centro-Oeste;EMAD I;False
+2247992;MG;Sudeste;EMAP;True
+2241218;CE;Nordeste;EMAD II;True
+2241226;CE;Nordeste;EMAP;True
+2261014;PA;Norte;EMAP;True
+2261006;PA;Norte;EMAD I;False
+2239248;CE;Nordeste;EMAD II;True
+1618598;RN;Nordeste;EMAP;True
+1618490;RN;Nordeste;EMAD I;True
+2245914;AL;Nordeste;EMAP;True
+1712128;MG;Sudeste;EMAD II;False
+2245124;MA;Nordeste;EMAP;True
+2263556;PA;Norte;EMAD II;True
+2263564;PA;Norte;EMAP;True
+2281406;CE;Nordeste;EMAD II;True
+2281414;CE;Nordeste;EMAP;True
+2282887;MG;Sudeste;EMAD I;True
+1517546;GO;Centro-Oeste;EMAP;True
+1517562;GO;Centro-Oeste;EMAD I;False
+1711172;BA;Nordeste;EMAD II;True
+1711180;BA;Nordeste;EMAP;True
+1617540;BA;Nordeste;EMAD II;False
+1473212;MG;Sudeste;EMAD I;True
+358908;SP;Sudeste;EMAD I;True
+1515594;AL;Nordeste;EMAD II;True
+290378;RJ;Sudeste;EMAD I;True
+383198;PR;Sul;EMAD I;False
+1711288;BA;Nordeste;EMAD I;True
+1711296;BA;Nordeste;EMAP;True
+1675494;AL;Nordeste;EMAD II;True
+1469029;RJ;Sudeste;EMAD I;False
+2178923;SP;Sudeste;EMAP;True
+2224240;SC;Sul;EMAD II;True
+2224259;SC;Sul;EMAP;True
+2215691;RJ;Sudeste;EMAP;True
+2210835;BA;Nordeste;EMAD II;False
+2206072;PB;Nordeste;EMAD II;False
+2206080;PB;Nordeste;EMAP;True
+290351;RJ;Sudeste;EMAP;True
+1533940;SC;Sul;EMAD I;False
+1705377;MA;Nordeste;EMAD I;True
+1679724;MG;Sudeste;EMAD I;True
+2189801;SP;Sudeste;EMAD I;True
+2182742;PB;Nordeste;EMAP;True
+1699989;AL;Nordeste;EMAP;True
+2477033;PE;Nordeste;EMAD II;True
+471445;DF;Centro-Oeste;EMAD I;True
+2270552;PA;Norte;EMAD I;False
+1494775;SP;Sudeste;EMAD I;False
+1520466;PB;Nordeste;EMAD II;True
+1520903;PB;Nordeste;EMAP;True
+1514156;SP;Sudeste;EMAD I;True
+1516035;SP;Sudeste;EMAP;True
+1529528;RS;Sul;EMAD I;False
+1529854;RS;Sul;EMAP;False
+1602888;RN;Nordeste;EMAD II;True
+1625772;PE;Nordeste;EMAP;True
+1533983;PA;Norte;EMAP;True
+1533754;PA;Norte;EMAD I;False
+1655507;PB;Nordeste;EMAD II;True
+1573276;CE;Nordeste;EMAP;True
+2131633;BA;Nordeste;EMAP;False
+2131641;BA;Nordeste;EMAD I;True
+2131668;BA;Nordeste;EMAD I;True
+1604376;GO;Centro-Oeste;EMAD I;True
+1604384;GO;Centro-Oeste;EMAP;True
+383473;PR;Sul;EMAP;True
+1675028;RS;Sul;EMAD I;False
+1617931;PA;Norte;EMAD I;True
+1544950;BA;Nordeste;EMAD II;True
+1545086;BA;Nordeste;EMAP;True
+1595024;MG;Sudeste;EMAP;True
+1595032;MG;Sudeste;EMAD I;False
+1466100;BA;Nordeste;EMAD I;True
+1665502;BA;Nordeste;EMAP;True
+1619837;RJ;Sudeste;EMAD I;False
+348899;SP;Sudeste;EMAD I;False
+348929;SP;Sudeste;EMAP;True
+2131706;RJ;Sudeste;EMAD II;True
+301248;RJ;Sudeste;EMAD I;False
+1541137;RS;Sul;EMAD I;False
+1541145;RS;Sul;EMAD I;False
+1541153;RS;Sul;EMAD I;False
+1541161;RS;Sul;EMAD I;False
+1674382;RS;Sul;EMAD I;False
+1674390;RS;Sul;EMAP;True
+277258;MG;Sudeste;EMAD I;False
+1706896;MG;Sudeste;EMAD II;True
+1706918;MG;Sudeste;EMAP;True
+2244756;GO;Centro-Oeste;EMAD II;True
+2244381;GO;Centro-Oeste;EMAP;True
+2246643;SP;Sudeste;EMAD I;True
+2246651;SP;Sudeste;EMAP;True
+2241803;SP;Sudeste;EMAP;True
+2219506;PA;Norte;EMAD I;False
+2167654;PE;Nordeste;EMAP;True
+1528254;PE;Nordeste;EMAD I;True
+1528262;PE;Nordeste;EMAP;True
+1706225;CE;Nordeste;EMAD I;True
+1564897;CE;Nordeste;EMAD II;False
+1564900;CE;Nordeste;EMAP;False
+1625128;PB;Nordeste;EMAD I;False
+1707396;MG;Sudeste;EMAP;True
+1589091;SP;Sudeste;EMAD I;False
+1697447;PB;Nordeste;EMAD II;True
+1520687;BA;Nordeste;EMAD II;True
+1520695;BA;Nordeste;EMAP;True
+1511750;SP;Sudeste;EMAD I;False
+1511777;SP;Sudeste;EMAP;False
+1677314;RN;Nordeste;EMAD II;True
+323934;SP;Sudeste;EMAD I;True
+323942;SP;Sudeste;EMAP;True
+1677713;MG;Sudeste;EMAD I;True
+1677721;MG;Sudeste;EMAP;True
+2236508;MA;Nordeste;EMAD I;True
+2236516;MA;Nordeste;EMAD I;False
+2236524;MA;Nordeste;EMAP;True
+1530526;CE;Nordeste;EMAD I;False
+1530534;CE;Nordeste;EMAP;False
+1656805;MG;Sudeste;EMAP;True
+2214628;SP;Sudeste;EMAP;True
+2215837;SP;Sudeste;EMAP;True
+352276;SP;Sudeste;EMAD I;True
+352268;SP;Sudeste;EMAP;True
+1708775;SP;Sudeste;EMAD I;False
+1679716;MG;Sudeste;EMAP;False
+1510789;SP;Sudeste;EMAP;True
+1661833;AL;Nordeste;EMAP;True
+1661841;AL;Nordeste;EMAD II;True
+1627562;SP;Sudeste;EMAD I;True
+1503057;CE;Nordeste;EMAD II;True
+1476777;PR;Sul;EMAD I;True
+1502867;RN;Nordeste;EMAD I;True
+1502875;RN;Nordeste;EMAP;True
+1709682;PR;Sul;EMAD I;False
+1566806;SP;Sudeste;EMAD I;False
+225738;MG;Sudeste;EMAD I;False
+1656686;MG;Sudeste;EMAP;True
+2237911;PE;Nordeste;EMAD I;True
+2237946;PE;Nordeste;EMAP;True
+2220520;MA;Nordeste;EMAD II;True
+1548891;GO;Centro-Oeste;EMAD I;False
+1548948;GO;Centro-Oeste;EMAP;True
+2151928;MA;Nordeste;EMAP;False
+1589539;AC;Norte;EMAD I;True
+1930060;BA;Nordeste;EMAD I;True
+1517759;BA;Nordeste;EMAD I;True
+1517767;BA;Nordeste;EMAP;True
+230014;MG;Sudeste;EMAD I;False
+1610023;SP;Sudeste;EMAD I;False
+1511661;SP;Sudeste;EMAD I;False
+140341;PE;Nordeste;EMAD I;True
+1505106;PA;Norte;EMAD I;False
+1636499;BA;Nordeste;EMAD II;True
+1701274;BA;Nordeste;EMAP;True
+363103;SP;Sudeste;EMAD I;True
+310395;RJ;Sudeste;EMAD I;False
+1619527;BA;Nordeste;EMAP;False
+1545450;PE;Nordeste;EMAP;True
+1655051;PE;Nordeste;EMAP;True
+1703870;PA;Norte;EMAD I;False
+1704893;PA;Norte;EMAP;True
+1620371;MG;Sudeste;EMAD I;False
+246670;MG;Sudeste;EMAD I;True
+1476246;MG;Sudeste;EMAP;True
+2165090;PA;Norte;EMAD I;False
+1675230;SE;Nordeste;EMAD II;True
+1675265;SE;Nordeste;EMAP;True
+1500465;MG;Sudeste;EMAP;True
+1500961;MG;Sudeste;EMAD I;True
+2295512;AL;Nordeste;EMAD II;True
+2280159;CE;Nordeste;EMAD II;True
+1656635;MG;Sudeste;EMAD I;False
+2232901;BA;Nordeste;EMAD II;True
+2232952;BA;Nordeste;EMAP;True
+2230046;RJ;Sudeste;EMAD I;True
+1566350;BA;Nordeste;EMAD II;True
+1566369;BA;Nordeste;EMAP;True
+2210037;PI;Nordeste;EMAP;True
+2241374;PA;Norte;EMAD I;True
+2215470;MT;Centro-Oeste;EMAD I;False
+2215578;MT;Centro-Oeste;EMAP;True
+2241382;PA;Norte;EMAP;True
+2187302;MA;Nordeste;EMAD II;True
+1546686;SP;Sudeste;EMAD II;False
+2256096;AM;Norte;EMAP;True
+310204;RJ;Sudeste;EMAP;True
+36420;TO;Norte;EMAD I;False
+36439;TO;Norte;EMAP;True
+337552;SP;Sudeste;EMAD I;True
+1573608;MG;Sudeste;EMAP;True
+1706586;SP;Sudeste;EMAD I;True
+1675834;RN;Nordeste;EMAP;True
+355240;SP;Sudeste;EMAD I;True
+1620770;MG;Sudeste;EMAP;True
+1609556;SP;Sudeste;EMAD I;True
+1610333;SP;Sudeste;EMAP;True
+1600982;SP;Sudeste;EMAD I;True
+1616579;SP;Sudeste;EMAD I;False
+1708538;PE;Nordeste;EMAP;True
+1661957;SP;Sudeste;EMAD I;False
+2214318;RS;Sul;EMAD I;False
+2174553;MG;Sudeste;EMAD I;True
+2175045;MG;Sudeste;EMAP;True
+1708546;MG;Sudeste;EMAD II;True
+2219956;PB;Nordeste;EMAP;True
+2233916;PR;Sul;EMAD I;False
+2287048;SP;Sudeste;EMAD I;False
+2264366;CE;Nordeste;EMAD I;True
+2270994;GO;Centro-Oeste;EMAD I;False
+1596292;CE;Nordeste;EMAD II;True
+1602896;RN;Nordeste;EMAP;True
+1553321;PA;Norte;EMAD I;False
+1558501;PA;Norte;EMAP;True
+1551655;CE;Nordeste;EMAD I;True
+1699970;CE;Nordeste;EMAP;True
+2161168;BA;Nordeste;EMAD II;True
+2161176;BA;Nordeste;EMAP;True
+1679740;MG;Sudeste;EMAD I;True
+1491202;MG;Sudeste;EMAD I;True
+1619985;MG;Sudeste;EMAD I;True
+1679759;MG;Sudeste;EMAP;True
+1517902;SP;Sudeste;EMAD I;True
+1622358;SP;Sudeste;EMAD I;False
+1678841;SP;Sudeste;EMAP;False
+320943;SP;Sudeste;EMAD I;False
+320951;SP;Sudeste;EMAP;True
+1616617;SP;Sudeste;EMAD II;True
+1616625;SP;Sudeste;EMAP;False
+1620657;PE;Nordeste;EMAD I;False
+1549413;MG;Sudeste;EMAD I;True
+1549421;MG;Sudeste;EMAP;True
+1470299;RJ;Sudeste;EMAD I;False
+1469665;RJ;Sudeste;EMAD I;False
+1714112;MG;Sudeste;EMAD I;True
+210234;BA;Nordeste;EMAD I;False
+2224313;RN;Nordeste;EMAD II;True
+1563955;SP;Sudeste;EMAD I;False
+1579835;MG;Sudeste;EMAD II;True
+1498096;BA;Nordeste;EMAP;False
+1672444;PA;Norte;EMAD I;False
+1672452;PA;Norte;EMAP;False
+1478451;SP;Sudeste;EMAD I;True
+1478478;SP;Sudeste;EMAP;True
+1591274;DF;Centro-Oeste;EMAP;False
+1481983;DF;Centro-Oeste;EMAD I;True
+1509977;AL;Nordeste;EMAD I;True
+1509993;AL;Nordeste;EMAP;True
+134309;PE;Nordeste;EMAD I;False
+1546643;PE;Nordeste;EMAD II;True
+2094517;PE;Nordeste;EMAP;True
+2230100;BA;Nordeste;EMAD II;False
+2230119;BA;Nordeste;EMAP;False
+1507524;CE;Nordeste;EMAP;True
+1709712;MG;Sudeste;EMAD I;True
+1682865;GO;Centro-Oeste;EMAD II;False
+1617117;RJ;Sudeste;EMAD I;True
+1617125;RJ;Sudeste;EMAP;True
+1565958;GO;Centro-Oeste;EMAD I;True
+1565966;GO;Centro-Oeste;EMAP;True
+2492520;PB;Nordeste;EMAP-R;True
+2491060;MG;Sudeste;EMAP;False
+1669680;CE;Nordeste;EMAD II;True
+1669699;CE;Nordeste;EMAP;True
+1515748;AM;Norte;EMAD I;True
+1515756;AM;Norte;EMAP;True
+2491362;PA;Norte;EMAD I;True
+1708597;MG;Sudeste;EMAD I;False
+226637;MG;Sudeste;EMAD I;True
+1656732;MG;Sudeste;EMAP;True
+2201089;RS;Sul;EMAD I;False
+2237687;RN;Nordeste;EMAP;True
+1478281;MG;Sudeste;EMAD I;True
+1525948;CE;Nordeste;EMAD I;False
+1618245;PA;Norte;EMAP;True
+1618237;PA;Norte;EMAD I;True
+1650351;PB;Nordeste;EMAD I;False
+1650386;PB;Nordeste;EMAP;True
+1542303;AM;Norte;EMAP;True
+1589385;PA;Norte;EMAD I;False
+1698818;MG;Sudeste;EMAD I;True
+438952;MS;Centro-Oeste;EMAP;True
+438944;MS;Centro-Oeste;EMAD I;True
+1667386;PA;Norte;EMAD II;True
+1667378;PA;Norte;EMAP;True
+1510592;MS;Centro-Oeste;EMAD I;True
+1710141;RS;Sul;EMAD I;True
+1571494;BA;Nordeste;EMAD I;False
+1571508;BA;Nordeste;EMAP;True
+1709119;GO;Centro-Oeste;EMAD II;True
+1709127;GO;Centro-Oeste;EMAP;True
+363324;SP;Sudeste;EMAP;True
+1709720;SP;Sudeste;EMAP;False
+342149;SP;Sudeste;EMAD I;True
+342157;SP;Sudeste;EMAP;True
+2195739;RS;Sul;EMAD II;True
+140376;PE;Nordeste;EMAD I;True
+1681710;GO;Centro-Oeste;EMAD II;False
+1681729;GO;Centro-Oeste;EMAP;True
+2497441;MG;Sudeste;EMAP-R;True
+2304333;PA;Norte;EMAD II;True
+2308223;PE;Nordeste;EMAD II;False
+2992;RO;Norte;EMAD I;True
+3018;RO;Norte;EMAP;True
+1603671;SP;Sudeste;EMAD I;False
+1523880;CE;Nordeste;EMAD I;False
+1696351;MG;Sudeste;EMAP;True
+1696378;MG;Sudeste;EMAD II;True
+1583611;MG;Sudeste;EMAD I;True
+1616366;MG;Sudeste;EMAP;True
+1543776;SP;Sudeste;EMAD I;False
+1543806;SP;Sudeste;EMAP;False
+1484060;AL;Nordeste;EMAD I;False
+1484095;AL;Nordeste;EMAP;True
+1484087;AL;Nordeste;EMAD I;True
+1484109;AL;Nordeste;EMAP;True
+1484079;AL;Nordeste;EMAD I;True
+85405;CE;Nordeste;EMAP;False
+1534467;MA;Nordeste;EMAD I;True
+1534475;MA;Nordeste;EMAP;True
+1510037;SE;Nordeste;EMAD II;True
+1510045;SE;Nordeste;EMAP;True
+1551809;PI;Nordeste;EMAD I;False
+350516;SP;Sudeste;EMAD I;True
+1589199;SP;Sudeste;EMAP;True
+1591258;SP;Sudeste;EMAD I;True
+1591266;SP;Sudeste;EMAD I;True
+1469622;RJ;Sudeste;EMAD I;True
+1469924;RJ;Sudeste;EMAP;True
+1469789;RJ;Sudeste;EMAD I;False
+1469932;RJ;Sudeste;EMAP;True
+2224992;PA;Norte;EMAD I;False
+2225018;PA;Norte;EMAP;True
+2225387;MA;Nordeste;EMAD II;True
+2225395;MA;Nordeste;EMAP;True
+1551620;PA;Norte;EMAD I;False
+1551639;PA;Norte;EMAP;True
+1596357;GO;Centro-Oeste;EMAD I;True
+1489771;BA;Nordeste;EMAD I;True
+1697617;SP;Sudeste;EMAD I;True
+167010;AL;Nordeste;EMAP;True
+1503596;AL;Nordeste;EMAD I;True
+1503618;AL;Nordeste;EMAP;True
+1545558;PE;Nordeste;EMAD I;False
+1528963;BA;Nordeste;EMAD II;True
+1528971;BA;Nordeste;EMAP;True
+1667394;PA;Norte;EMAD II;True
+1654969;AL;Nordeste;EMAD II;True
+1654977;AL;Nordeste;EMAP;True
+1708031;BA;Nordeste;EMAD I;True
+2256223;SP;Sudeste;EMAD I;False
+1672193;PI;Nordeste;EMAD II;True
+1672207;PI;Nordeste;EMAP;True
+2201372;RN;Nordeste;EMAP;True
+2242877;GO;Centro-Oeste;EMAD II;False
+2242885;GO;Centro-Oeste;EMAP;True
+2247852;BA;Nordeste;EMAD II;True
+1505149;PA;Norte;EMAP;False
+1566377;MS;Centro-Oeste;EMAD I;False
+1566385;MS;Centro-Oeste;EMAP;False
+1480359;MG;Sudeste;EMAP;True
+1481835;MG;Sudeste;EMAD I;True
+1522620;BA;Nordeste;EMAP;True
+1617559;BA;Nordeste;EMAP;True
+1550438;RJ;Sudeste;EMAD I;False
+1550446;RJ;Sudeste;EMAP;True
+1600885;SP;Sudeste;EMAD I;False
+1654586;AL;Nordeste;EMAP;True
+1488945;AM;Norte;EMAD I;True
+1524356;AM;Norte;EMAD I;True
+1488953;AM;Norte;EMAP;True
+292478;RJ;Sudeste;EMAD I;True
+1480618;RJ;Sudeste;EMAP;True
+2283794;SE;Nordeste;EMAP;True
+2216582;PA;Norte;EMAD II;True
+2216590;PA;Norte;EMAP;True
+2266938;RS;Sul;EMAD II;True
+1677594;RN;Nordeste;EMAD II;True
+1676636;AL;Nordeste;EMAD II;True
+1769650;AL;Nordeste;EMAP;True
+1689142;SP;Sudeste;EMAP;False
+1690116;MS;Centro-Oeste;EMAD I;True
+2202484;RN;Nordeste;EMAD II;False
+1630628;SP;Sudeste;EMAD I;True
+1498916;SP;Sudeste;EMAD I;False
+310425;RJ;Sudeste;EMAD I;False
+229997;MG;Sudeste;EMAP;True
+1555715;MA;Nordeste;EMAD I;True
+1555723;MA;Nordeste;EMAP;False
+2292106;SC;Sul;EMAD I;False
+2293005;CE;Nordeste;EMAP;True
+2228084;AM;Norte;EMAD I;True
+1530771;SP;Sudeste;EMAD I;False
+378682;PR;Sul;EMAD I;True
+378674;PR;Sul;EMAD I;True
+1486926;PR;Sul;EMAD I;True
+378666;PR;Sul;EMAP;True
+1514334;MG;Sudeste;EMAP;True
+1699903;AL;Nordeste;EMAD II;True
+2271842;MA;Nordeste;EMAD II;True
+2271826;MA;Nordeste;EMAP;True
+2510367;MG;Sudeste;EMAP-R;True
+2260417;PE;Nordeste;EMAD II;True
+2264498;PB;Nordeste;EMAP;True
+2293838;MG;Sudeste;EMAD I;False
+1706926;MG;Sudeste;EMAD I;True
+1700901;AL;Nordeste;EMAD II;True
+210145;BA;Nordeste;EMAP;True
+1481436;BA;Nordeste;EMAD I;True
+1493809;BA;Nordeste;EMAP;False
+113255;RN;Nordeste;EMAD I;False
+113271;RN;Nordeste;EMAP;True
+1490214;RO;Norte;EMAP;True
+1490192;RO;Norte;EMAD I;True
+1607863;TO;Norte;EMAD I;True
+1607855;TO;Norte;EMAP;True
+1680587;MG;Sudeste;EMAD I;True
+1562568;RS;Sul;EMAD I;False
+1521454;PI;Nordeste;EMAD II;True
+1527320;PI;Nordeste;EMAP;True
+1708481;CE;Nordeste;EMAD I;True
+1708503;CE;Nordeste;EMAP;True
+1704524;BA;Nordeste;EMAD II;False
+1709135;PB;Nordeste;EMAD I;True
+1709143;PB;Nordeste;EMAD I;True
+1709151;PB;Nordeste;EMAD I;True
+1709178;PB;Nordeste;EMAP;True
+1620142;BA;Nordeste;EMAD I;True
+1620150;BA;Nordeste;EMAP;True
+1575589;RN;Nordeste;EMAD II;True
+1535943;RJ;Sudeste;EMAD I;True
+1575597;RN;Nordeste;EMAP;True
+1675907;SP;Sudeste;EMAD I;False
+2217872;CE;Nordeste;EMAP;True
+2512351;PI;Nordeste;EMAP-R;True
+2246619;MG;Sudeste;EMAP;False
+330418;SP;Sudeste;EMAD I;False
+330388;SP;Sudeste;EMAP;True
+1706691;MG;Sudeste;EMAD II;True
+1708619;MG;Sudeste;EMAP;True
+1471651;SP;Sudeste;EMAD I;True
+1471678;SP;Sudeste;EMAP;True
+232459;MG;Sudeste;EMAD I;True
+1706748;MG;Sudeste;EMAD II;True
+1706756;MG;Sudeste;EMAP;True
+1560778;PA;Norte;EMAD II;True
+50598;MA;Nordeste;EMAD I;True
+50601;MA;Nordeste;EMAP;True
+1675478;AL;Nordeste;EMAD II;True
+1675486;AL;Nordeste;EMAP;True
+458406;GO;Centro-Oeste;EMAP;True
+1535811;AL;Nordeste;EMAD II;True
+1535838;AL;Nordeste;EMAP;True
+2208296;PR;Sul;EMAD I;True
+2208318;PR;Sul;EMAP;False
+2147513;BA;Nordeste;EMAP;True
+1481363;SP;Sudeste;EMAD I;True
+1506528;SP;Sudeste;EMAP;True
+52;MG;Sudeste;EMAP;False
+51;MG;Sudeste;EMAD I;False
+1709097;SP;Sudeste;EMAD I;False
+1709100;SP;Sudeste;EMAP;True
+1623389;PB;Nordeste;EMAP;True
+1531557;PI;Nordeste;EMAP;True
+1477285;RJ;Sudeste;EMAD I;True
+1477390;RJ;Sudeste;EMAP;False
+1669648;RJ;Sudeste;EMAD I;False
+310387;RJ;Sudeste;EMAP;True
+2258021;MG;Sudeste;EMAP;False
+1707418;MG;Sudeste;EMAD II;True
+2284529;PA;Norte;EMAP;True
+2284537;PA;Norte;EMAD II;True
+2277476;BA;Nordeste;EMAP;True
+308382;RJ;Sudeste;EMAP;True
+308366;RJ;Sudeste;EMAD I;False
+1701592;RS;Sul;EMAD II;True
+2189305;DF;Centro-Oeste;EMAD I;True
+2215314;PA;Norte;EMAP;True
+353566;SP;Sudeste;EMAD I;True
+353558;SP;Sudeste;EMAP;True
+1486810;SP;Sudeste;EMAD I;True
+1714678;MG;Sudeste;EMAP;False
+1714651;MG;Sudeste;EMAD I;True
+1527762;SP;Sudeste;EMAD I;True
+377031;PR;Sul;EMAD I;False
+1585568;RJ;Sudeste;EMAD I;True
+1678310;AL;Nordeste;EMAD I;False
+1715917;SP;Sudeste;EMAD I;False
+1481800;RJ;Sudeste;EMAP;True
+1481932;RJ;Sudeste;EMAD I;True
+1481819;RJ;Sudeste;EMAP;True
+1472801;RJ;Sudeste;EMAD II;False
+1472925;RJ;Sudeste;EMAP;False
+1531042;GO;Centro-Oeste;EMAD II;True
+1537393;GO;Centro-Oeste;EMAP;True
+22829;PA;Norte;EMAD I;False
+22837;PA;Norte;EMAP;True
+2310279;PA;Norte;EMAP;True
+2311321;RS;Sul;EMAD I;False
+2285800;BA;Nordeste;EMAD II;True
+2308665;BA;Nordeste;EMAP;True
+2302608;BA;Nordeste;EMAD II;True
+2302616;BA;Nordeste;EMAP;True
+2308215;PE;Nordeste;EMAP;True
+1655000;TO;Norte;EMAD I;True
+2240513;GO;Centro-Oeste;EMAD II;True
+2525941;BA;Nordeste;EMAP-R;True
+2388863;PR;Sul;EMAD I;False
+2309459;PE;Nordeste;EMAD I;False
+2338092;MG;Sudeste;EMAD I;False
+2333856;SP;Sudeste;EMAD I;False
+2386917;BA;Nordeste;EMAD I;True
+367893;SP;Sudeste;EMAD I;True
+2332000;CE;Nordeste;EMAD I;False
+2449978;BA;Nordeste;EMAD I;False
+290343;RJ;Sudeste;EMAD I;True
+2360535;PE;Nordeste;EMAP;True
+1595210;CE;Nordeste;EMAD I;True
+1595229;CE;Nordeste;EMAP;False
+1656627;MG;Sudeste;EMAD I;False
+2308525;CE;Nordeste;EMAD I;False
+1666215;SP;Sudeste;EMAD I;False
+1705067;MT;Centro-Oeste;EMAD I;True
+2397013;SP;Sudeste;EMAP;False
+2319330;PA;Norte;EMAP;True
+2319322;PA;Norte;EMAD II;True
+2304872;RJ;Sudeste;EMAD I;True
+2395789;BA;Nordeste;EMAP;True
+2418177;CE;Nordeste;EMAP;True
+184039;BA;Nordeste;EMAD I;True
+184047;BA;Nordeste;EMAP;True
+1503359;MG;Sudeste;EMAD I;False
+2532018;AM;Norte;EMAD I;False
+2385287;DF;Centro-Oeste;EMAD I;False
+2532093;AM;Norte;EMAP;True
+2217929;CE;Nordeste;EMAP;False
+2221780;MA;Nordeste;EMAD I;True
+2310600;CE;Nordeste;EMAD II;False
+2310627;CE;Nordeste;EMAP;True
+2322757;CE;Nordeste;EMAD II;True
+2331233;MG;Sudeste;EMAD II;False
+1707108;CE;Nordeste;EMAD I;False
+1470280;RJ;Sudeste;EMAD I;False
+2354845;RN;Nordeste;EMAP;True
+2334526;PE;Nordeste;EMAD II;True
+2140349;SE;Nordeste;EMAD I;True
+2382180;BA;Nordeste;EMAD I;False
+2374234;RO;Norte;EMAP;False
+2312522;SP;Sudeste;EMAP;True
+2312530;SP;Sudeste;EMAD I;False
+2376296;DF;Centro-Oeste;EMAP;True
+2334518;PE;Nordeste;EMAP;True
+2391694;CE;Nordeste;EMAD I;True
+2391708;CE;Nordeste;EMAP;True
+2318253;GO;Centro-Oeste;EMAD II;True
+2318261;GO;Centro-Oeste;EMAP;True
+2313154;MG;Sudeste;EMAP;True
+1486306;SP;Sudeste;EMAD I;True
+2316129;CE;Nordeste;EMAD II;True
+1502530;SP;Sudeste;EMAD I;True
+2304112;PA;Norte;EMAD I;False
+2304120;PA;Norte;EMAP;True
+1610139;SP;Sudeste;EMAD I;True
+2324784;AL;Nordeste;EMAD II;True
+2324792;AL;Nordeste;EMAP;True
+1679783;SE;Nordeste;EMAD I;True
+97020;CE;Nordeste;EMAD I;False
+2407787;PE;Nordeste;EMAP;True
+2407795;PE;Nordeste;EMAD II;True
+1556134;SP;Sudeste;EMAP;True
+2312484;MG;Sudeste;EMAP;True
+1615718;SP;Sudeste;EMAD I;False
+2308622;PE;Nordeste;EMAP;True
+2313200;BA;Nordeste;EMAD II;True
+57975;MA;Nordeste;EMAP;True
+2333244;SP;Sudeste;EMAD I;False
+2333252;SP;Sudeste;EMAD I;False
+2333260;SP;Sudeste;EMAP;True
+2321432;RJ;Sudeste;EMAD I;True
+2321440;RJ;Sudeste;EMAD I;False
+2321459;RJ;Sudeste;EMAP;True
+2323117;CE;Nordeste;EMAP;False
+2313855;CE;Nordeste;EMAP;True
+1701010;CE;Nordeste;EMAP;False
+1701053;CE;Nordeste;EMAP;False
+2240521;GO;Centro-Oeste;EMAP;True
+2332361;MG;Sudeste;EMAD II;False
+2332388;MG;Sudeste;EMAP;False
+1700685;CE;Nordeste;EMAD I;False
+1701061;CE;Nordeste;EMAP;False
+1701088;CE;Nordeste;EMAP;False
+2490323;PI;Nordeste;EMAP-R;False
+2207362;PA;Norte;EMAD II;True
+1988921;SP;Sudeste;EMAD I;False
+2488612;MG;Sudeste;EMAD II;False
+2488620;MG;Sudeste;EMAP;True
+1479016;SP;Sudeste;EMAD I;False
+1479075;SP;Sudeste;EMAD I;False
+1479024;SP;Sudeste;EMAD I;False
+1479091;SP;Sudeste;EMAP;True
+2497182;PR;Sul;EMAP-R;False
+2306352;MG;Sudeste;EMAD I;True
+1650327;AL;Nordeste;EMAD II;True
+1650793;AL;Nordeste;EMAP;False
+2447649;BA;Nordeste;EMAP;False
+1635581;SP;Sudeste;EMAD I;True
+2496704;PI;Nordeste;EMAP-R;False
+2494825;BA;Nordeste;EMAP-R;True
+1511734;SP;Sudeste;EMAD I;False
+1701029;CE;Nordeste;EMAP;False
+1710834;CE;Nordeste;EMAD I;False
+2425017;RN;Nordeste;EMAD II;True
+2487624;SE;Nordeste;EMAD I;True
+1479369;PR;Sul;EMAD I;True
+1479172;PR;Sul;EMAD I;False
+2488469;MG;Sudeste;EMAP-R;False
+2270447;PE;Nordeste;EMAD I;False
+2455269;BA;Nordeste;EMAD I;True
+2484250;PE;Nordeste;EMAP;False
+2504154;MG;Sudeste;EMAP-R;False
+2321130;MT;Centro-Oeste;EMAD I;True
+1518585;CE;Nordeste;EMAP;False
+2489236;RS;Sul;EMAD I;True
+2500299;MA;Nordeste;EMAD I;True
+2503891;MG;Sudeste;EMAP-R;True
+2429209;PE;Nordeste;EMAP;True
+1654985;PE;Nordeste;EMAD I;False
+2402602;SP;Sudeste;EMAD II;True
+2418983;CE;Nordeste;EMAP;True
+2278189;PB;Nordeste;EMAD II;True
+1569929;DF;Centro-Oeste;EMAD I;True
+2272768;GO;Centro-Oeste;EMAD I;True
+2297485;GO;Centro-Oeste;EMAP;False
+1705172;MT;Centro-Oeste;EMAD I;True
+2483653;SP;Sudeste;EMAD I;False
+2430924;RJ;Sudeste;EMAD I;False
+2430932;RJ;Sudeste;EMAD I;False
+2430940;RJ;Sudeste;EMAD I;False
+2430959;RJ;Sudeste;EMAP;True
+1635573;SP;Sudeste;EMAD I;True
+1616234;MG;Sudeste;EMAD I;False
+1533207;SP;Sudeste;EMAD I;False
+1533215;SP;Sudeste;EMAP;True
+1562282;RS;Sul;EMAD I;False
+1562290;RS;Sul;EMAP;False
+1697005;PB;Nordeste;EMAD II;True
+1540858;SP;Sudeste;EMAD I;False
+1560751;SP;Sudeste;EMAP;True
+323691;SP;Sudeste;EMAD I;True
+323675;SP;Sudeste;EMAP;True
+1538098;DF;Centro-Oeste;EMAP;True
+308447;RJ;Sudeste;EMAD I;False
+308439;RJ;Sudeste;EMAP;True
+1475886;RJ;Sudeste;EMAD I;True
+1475916;RJ;Sudeste;EMAP;True
+2278537;RJ;Sudeste;EMAD I;True
+288721;RJ;Sudeste;EMAP;True
+468541;DF;Centro-Oeste;EMAD I;True
+1610546;SP;Sudeste;EMAP;True
+124613;PB;Nordeste;EMAD I;True
+124729;PB;Nordeste;EMAD I;False
+124621;PB;Nordeste;EMAP;True
+124699;PB;Nordeste;EMAD I;True
+124605;PB;Nordeste;EMAP;True
+1482963;PB;Nordeste;EMAP;True
+109231;RN;Nordeste;EMAD I;True
+2183927;PE;Nordeste;EMAD II;True
+470902;DF;Centro-Oeste;EMAP;True
+1709658;PI;Nordeste;EMAD I;False
+1715674;PI;Nordeste;EMAP;True
+1620428;PB;Nordeste;EMAP;True
+1620436;PB;Nordeste;EMAD II;True
+1565265;PB;Nordeste;EMAP;True
+1565273;PB;Nordeste;EMAD II;True
+290424;RJ;Sudeste;EMAD I;True
+290416;RJ;Sudeste;EMAP;True
+1483358;SP;Sudeste;EMAD II;True
+1483404;SP;Sudeste;EMAP;True
+458988;GO;Centro-Oeste;EMAP;True
+1678302;AL;Nordeste;EMAP;True
+1699601;MG;Sudeste;EMAD II;True
+1699628;MG;Sudeste;EMAP;True
+329428;SP;Sudeste;EMAD I;False
+329436;SP;Sudeste;EMAP;True
+1674358;CE;Nordeste;EMAD I;True
+323659;SP;Sudeste;EMAD I;False
+323640;SP;Sudeste;EMAP;True
+1483188;SP;Sudeste;EMAD I;False
+1548727;SP;Sudeste;EMAD I;False
+2242710;PE;Nordeste;EMAP;True
+2227894;PE;Nordeste;EMAD II;True
+1524348;AM;Norte;EMAD I;True
+2241897;GO;Centro-Oeste;EMAD I;False
+2258005;MG;Sudeste;EMAP;True
+2255669;BA;Nordeste;EMAD I;False
+2255677;BA;Nordeste;EMAP;True
+2292556;BA;Nordeste;EMAD II;True
+2127431;CE;Nordeste;EMAD I;False
+1564676;RJ;Sudeste;EMAP;True
+1485695;SP;Sudeste;EMAP;True
+1485652;SP;Sudeste;EMAD II;False
+1656708;AL;Nordeste;EMAD I;False
+1656775;AL;Nordeste;EMAP;True
+1542087;SP;Sudeste;EMAP;True
+365157;SP;Sudeste;EMAD I;True
+1633287;SP;Sudeste;EMAD I;False
+1709488;BA;Nordeste;EMAD II;True
+1709496;BA;Nordeste;EMAP;True
+1524402;SC;Sul;EMAD I;False
+363316;SP;Sudeste;EMAD I;False
+1710389;RS;Sul;EMAD I;False
+2301644;AL;Nordeste;EMAP;False
+1585207;PE;Nordeste;EMAD I;False
+1654756;PE;Nordeste;EMAD I;False
+1481843;RJ;Sudeste;EMAD I;True
+2230690;BA;Nordeste;EMAD II;True
+2230712;BA;Nordeste;EMAP;True
+2424428;BA;Nordeste;EMAP;False
+2221268;MG;Sudeste;EMAP;True
+2166542;MG;Sudeste;EMAD I;True
+2228556;MG;Sudeste;EMAD II;True
+2238233;PA;Norte;EMAP;True
+2237741;MG;Sudeste;EMAD II;True
+2129140;PR;Sul;EMAP;True
+1974092;PR;Sul;EMAD II;False
+1500562;AL;Nordeste;EMAP;True
+1500554;AL;Nordeste;EMAD I;True
+1526421;PR;Sul;EMAD II;True
+1698230;PB;Nordeste;EMAD II;False
+1698222;PB;Nordeste;EMAP;True
+1479857;RJ;Sudeste;EMAD I;False
+1470272;RJ;Sudeste;EMAD I;True
+1536869;MS;Centro-Oeste;EMAP;True
+1536850;MS;Centro-Oeste;EMAD I;True
+400386;SC;Sul;EMAD I;False
+365149;SP;Sudeste;EMAP;True
+1495771;PI;Nordeste;EMAD II;True
+1497146;PI;Nordeste;EMAP;True
+1705954;AL;Nordeste;EMAP;True
+1475746;RJ;Sudeste;EMAD I;True
+1475754;RJ;Sudeste;EMAP;True
+167029;AL;Nordeste;EMAD I;False

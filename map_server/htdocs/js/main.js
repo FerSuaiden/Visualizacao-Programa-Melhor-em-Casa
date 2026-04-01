@@ -227,12 +227,190 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ---------- Iframe Expand/Collapse ---------- */
+  function syncFullscreenIframeSize(wrapper, expanded) {
+    wrapper?.querySelectorAll('iframe').forEach((iframe) => {
+      if (expanded) {
+        iframe.style.setProperty('width', '100vw', 'important');
+        iframe.style.setProperty('height', '100dvh', 'important');
+        iframe.style.setProperty('max-width', 'none', 'important');
+        iframe.style.setProperty('max-height', 'none', 'important');
+      } else {
+        iframe.style.removeProperty('width');
+        iframe.style.removeProperty('height');
+        iframe.style.removeProperty('max-width');
+        iframe.style.removeProperty('max-height');
+      }
+    });
+  }
+
+  function triggerEmbeddedResize(wrapper) {
+    // Reflow interactive embeds (Leaflet/Plotly) after fullscreen transitions.
+    [60, 180, 420].forEach((delay) => {
+      setTimeout(() => {
+        window.dispatchEvent(new Event('resize'));
+        wrapper?.querySelectorAll('iframe').forEach((iframe) => {
+          try {
+            iframe.contentWindow?.dispatchEvent(new Event('resize'));
+          } catch (_) {
+            // Ignore cross-origin or transient access errors.
+          }
+        });
+      }, delay);
+    });
+  }
+
+  function getCurrentFullscreenElement() {
+    return document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+  }
+
+  function exitNativeFullscreen() {
+    if (document.exitFullscreen) return document.exitFullscreen();
+    if (document.webkitExitFullscreen) return document.webkitExitFullscreen();
+    if (document.msExitFullscreen) return document.msExitFullscreen();
+    return Promise.resolve();
+  }
+
+  const LEGEND_HIDDEN_STYLE_ID = 'legend-visibility-toggle-style';
+  const LEGEND_CANDIDATE_ATTR = 'data-legend-candidate';
+  const LEGEND_HIDDEN_CLASS = 'legend-hidden-by-toggle';
+  const LEGEND_HIDDEN_SELECTORS = [
+    '.legend',
+    '.maplegend',
+    '.leaflet-control.legend',
+    '.leaflet-control .legend',
+    '.leaflet-control-container .legend',
+    `[${LEGEND_CANDIDATE_ATTR}="1"]`,
+  ].join(', ');
+
+  function markLegendCandidates(doc) {
+    doc.querySelectorAll('div').forEach((div) => {
+      const style = String(div.getAttribute('style') || '').toLowerCase();
+      const hasFixedOverlayStyle =
+        style.includes('position: fixed') &&
+        (style.includes('z-index:9999') || style.includes('z-index: 9999') || style.includes('z-index:'));
+      if (hasFixedOverlayStyle) {
+        div.setAttribute(LEGEND_CANDIDATE_ATTR, '1');
+      }
+    });
+
+    // Plotly legends can be rendered as SVG annotations instead of HTML blocks.
+    doc.querySelectorAll('g.annotation').forEach((annotation) => {
+      const text = String(annotation.textContent || '').toLowerCase();
+      if (text.includes('legenda')) {
+        annotation.setAttribute(LEGEND_CANDIDATE_ATTR, '1');
+      }
+    });
+  }
+
+  function setPlotlyLegendVisibility(iframe, visible) {
+    try {
+      const plotDoc = iframe.contentDocument || iframe.contentWindow?.document;
+      if (!plotDoc) return;
+
+      const plotRoot = plotDoc.querySelector('.js-plotly-plot');
+      const plotly = iframe.contentWindow?.Plotly || plotDoc.defaultView?.Plotly;
+      if (!plotRoot || !plotly || typeof plotly.relayout !== 'function') return;
+
+      // Keep Plotly's internal legend state in sync with our toggle button.
+      plotly.relayout(plotRoot, { showlegend: visible });
+    } catch (_) {
+      // Ignore if Plotly is not ready yet in the iframe.
+    }
+  }
+
+  function setIframeLegendVisibility(iframe, visible) {
+    try {
+      const doc = iframe.contentDocument || iframe.contentWindow?.document;
+      if (!doc) return;
+
+      markLegendCandidates(doc);
+
+      const existing = doc.getElementById(LEGEND_HIDDEN_STYLE_ID);
+      if (visible) {
+        existing?.remove();
+        doc.documentElement.classList.remove(LEGEND_HIDDEN_CLASS);
+        setPlotlyLegendVisibility(iframe, true);
+        return;
+      }
+
+      if (!existing) {
+        const style = doc.createElement('style');
+        style.id = LEGEND_HIDDEN_STYLE_ID;
+        style.textContent = `
+          .${LEGEND_HIDDEN_CLASS} ${LEGEND_HIDDEN_SELECTORS} {
+            display: none !important;
+            visibility: hidden !important;
+          }
+        `;
+        (doc.head || doc.documentElement).appendChild(style);
+      }
+      doc.documentElement.classList.add(LEGEND_HIDDEN_CLASS);
+      setPlotlyLegendVisibility(iframe, false);
+    } catch (_) {
+      // Ignore cross-origin iframes or transient access errors.
+    }
+  }
+
+  function updateLegendButtonState(btn, visible) {
+    btn.textContent = 'Legendas';
+    btn.classList.toggle('active', visible);
+    btn.title = visible ? 'Ocultar legenda' : 'Mostrar legenda';
+    btn.setAttribute('aria-label', btn.title);
+  }
+
+  function applyLegendVisibility(wrapper, visible) {
+    wrapper.dataset.legendVisible = visible ? '1' : '0';
+    wrapper.querySelectorAll('iframe').forEach((iframe) => {
+      setIframeLegendVisibility(iframe, visible);
+    });
+    const btn = wrapper.querySelector('.iframe-legend-toggle');
+    if (btn) updateLegendButtonState(btn, visible);
+  }
+
+  function bindIframeLegendButtons(scope = document) {
+    scope.querySelectorAll('.iframe-wrapper').forEach((wrapper) => {
+      const iframe = wrapper.querySelector('iframe');
+      if (!iframe) return;
+
+      let btn = wrapper.querySelector('.iframe-legend-toggle');
+      if (!btn) {
+        btn = document.createElement('button');
+        btn.className = 'iframe-legend-toggle';
+        wrapper.appendChild(btn);
+      }
+
+      if (!btn.dataset.legendBound) {
+        btn.dataset.legendBound = '1';
+        btn.addEventListener('click', () => {
+          const visible = wrapper.dataset.legendVisible === '1';
+          applyLegendVisibility(wrapper, !visible);
+        });
+      }
+
+      if (!iframe.dataset.legendLoadBound) {
+        iframe.dataset.legendLoadBound = '1';
+        iframe.addEventListener('load', () => {
+          const visible = wrapper.dataset.legendVisible === '1';
+          setIframeLegendVisibility(iframe, visible);
+        });
+      }
+
+      if (!wrapper.dataset.legendVisible) {
+        wrapper.dataset.legendVisible = '0';
+      }
+
+      const visible = wrapper.dataset.legendVisible === '1';
+      updateLegendButtonState(btn, visible);
+      setIframeLegendVisibility(iframe, visible);
+    });
+  }
+
+
   function toggleIframeFullscreen(wrapper, btn) {
-    const supportsNativeFullscreen = !!(
-      wrapper.requestFullscreen ||
-      wrapper.webkitRequestFullscreen ||
-      wrapper.msRequestFullscreen
-    );
+    const requestNativeFullscreen =
+      wrapper.requestFullscreen || wrapper.webkitRequestFullscreen || wrapper.msRequestFullscreen;
+
+    const supportsNativeFullscreen = !!requestNativeFullscreen;
 
     const updateButtonState = (expanded) => {
       btn.textContent = expanded ? '✕' : '⛶';
@@ -241,21 +419,29 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     if (supportsNativeFullscreen) {
-      const isInNativeFullscreen = document.fullscreenElement === wrapper;
+      const isInNativeFullscreen = getCurrentFullscreenElement() === wrapper;
       if (isInNativeFullscreen) {
-        document.exitFullscreen?.();
+        syncFullscreenIframeSize(wrapper, false);
+        Promise.resolve(exitNativeFullscreen()).finally(() => triggerEmbeddedResize(wrapper));
         return;
       }
 
-      wrapper.requestFullscreen?.().catch(() => {
-        const expanded = wrapper.classList.toggle('iframe-fullscreen');
-        updateButtonState(expanded);
-      });
+      syncFullscreenIframeSize(wrapper, true);
+      Promise.resolve(requestNativeFullscreen.call(wrapper))
+        .then(() => triggerEmbeddedResize(wrapper))
+        .catch(() => {
+          const expanded = wrapper.classList.toggle('iframe-fullscreen');
+          updateButtonState(expanded);
+          syncFullscreenIframeSize(wrapper, expanded);
+          triggerEmbeddedResize(wrapper);
+        });
       return;
     }
 
     const expanded = wrapper.classList.toggle('iframe-fullscreen');
     updateButtonState(expanded);
+    syncFullscreenIframeSize(wrapper, expanded);
+    triggerEmbeddedResize(wrapper);
   }
 
   function bindIframeExpandButtons(scope = document) {
@@ -276,6 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   bindIframeExpandButtons();
+  bindIframeLegendButtons();
 
   // ESC to close expanded iframe
   document.addEventListener('keydown', (e) => {
@@ -283,26 +470,34 @@ document.addEventListener('DOMContentLoaded', () => {
       const expanded = document.querySelector('.iframe-wrapper.iframe-fullscreen');
       if (expanded) {
         expanded.classList.remove('iframe-fullscreen');
+        syncFullscreenIframeSize(expanded, false);
         const btn = expanded.querySelector('.iframe-expand');
         if (btn) { btn.textContent = '⛶'; btn.title = 'Expandir'; }
         document.body.style.overflow = '';
+        triggerEmbeddedResize(expanded);
       }
     }
   });
 
-  document.addEventListener('fullscreenchange', () => {
+  function onFullscreenChange() {
     document.querySelectorAll('.iframe-expand').forEach(btn => {
       const wrapper = btn.closest('.iframe-wrapper');
       if (!wrapper) return;
-      const expanded = document.fullscreenElement === wrapper || wrapper.classList.contains('iframe-fullscreen');
+      const expanded = getCurrentFullscreenElement() === wrapper || wrapper.classList.contains('iframe-fullscreen');
       btn.textContent = expanded ? '✕' : '⛶';
       btn.title = expanded ? 'Fechar' : 'Expandir';
+      syncFullscreenIframeSize(wrapper, expanded);
+      if (expanded) triggerEmbeddedResize(wrapper);
     });
 
-    if (!document.fullscreenElement) {
+    if (!getCurrentFullscreenElement()) {
       document.body.style.overflow = '';
     }
-  });
+  }
+
+  document.addEventListener('fullscreenchange', onFullscreenChange);
+  document.addEventListener('webkitfullscreenchange', onFullscreenChange);
+  document.addEventListener('MSFullscreenChange', onFullscreenChange);
 
   /* ---------- State Selector (estadual page) ---------- */
   const ofertaStateSelect = document.getElementById('oferta-state-select');
@@ -311,22 +506,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showOfertaState(uf) {
     if (!ofertaMapDisplay) return;
-    const mapPath = `Outputs%26Codigo/PARTE1/mapas_Equipes_Atencao_Domiciliar_por_estado/mapa_Equipes_Atencao_Domiciliar_${uf}.html`;
+    const mapPath = `Outputs%26Codigo/OFERTA/mapas_Equipes_Atencao_Domiciliar_por_estado/mapa_Equipes_Atencao_Domiciliar_${uf}.html`;
 
     ofertaMapDisplay.innerHTML = `
-      <div class="card card-full">
-        <div class="iframe-wrapper" style="padding-bottom:65%;">
+      <div class="card card-full oferta-map-card">
+        <div class="iframe-wrapper oferta-map-frame">
           <iframe src="${mapPath}" title="Mapa de Equipes AD em ${uf}" loading="lazy"></iframe>
           <button class="iframe-expand" title="Expandir">⛶</button>
-        </div>
-        <div class="card-body">
-          <h3>${uf}: Distribuição Espacial das Equipes</h3>
-          <p>Mapa interativo com clusters automáticos e classificação por composição (EMAD/EMAP) dos estabelecimentos.</p>
         </div>
       </div>
     `;
 
     bindIframeExpandButtons(ofertaMapDisplay);
+    bindIframeLegendButtons(ofertaMapDisplay);
     ofertaStateButtons.forEach(b => b.classList.toggle('active', b.dataset.uf === uf));
     if (ofertaStateSelect) ofertaStateSelect.value = uf;
   }
@@ -349,7 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showState(uf) {
     if (!stateDisplay) return;
-    const imgPath = `Outputs%26Codigo/PARTE4/visualizacoes/estados/${uf}/${uf}_equipes_conformidade.png`;
+    const imgPath = `Outputs%26Codigo/CONFORMIDADE/visualizacoes/estados/${uf}/${uf}_equipes_conformidade.png`;
 
     stateDisplay.innerHTML = `
       <div class="card card-full">

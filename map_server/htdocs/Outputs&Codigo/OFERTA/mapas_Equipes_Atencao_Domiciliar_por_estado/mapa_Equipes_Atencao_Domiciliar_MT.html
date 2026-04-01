@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ebbc6ae873c1c644315bca512e59c10 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+    <div style="position: fixed;
+                bottom: 50px; left: 50px; width: 420px; height: auto;
+                border:2px solid grey; z-index:9999; font-size:14px;
+                background-color:white; opacity: .92; padding: 14px;
+                line-height: 1.6;
+                ">
+                <b style="font-size:16px;">Legenda - Programa Melhor em Casa (MT)</b><br><br>
+                <i class="fa fa-map-marker fa-2x" style="color:purple"></i>&nbsp; <b>Atendimento + Apoio</b> (EMAD + EMAP)<br>
+                <i class="fa fa-map-marker fa-2x" style="color:blue"></i>&nbsp; <b>Apenas EMAD</b> (Equipe de Atendimento)<br>
+                <i class="fa fa-map-marker fa-2x" style="color:green"></i>&nbsp; <b>Apenas EMAP</b> (Equipe de Apoio)<br>
+                <hr style="margin: 10px 0;">
+                <span style="line-height: 1.7; font-size: 13px;">
+                <b>EMAD I/II:</b> Equipe Multiprofissional de Atenção Domiciliar<br>
+                <b>EMAP:</b> Equipe Multiprofissional de Apoio<br>
+                <b>EMAP-R:</b> Equipe Multiprofissional de Apoio para Reabilitação
+                </span>
+    </div>
+    
+    
+            <div class="folium-map" id="map_4ebbc6ae873c1c644315bca512e59c10" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ebbc6ae873c1c644315bca512e59c10 = L.map(
+                "map_4ebbc6ae873c1c644315bca512e59c10",
+                {
+                    center: [-14.390086029098853, -54.99737739833045],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b92874b3c0d38a184a6d16f5d6ef547b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b92874b3c0d38a184a6d16f5d6ef547b.addTo(map_4ebbc6ae873c1c644315bca512e59c10);
+        
+    
+            var marker_cluster_8165a75e24f33946fb04fd0236a2db68 = L.markerClusterGroup(
+                {
+  "disableClusteringAtZoom": 17,
+  "maxClusterRadius": 40,
+}
+            );
+        
+    
+            var marker_54a9b263cfc5b531ee9f9b8f79f5b64d = L.marker(
+                [-15.605594909804198, -56.1002254486084],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_833f84615ae44c1845e9702fa1570b15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a21898508c3a3f041e825d0678a20fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61574bd5e6bd95a691cb4b75f16310b4 = $(`<div id="html_61574bd5e6bd95a691cb4b75f16310b4" style="width: 100.0%; height: 100.0%;"><b>CERMAC CENTRO ESTADUAL DE REF DE MEDIA E ALTA COMPLEXIDAD</b><br><b>Equipes:</b> Apenas Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA THOGO DA SILVA PEREIRA, 63<br><b>CNES:</b> 2473054</div>`)[0];
+                popup_4a21898508c3a3f041e825d0678a20fe.setContent(html_61574bd5e6bd95a691cb4b75f16310b4);
+            
+        
+
+        marker_54a9b263cfc5b531ee9f9b8f79f5b64d.bindPopup(popup_4a21898508c3a3f041e825d0678a20fe)
+        ;
+
+        
+    
+    
+                marker_54a9b263cfc5b531ee9f9b8f79f5b64d.setIcon(icon_833f84615ae44c1845e9702fa1570b15);
+            
+    
+            var marker_0ceb12734726a5fa63d7d8716030c8ec = L.marker(
+                [-15.6122159, -56.0252644],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_183fa7d0f938fa232cf450e05e8c38d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e90959b5390cb0e0c9b0319abdcff1df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7594093b983b5a8010900873491c3f4e = $(`<div id="html_7594093b983b5a8010900873491c3f4e" style="width: 100.0%; height: 100.0%;"><b>EMAD EMAP EQUIPES MULTIPROFISSIONAIS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA 2300, 100<br><b>CNES:</b> 0901873</div>`)[0];
+                popup_e90959b5390cb0e0c9b0319abdcff1df.setContent(html_7594093b983b5a8010900873491c3f4e);
+            
+        
+
+        marker_0ceb12734726a5fa63d7d8716030c8ec.bindPopup(popup_e90959b5390cb0e0c9b0319abdcff1df)
+        ;
+
+        
+    
+    
+                marker_0ceb12734726a5fa63d7d8716030c8ec.setIcon(icon_183fa7d0f938fa232cf450e05e8c38d4);
+            
+    
+            var marker_4cc9065860177eb89583e2a16c55c67d = L.marker(
+                [-10.65300324485082, -51.57261371612549],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_162e91d4cc17206fe6a7bbdfc5c0ee38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df9cd10f6cefca007d6ae66388a5a252 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_362593fdf726c89207cb61683b939b98 = $(`<div id="html_362593fdf726c89207cb61683b939b98" style="width: 100.0%; height: 100.0%;"><b>E SAUDE FAMILIA GLEBA FONTOURA</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA IPORA, S/N<br><b>CNES:</b> 2654946</div>`)[0];
+                popup_df9cd10f6cefca007d6ae66388a5a252.setContent(html_362593fdf726c89207cb61683b939b98);
+            
+        
+
+        marker_4cc9065860177eb89583e2a16c55c67d.bindPopup(popup_df9cd10f6cefca007d6ae66388a5a252)
+        ;
+
+        
+    
+    
+                marker_4cc9065860177eb89583e2a16c55c67d.setIcon(icon_162e91d4cc17206fe6a7bbdfc5c0ee38);
+            
+    
+            var marker_94a7824bb99687a0310d94aba72cb69c = L.marker(
+                [-15.903961, -52.3107463],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_b593f0e0d962812742eced3f0bcfde02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1d4b6f8e09a54c0007252ec179defb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ee74c63b181d6b4606826bf8d7f70ec = $(`<div id="html_3ee74c63b181d6b4606826bf8d7f70ec" style="width: 100.0%; height: 100.0%;"><b>MELHOR EM CASA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA TAPAJOS, S/N<br><b>CNES:</b> 9033149</div>`)[0];
+                popup_b1d4b6f8e09a54c0007252ec179defb0.setContent(html_3ee74c63b181d6b4606826bf8d7f70ec);
+            
+        
+
+        marker_94a7824bb99687a0310d94aba72cb69c.bindPopup(popup_b1d4b6f8e09a54c0007252ec179defb0)
+        ;
+
+        
+    
+    
+                marker_94a7824bb99687a0310d94aba72cb69c.setIcon(icon_b593f0e0d962812742eced3f0bcfde02);
+            
+    
+            var marker_8d559be611de7d8b93232736407894c7 = L.marker(
+                [-13.025818, -57.093335],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_f3e15878b08c4f7fc90c9b49857dbb77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d52011e98b5367c017fdf90587f7b424 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a19677d43bd68151c02dc1baf2ab384e = $(`<div id="html_a19677d43bd68151c02dc1baf2ab384e" style="width: 100.0%; height: 100.0%;"><b>PRONTO ATENDIMENTO MUNICIPAL DECIO LORDANO</b><br><b>Equipes:</b> Apenas Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> R GETULIO VARGAS, S/N<br><b>CNES:</b> 5146437</div>`)[0];
+                popup_d52011e98b5367c017fdf90587f7b424.setContent(html_a19677d43bd68151c02dc1baf2ab384e);
+            
+        
+
+        marker_8d559be611de7d8b93232736407894c7.bindPopup(popup_d52011e98b5367c017fdf90587f7b424)
+        ;
+
+        
+    
+    
+                marker_8d559be611de7d8b93232736407894c7.setIcon(icon_f3e15878b08c4f7fc90c9b49857dbb77);
+            
+    
+            var marker_ec2c7130f18990f447f3af2078181551 = L.marker(
+                [-16.4615698, -54.6519477],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_0bd14365451fe962f7064547954f43e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f5e63f363015357e9234b7b57d83d38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b96479fd382db9936300148eb8264774 = $(`<div id="html_b96479fd382db9936300148eb8264774" style="width: 100.0%; height: 100.0%;"><b>PROGRAMA MELHOR EM CASA RONDONOPOLIS</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> AV JOSE PINTO, S/N<br><b>CNES:</b> 0892947</div>`)[0];
+                popup_7f5e63f363015357e9234b7b57d83d38.setContent(html_b96479fd382db9936300148eb8264774);
+            
+        
+
+        marker_ec2c7130f18990f447f3af2078181551.bindPopup(popup_7f5e63f363015357e9234b7b57d83d38)
+        ;
+
+        
+    
+    
+                marker_ec2c7130f18990f447f3af2078181551.setIcon(icon_0bd14365451fe962f7064547954f43e3);
+            
+    
+            var marker_04f95a0cc2b0b6e7106b3547d555b0df = L.marker(
+                [-15.542706962452984, -55.16317963600159],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_972feac9e40bdb98731a5eafe5db2ea3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6ab385e8fc9dc892f6e55ff32081ac4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d50e5a6d7de13642dfd4d4843276244 = $(`<div id="html_7d50e5a6d7de13642dfd4d4843276244" style="width: 100.0%; height: 100.0%;"><b>SAD SERVICO DE ATENDIMENTO DOMICILIAR MELHOR EM CASA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA FORTALEZA, 1606<br><b>CNES:</b> 9976582</div>`)[0];
+                popup_c6ab385e8fc9dc892f6e55ff32081ac4.setContent(html_7d50e5a6d7de13642dfd4d4843276244);
+            
+        
+
+        marker_04f95a0cc2b0b6e7106b3547d555b0df.bindPopup(popup_c6ab385e8fc9dc892f6e55ff32081ac4)
+        ;
+
+        
+    
+    
+                marker_04f95a0cc2b0b6e7106b3547d555b0df.setIcon(icon_972feac9e40bdb98731a5eafe5db2ea3);
+            
+    
+            var marker_5d90c18d70df63ef7234b2008a8fce29 = L.marker(
+                [-15.6040305, -56.1772661],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_a89a72259de6f321d2d60aae32e97fdc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc6c29e13904b045ddf551b2d120ac1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b2b7dffdcd1e9720d83acf9ee599fa3 = $(`<div id="html_1b2b7dffdcd1e9720d83acf9ee599fa3" style="width: 100.0%; height: 100.0%;"><b>USF JARDIM GLORIA MOACYR D LANNES</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA DA HARMONIA, 260<br><b>CNES:</b> 2390736</div>`)[0];
+                popup_dc6c29e13904b045ddf551b2d120ac1d.setContent(html_1b2b7dffdcd1e9720d83acf9ee599fa3);
+            
+        
+
+        marker_5d90c18d70df63ef7234b2008a8fce29.bindPopup(popup_dc6c29e13904b045ddf551b2d120ac1d)
+        ;
+
+        
+    
+    
+                marker_5d90c18d70df63ef7234b2008a8fce29.setIcon(icon_a89a72259de6f321d2d60aae32e97fdc);
+            
+    
+            var marker_3da610ed80ce22fde52b551acff488c1 = L.marker(
+                [-15.5536, -54.30025],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_05184d6d37350fb54db3c82820e72f45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_260275a2a0607eab7c35e9b04034a7a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abc162266e2daa960f0943a0707781aa = $(`<div id="html_abc162266e2daa960f0943a0707781aa" style="width: 100.0%; height: 100.0%;"><b>SERVICO DE ATENCAO DOMICILIAR MELHOR EM CASA PVA DO LESTE</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA CURITIBA, 444<br><b>CNES:</b> 4233638</div>`)[0];
+                popup_260275a2a0607eab7c35e9b04034a7a7.setContent(html_abc162266e2daa960f0943a0707781aa);
+            
+        
+
+        marker_3da610ed80ce22fde52b551acff488c1.bindPopup(popup_260275a2a0607eab7c35e9b04034a7a7)
+        ;
+
+        
+    
+    
+                marker_3da610ed80ce22fde52b551acff488c1.setIcon(icon_05184d6d37350fb54db3c82820e72f45);
+            
+    
+            var marker_9e833cfa604c883801d1fc3aa8f7e32a = L.marker(
+                [-9.8860652, -56.0857249],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_070c0c82b160ff44a93a39ee7df78880 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82981a2c3fe9f9aa783b09f1725b9dfe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82d9527cfa6e4cb0153297b07d63d7e4 = $(`<div id="html_82d9527cfa6e4cb0153297b07d63d7e4" style="width: 100.0%; height: 100.0%;"><b>EMAD EQUIPE MULTIPROFISSIONAL DE ATENCAO DOMICILIAR</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA DAS ORQUIDEAS, 135<br><b>CNES:</b> 4186192</div>`)[0];
+                popup_82981a2c3fe9f9aa783b09f1725b9dfe.setContent(html_82d9527cfa6e4cb0153297b07d63d7e4);
+            
+        
+
+        marker_9e833cfa604c883801d1fc3aa8f7e32a.bindPopup(popup_82981a2c3fe9f9aa783b09f1725b9dfe)
+        ;
+
+        
+    
+    
+                marker_9e833cfa604c883801d1fc3aa8f7e32a.setIcon(icon_070c0c82b160ff44a93a39ee7df78880);
+            
+    
+            var marker_3b42acafaa43767e0608c0f707cab0d5 = L.marker(
+                [-14.4026077, -56.4356489],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_06875804d195c7d62f2acfeff7492527 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ee0676a8adc34cce0ebfc1fa8c77bd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59da9790ae63b887559cdec690b914bd = $(`<div id="html_59da9790ae63b887559cdec690b914bd" style="width: 100.0%; height: 100.0%;"><b>EMAD EQUIPE M DE ATENCAO DOMICILIAR DE DIAMANTINO</b><br><b>Equipes:</b> Apenas Atendimento (EMAD I/II)<br><b>Endereço:</b> RUA RUI BARBOSA, S/N<br><b>CNES:</b> 4652444</div>`)[0];
+                popup_8ee0676a8adc34cce0ebfc1fa8c77bd7.setContent(html_59da9790ae63b887559cdec690b914bd);
+            
+        
+
+        marker_3b42acafaa43767e0608c0f707cab0d5.bindPopup(popup_8ee0676a8adc34cce0ebfc1fa8c77bd7)
+        ;
+
+        
+    
+    
+                marker_3b42acafaa43767e0608c0f707cab0d5.setIcon(icon_06875804d195c7d62f2acfeff7492527);
+            
+    
+            var marker_f065247625710727e691e1aa2d50d777 = L.marker(
+                [-14.429859132078228, -54.052326679229736],
+                {
+}
+            ).addTo(marker_cluster_8165a75e24f33946fb04fd0236a2db68);
+        
+    
+            var icon_a1015a9186c1fc2d5f0e13a5b76fcbbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9426eba849b471e3cdbdacebcbfaa64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_150d37002faa57f7f69e31901791a6bf = $(`<div id="html_150d37002faa57f7f69e31901791a6bf" style="width: 100.0%; height: 100.0%;"><b>SERVICO DE ATENDIMENTO DOMICILIAR MELHOR EM CASA</b><br><b>Equipes:</b> Atendimento (EMAD) e Apoio (EMAP/EMAP-R)<br><b>Endereço:</b> RUA SAO FRANCISCO XAVIER, 1463<br><b>CNES:</b> 4711009</div>`)[0];
+                popup_a9426eba849b471e3cdbdacebcbfaa64.setContent(html_150d37002faa57f7f69e31901791a6bf);
+            
+        
+
+        marker_f065247625710727e691e1aa2d50d777.bindPopup(popup_a9426eba849b471e3cdbdacebcbfaa64)
+        ;
+
+        
+    
+    
+                marker_f065247625710727e691e1aa2d50d777.setIcon(icon_a1015a9186c1fc2d5f0e13a5b76fcbbe);
+            
+    
+            marker_cluster_8165a75e24f33946fb04fd0236a2db68.addTo(map_4ebbc6ae873c1c644315bca512e59c10);
+        
+</script>
+</html>

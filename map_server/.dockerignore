@@ -4,3 +4,4 @@ README.md
 *.log
 __pycache__/
 *.pyc
+site/
