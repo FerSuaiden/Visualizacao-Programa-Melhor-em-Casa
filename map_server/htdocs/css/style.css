@@ -289,6 +289,11 @@ a:hover { opacity: .8; }
   padding-bottom: 52%;
 }
 
+.iframe-wrapper.sunburst-frame {
+  padding-bottom: 72%;
+  min-height: 520px;
+}
+
 
 /* ---------- Tables ---------- */
 .table-wrapper {
@@ -745,6 +750,39 @@ main strong {
 
   .iframe-wrapper.oferta-map-frame {
     padding-bottom: 68%;
+  }
+
+  .iframe-wrapper.sunburst-frame {
+    padding-bottom: 120% !important;
+    min-height: 620px;
+  }
+
+  .iframe-expand,
+  .iframe-legend-toggle {
+    opacity: 1;
+  }
+
+  .iframe-wrapper.iframe-fullscreen .iframe-expand,
+  .iframe-wrapper:fullscreen .iframe-expand,
+  .iframe-wrapper:-webkit-full-screen .iframe-expand,
+  .iframe-wrapper:-ms-fullscreen .iframe-expand {
+    top: .55rem;
+    right: .55rem;
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .iframe-wrapper.iframe-fullscreen .iframe-legend-toggle,
+  .iframe-wrapper:fullscreen .iframe-legend-toggle,
+  .iframe-wrapper:-webkit-full-screen .iframe-legend-toggle,
+  .iframe-wrapper:-ms-fullscreen .iframe-legend-toggle {
+    top: .55rem;
+    right: 3.05rem;
+    min-width: 78px;
+    height: 34px;
+    padding: 0 .45rem;
+    font-size: .78rem;
   }
 }
 

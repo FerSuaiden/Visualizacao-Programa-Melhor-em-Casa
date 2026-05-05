@@ -39,7 +39,11 @@ try:
 
     # Grafico de pizza (composicao nacional) no estilo donut com percentuais fora.
     df_composicao_nacional = df_equipes_filtradas['Tipo_Equipe'].value_counts()
-    fig_pie, ax_pie = plt.subplots(figsize=(12.8, 8.8))
+    fig_pie, (ax_pie, ax_leg) = plt.subplots(
+        ncols=2,
+        figsize=(12.8, 6.8),
+        gridspec_kw={'width_ratios': [1.55, 1.45], 'wspace': 0.02}
+    )
     
     # Define cores para consistência
     cores = ['#1f77b4', '#2ca02c', '#ff7f0e', '#9467bd']
@@ -55,14 +59,15 @@ try:
         df_composicao_nacional, 
         startangle=90,
         autopct=pct_e_qtd,
-        radius=1.08,
-        pctdistance=1.16,
+        radius=1.28,
+        pctdistance=1.10,
         colors=cores[:len(df_composicao_nacional)],
         wedgeprops={'width': 0.45, 'edgecolor': 'white', 'linewidth': 2},
-        textprops={'fontsize': 11, 'fontweight': 'bold'}
+        textprops={'fontsize': 15, 'fontweight': 'bold'}
     )
     
     ax_pie.axis('equal')  # Garante que a pizza seja um círculo
+    ax_leg.axis('off')
     # Sem titulo superior para priorizar area util do grafico.
     
     # Legenda enxuta: apenas sigla e significado.
@@ -77,22 +82,22 @@ try:
         for label in df_composicao_nacional.index
     ]
     
-    ax_pie.legend(
+    ax_leg.legend(
         wedges, 
         detailed_labels, 
         title="Tipo de Equipe (Programa Melhor em Casa)",
         loc="center left",
-        bbox_to_anchor=(1.02, 0.5),
-        fontsize=12,
-        title_fontsize=14,
+        bbox_to_anchor=(0.0, 0.5),
+        fontsize=16,
+        title_fontsize=18,
         frameon=False
     )
 
-    ax_pie.text(0, 0, f"Total\n{total_equipes:,}".replace(',', '.'), ha='center', va='center', fontsize=14, fontweight='bold')
+    ax_pie.text(0, 0, f"Total\n{total_equipes:,}".replace(',', '.'), ha='center', va='center', fontsize=19, fontweight='bold')
     
-    plt.tight_layout()
+    fig_pie.subplots_adjust(left=0.02, right=0.98, top=0.96, bottom=0.06, wspace=0.02)
     nome_grafico = SCRIPT_DIR / 'composicao_nacional_pizza.png'
-    plt.savefig(nome_grafico, bbox_inches='tight')
+    plt.savefig(nome_grafico, bbox_inches='tight', pad_inches=0.03)
     print(f"Gráfico salvo: {nome_grafico}")
 
 

@@ -346,7 +346,7 @@ def main():
     # VISUALIZAÇÃO 1A: COBERTURA MUNICIPAL - TOP 15 UFs POR % DE COBERTURA
     # =========================================================================
     
-    fig1a, ax1 = plt.subplots(figsize=(10, 9))
+    fig1a, ax1 = plt.subplots(figsize=(10, 7))
     
     # Ordenar por PORCENTAGEM de cobertura (não por números brutos)
     top_ufs_pct = municipios_ad.nlargest(15, 'COBERTURA_%').copy()
@@ -466,7 +466,7 @@ def main():
     # VISUALIZAÇÃO 3A: CONFORMIDADE LEGAL - POR TIPO DE EQUIPE
     # =========================================================================
     
-    fig3a, ax5 = plt.subplots(figsize=(9, 7))
+    fig3a, ax5 = plt.subplots(figsize=(9, 4.6))
     
     # Por tipo
     stats_tipo = df_resultados.groupby('TIPO').agg({
@@ -511,7 +511,7 @@ def main():
     # VISUALIZAÇÃO 3B: CONFORMIDADE LEGAL - POR REGIÃO
     # =========================================================================
     
-    fig3b, ax6 = plt.subplots(figsize=(9, 7))
+    fig3b, ax6 = plt.subplots(figsize=(9, 4.6))
     
     # Por região
     stats_regiao = df_resultados.groupby('REGIAO').agg({

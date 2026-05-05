@@ -140,9 +140,9 @@ def salvar_grafico_cobertura(df_serie: pd.DataFrame, caminho_saida: str) -> None
             color=CORES_REGIAO[regiao],
         )
 
-    ax.set_xlabel("Ano", fontsize=24)
-    ax.set_ylabel("% dos municípios da região com AD", fontsize=24)
-    ax.tick_params(axis="both", labelsize=20)
+    ax.set_xlabel("Ano", fontsize=26)
+    ax.set_ylabel("% dos municípios da região com AD", fontsize=26)
+    ax.tick_params(axis="both", labelsize=22)
 
     # Escala dinamica: teto no multiplo de 5 imediatamente acima do maximo observado.
     cols_cob = [f"COBERTURA_PCT_{reg.upper()}" for reg in REGIOES_ORDENADAS]
@@ -150,7 +150,7 @@ def salvar_grafico_cobertura(df_serie: pd.DataFrame, caminho_saida: str) -> None
     y_max = max(5, int(math.ceil(max_cob / 5.0) * 5))
     ax.set_ylim(0, y_max)
 
-    ax.legend(title="Regiao", ncol=3, fontsize=18, title_fontsize=19)
+    ax.legend(title="Regiao", ncol=3, fontsize=20, title_fontsize=21)
     fig.autofmt_xdate()
     plt.tight_layout()
     fig.savefig(caminho_saida, dpi=220)
